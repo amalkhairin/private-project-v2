@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+
+# Hapus ekstensi .html dari URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Atur agar permintaan ke direktori tanpa trailing slash diakhiri dengan /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
