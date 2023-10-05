@@ -132,7 +132,7 @@
             "id": 9,
             "platform": "youtube",
             "image": "",
-            "name": "Viyushi Winko",
+            "name": "Jows",
             "link": [
                 {
                     "name": "Showcase",
@@ -148,7 +148,7 @@
             "id": 10,
             "platform": "youtube",
             "image": "",
-            "name": "Jows",
+            "name": "Ameru Nomi",
             "link": [
                 {
                     "name": "Showcase",
@@ -164,7 +164,7 @@
             "id": 11,
             "platform": "youtube",
             "image": "",
-            "name": "Ameru Nomi",
+            "name": "Gacchan",
             "link": [
                 {
                     "name": "Showcase",
@@ -180,7 +180,7 @@
             "id": 12,
             "platform": "youtube",
             "image": "",
-            "name": "Gacchan",
+            "name": "Yumetsukie",
             "link": [
                 {
                     "name": "Showcase",
@@ -196,7 +196,7 @@
             "id": 13,
             "platform": "youtube",
             "image": "",
-            "name": "Yumetsukie",
+            "name": "Nasstasha Lubov [Virtunix]",
             "link": [
                 {
                     "name": "Showcase",
@@ -212,7 +212,7 @@
             "id": 14,
             "platform": "youtube",
             "image": "",
-            "name": "Nasstasha Lubov [Virtunix]",
+            "name": "Cecilia Lieberia Ch.『 Re:Memories 』",
             "link": [
                 {
                     "name": "Showcase",
@@ -228,7 +228,7 @@
             "id": 15,
             "platform": "youtube",
             "image": "",
-            "name": "Cecilia Lieberia Ch.『 Re:Memories 』",
+            "name": "Pink Miruku",
             "link": [
                 {
                     "name": "Showcase",
@@ -244,7 +244,7 @@
             "id": 16,
             "platform": "youtube",
             "image": "",
-            "name": "Pink Miruku",
+            "name": "DombeaR Cave",
             "link": [
                 {
                     "name": "Showcase",
@@ -260,22 +260,6 @@
             "id": 17,
             "platform": "youtube",
             "image": "",
-            "name": "DombeaR Cave",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 18,
-            "platform": "youtube",
-            "image": "",
             "name": "Bakedeath",
             "link": [
                 {
@@ -289,7 +273,7 @@
             ]
         },
         {
-            "id": 19,
+            "id": 18,
             "platform": "twitch",
             "image": "",
             "name": "Calypzia",

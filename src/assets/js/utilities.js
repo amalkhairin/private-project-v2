@@ -1,14 +1,20 @@
-var observer = new IntersectionObserver(function(entries, observer){
-    entries.forEach(function(entry){
-        if(entry.isIntersecting){
-            $("#works .carousel-inner").addClass("animated")
-        }
-    })
-}, {
-    threshold: 0.5
-})
-
-observer.observe($("#works")[0])
+function observeElementIntersection(selector, threshold=0) {
+    // $(selector).css("visibility", "hidden")
+    $(selector).css("transform", "translateX(100px)")
+    $(selector).css("opacity", "0")
+    $(selector).css("transition", "opacity 0.5s, transform 0.5s")
+    new IntersectionObserver(function(entries, observer){
+        entries.forEach(function(entry){
+            if(entry.isIntersecting){
+                $(selector).addClass("animated");
+            } else {
+                $(selector).removeClass("animated");
+            }
+        });
+    }, {
+        threshold: threshold
+    }).observe($(selector)[0]);
+}
 
 
 
@@ -63,7 +69,7 @@ function get_works(filter, limit){
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content p-3" style="">
+                                <div class="content p-3 bg-white" style="">
                                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 justify-content-center align-items-center">
                                         <div class="col-md-6">
                                             <div class="image-container mx-auto" style="width: 200px; height: 200px; background: rgb(134, 134, 168); position: relative;">
@@ -129,7 +135,7 @@ function get_works(filter, limit){
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="content d-flex justify-content-center align-items-center p-3" style="height: 250px">
+                                    <div class="content bg-white d-flex justify-content-center align-items-center p-3" style="height: 250px">
                                         <div class="text-center mx-auto my-auto">
                                             <a href="/showcase.html" class="btn button-small b-green">Show More</a>
                                         </div>
@@ -308,8 +314,8 @@ function get_plan(type){
 
         $.each(jsonData, function(index, plan) {
             $("#plan-wrapper").append(`
-                <div id="${plan.id}" type="${plan.type}" class="col-md-5">
-                    <div class="window-2">
+                <div id="${plan.id}" type="${plan.type}" class="col-md-3 plan-card window-2">
+                    <div class="">
                         <div class="header ${isTwitch} px-3 py-1">
                             <div class="row justify-content-between">
                                 <div class="col-auto">
@@ -332,7 +338,7 @@ function get_plan(type){
                         </div>
                         <div class="content p-3">
                             <div class="row row-cols-1 justify-content-center">
-                                <div class="col text-center" style="height: 250px;">
+                                <div class="col text-center" style="height: 300px;">
                                     <h3 class="heading heading-window-1">${plan.price}</h3>
                                     <span class="text-small">You'll get:</span>
                                     <ul id="items-${plan.id}" class="list-item text-start">

@@ -40,10 +40,10 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#works">Our Works</a>
+                            <a class="nav-link text-white" aria-current="page" href="/showcase.html">Our Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="/#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/progress.html">Progress</a>
@@ -60,11 +60,10 @@
     <section id="main">
         <div class="container">
             <div class="row justify-content-center mt-4">
-                <div class="col-md-5 col-sm-12 text-center">
-                    <h1 class="heading heading-1">let's level up your live stream</h1>
-                    <span class="subtext text-white">Try our cool live chat CSS designs.</span>
-                    <p class="other-text text-white fs-6"><span>Commission status:</span></p>
-                    <a href="#services" class="btn button-white">Open</a>
+                <div class="col-md-8 col-sm-12 text-center">
+                    <h1 class="heading heading-1 letters">let's level up your live stream with our CSS design</h1>
+                    <p class="other-text mt-3 text-white fs-6"><span>Commission status:</span></p>
+                    <a href="#services" class="btn button-white btn-open">Open</a>
                     <div class="arrow-down my-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 29 23" fill="none">
                             <path d="M14.3232 21.718V21.718L14.3355 21.718C15.0133 21.7145 15.6819 21.5603 16.2927 21.2664C16.9012 20.9735 17.4373 20.5494 17.8621 20.0244L26.0454 10.1112L26.0511 10.1044L26.0566 10.0974C26.6782 9.32169 27.0693 8.38697 27.1854 7.39978C27.301 6.4178 27.1398 5.42318 26.7202 4.52809C26.36 3.7186 25.7758 3.02891 25.0362 2.54054C24.2922 2.04921 23.4225 1.78242 22.5309 1.77204L22.5238 1.77196H22.5167H6.14204H6.13493L6.12782 1.77204C5.23627 1.78242 4.36654 2.04921 3.62252 2.54054C2.88298 3.02892 2.29871 3.71862 1.93853 4.52812C1.51899 5.42321 1.35781 6.41781 1.47334 7.39978C1.58948 8.38697 1.9806 9.32169 2.60214 10.0974L2.60771 10.1044L2.61339 10.1112L10.7967 20.0245C11.2216 20.5494 11.7575 20.9735 12.3661 21.2664C12.9769 21.5603 13.6454 21.7145 14.3232 21.718Z" fill="#F8F9FB" stroke="#AECBEB" stroke-width="2.44339"/>
@@ -76,8 +75,15 @@
     </section>
 
     <section id="works">
-        <div class="bg-white">
+        <div class="bg-white bg-image">
             <div class="container py-4">
+
+                <div class="row justify-content-center my-5">
+                    <div id="test" class="col-md-10">
+                        <h2 class="heading heading-3 text-center" style="font-family: var(--font-family-2);">More than 20 VTubers/Streamers have entrusted us with their live chat design and CSS</h2>
+                        <div class="mx-auto line-decoration"></div>
+                    </div>
+                </div>
 
                 <div class="row row-cols-1 justify-content-center mb-5 d-none">
                     <!-- new items -->
@@ -126,10 +132,10 @@
                     </div>
                 </div>
                 
-                <div class="row justify-content-center mt-3 mb-3">
+                <div class="row justify-content-center mt-5 mb-3">
                     <div class="col">
-                        <h3 class="heading heading-3 text-center">Our Works</h3>
-                        <div class=" d-flex justify-content-center">
+                        <h3 id="works-title" class="heading heading-3 text-center">Our Works</h3>
+                        <div class="filter-wrapper d-flex justify-content-center">
                             <div id="filter-1" class="filter-item px-3 mx-1 active">All</div>
                             <div id="filter-2" class="filter-item px-3 mx-1">Youtube</div>
                             <div id="filter-3" class="filter-item px-3 mx-1">Twitch</div>
@@ -169,7 +175,7 @@
         <div class="container py-4">
             <div class="row row-cols-1 justify-content-center my-3">
                 <div class="col">
-                    <h3 class="heading heading-white-3 text-center">Our Services</h3>
+                    <h3 id="services-title" class="heading heading-white-3 text-center">Our Services</h3>
                     <div class="switch d-flex justify-content-center my-4">
                         <div id="switch-opt-1" class="button-switch active mx-2">Youtube</div>
                         <div id="switch-opt-2" class="button-switch mx-2">Twitch</div>
@@ -186,8 +192,8 @@
         <div class="container py-4">
             <div class="row row-cols-1 justify-content-center my-3">
                 <div class="col-auto">
-                    <h3 class="heading heading-white-3 text-center">Term of Services</h3>
-                    <div class="text-start">
+                    <h3 id="tos-title" class="heading heading-white-3 text-center">Term of Services</h3>
+                    <div id="tos-list" class="text-start">
                         <ul class="text-white">
                             <li>DM via Twitter or Discord</li>
                             <li>Provide some design briefs or references</li>
@@ -289,6 +295,39 @@
                     get_works("twitch",5);
                 }
             })
+
+            observeElementIntersection("#works #carousel-wrapper", 0.5)
+            observeElementIntersection("#test", 0.5)
+            observeElementIntersection(".filter-wrapper", 0.5)
+            observeElementIntersection("#works-title", 0.5)
+            observeElementIntersection("#tos-title", 0.5)
+            observeElementIntersection("#tos-list", 0.5)
+            observeElementIntersection("#services-title", 0.5)
+            observeElementIntersection(".switch", 0.5)
+            observeElementIntersection("#plan-wrapper", 0)
+            observeElementIntersection("#contact", 0.5)
+
+            // const textContainer = $(".letters");
+            // const text = textContainer.text();
+            // textContainer.empty(); // Kosongkan kontainer teks
+
+            // var delay = 60; // Delay dalam milidetik (0.2 detik)
+            // var index = 0;
+
+            // var interval = setInterval(function() {
+            //     if (index < text.length) {
+            //         // Ambil karakter pada index saat ini
+            //         var char = text.charAt(index);
+                    
+            //         // Append karakter ke elemen target
+            //         $('.letters').append(char);
+
+            //         index++;
+            //     } else {
+            //         // Hentikan interval jika sudah selesai
+            //         clearInterval(interval);
+            //     }
+            // }, delay);
             
 
         })
