@@ -14,9 +14,9 @@ body {
     overflow-x: hidden !important;
 }
 
-* {
+/* * {
     overflow-x: hidden !important;
-}
+} */
 
 
 .bg-image {
@@ -270,7 +270,6 @@ body {
 
 .animated {
     opacity: 1 !important;
-    transform: translateX(0) !important;
 }
 
 /* .animated {

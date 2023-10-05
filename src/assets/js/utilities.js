@@ -1,8 +1,7 @@
 function observeElementIntersection(selector, threshold=0) {
     // $(selector).css("visibility", "hidden")
-    $(selector).css("transform", "translateX(100px)")
     $(selector).css("opacity", "0")
-    $(selector).css("transition", "opacity 0.5s, transform 0.5s")
+    $(selector).css("transition", "opacity 0.5s")
     new IntersectionObserver(function(entries, observer){
         entries.forEach(function(entry){
             if(entry.isIntersecting){
