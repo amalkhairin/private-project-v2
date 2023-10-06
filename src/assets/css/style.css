@@ -23,6 +23,7 @@ body {
     transform-origin: center;
     animation: rabbit-left 7s steps(1) 1s infinite;
     z-index: -1;
+    display: none !important;
     opacity: 0;
 }
 
