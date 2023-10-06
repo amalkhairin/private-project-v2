@@ -69,8 +69,8 @@ function get_works(filter, limit){
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content p-3 bg-white" style="">
-                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 justify-content-center align-items-center">
+                                <div class="content p-3 bg-white align-items-center">
+                                    <div class="row my-auto row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 justify-content-center align-items-center">
                                         <div class="col-md-6">
                                             <div class="image-container mx-auto" style="width: 200px; height: 200px; background: rgb(134, 134, 168); position: relative;">
                                                 <img class="img-fluid" src="${work.image}" onerror="this.style.display='none';" alt="" style="width: 100%; height: 100%; object-fit: cover;">
@@ -109,43 +109,43 @@ function get_works(filter, limit){
                 $(".carousel-item").addClass("active")
             }
 
-            if(index == worksData.length - 1) {
-                $(".carousel-inner").append(`
-                    <div class="carousel-item">
-                        <div class="row g-3 row-cols-1 justify-content-center">
-                            <div class="col-md-10 col-sm-12 col-lg-8 col-xl-6 col-xxl-6">
-                                <div class="window my-3">
-                                    <div class="header px-3 py-1">
-                                        <div class="row justify-content-end">
-                                            <div class="col-auto">
+            // if(index == worksData.length - 1) {
+            //     $(".carousel-inner").append(`
+            //         <div class="carousel-item">
+            //             <div class="row g-3 row-cols-1 justify-content-center">
+            //                 <div class="col-md-10 col-sm-12 col-lg-8 col-xl-6 col-xxl-6">
+            //                     <div class="window my-3">
+            //                         <div class="header px-3 py-1">
+            //                             <div class="row justify-content-end">
+            //                                 <div class="col-auto">
                                                 
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="window-decoration">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="98" height="29" viewBox="0 0 98 29" fill="none">
-                                                        <rect x="71.8667" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                        <path d="M90.0039 10.2256L88.464 8.68568L83.8442 13.3054L79.2245 8.68568L77.6846 10.2256L82.3043 14.8454L77.6846 19.4651L79.2245 21.0051L83.8442 16.3853L88.464 21.0051L90.0039 19.4651L85.3842 14.8454L90.0039 10.2256Z" fill="#83B0E1"/>
-                                                        <rect x="37.022" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                        <rect x="42.4668" y="12.6665" width="8.71111" height="8.71111" stroke="#83B0E1" stroke-width="2.17778"/>
-                                                        <path d="M43.5557 9.3999H54.4446V20.2888" stroke="#83B0E1" stroke-width="2.17778"/>
-                                                        <rect x="2.17778" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                        <rect x="21.7778" y="20.2891" width="2.17778" height="15.2444" transform="rotate(90 21.7778 20.2891)" fill="#83B0E1"/>
-                                                        </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content bg-white d-flex justify-content-center align-items-center p-3" style="height: 250px">
-                                        <div class="text-center mx-auto my-auto">
-                                            <a href="/showcase.html" class="btn button-small b-green">Show More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `)
-            }
+            //                                 </div>
+            //                                 <div class="col-auto">
+            //                                     <div class="window-decoration">
+            //                                         <svg xmlns="http://www.w3.org/2000/svg" width="98" height="29" viewBox="0 0 98 29" fill="none">
+            //                                             <rect x="71.8667" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
+            //                                             <path d="M90.0039 10.2256L88.464 8.68568L83.8442 13.3054L79.2245 8.68568L77.6846 10.2256L82.3043 14.8454L77.6846 19.4651L79.2245 21.0051L83.8442 16.3853L88.464 21.0051L90.0039 19.4651L85.3842 14.8454L90.0039 10.2256Z" fill="#83B0E1"/>
+            //                                             <rect x="37.022" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
+            //                                             <rect x="42.4668" y="12.6665" width="8.71111" height="8.71111" stroke="#83B0E1" stroke-width="2.17778"/>
+            //                                             <path d="M43.5557 9.3999H54.4446V20.2888" stroke="#83B0E1" stroke-width="2.17778"/>
+            //                                             <rect x="2.17778" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
+            //                                             <rect x="21.7778" y="20.2891" width="2.17778" height="15.2444" transform="rotate(90 21.7778 20.2891)" fill="#83B0E1"/>
+            //                                             </svg>
+            //                                     </div>
+            //                                 </div>
+            //                             </div>
+            //                         </div>
+            //                         <div class="content bg-white d-flex justify-content-center align-items-center p-3" style="height: 250px">
+            //                             <div class="text-center mx-auto my-auto">
+            //                                 <a href="/showcase.html" class="btn button-small b-green">Show More</a>
+            //                             </div>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     `)
+            // }
         });
 
     })
