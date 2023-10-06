@@ -77,7 +77,7 @@ function get_works(filter, limit){
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="heading heading-window-1 text-center my-3">${work.name}</div>
+                                            <div class="heading heading-window-1 work-name text-center my-3">${work.name}</div>
                                             <div id="work-link-${work.id}" class="row justify-content-center">
                                             </div>
                                         </div>
@@ -317,7 +317,7 @@ function get_plan(type){
                 <div id="${plan.id}" type="${plan.type}" class="col-md-3 plan-card window-2">
                     <div class="">
                         <div class="header ${isTwitch} px-3 py-1">
-                            <div class="row mx-0 justify-content-between">
+                            <div class="row justify-content-between">
                                 <div class="col-auto">
                                     ${plan.plan_type}
                                 </div>
@@ -337,8 +337,8 @@ function get_plan(type){
                             </div>
                         </div>
                         <div class="content p-3">
-                            <div class="row mx-0 row-cols-1 justify-content-center">
-                                <div class="col text-center" style="height: 300px;">
+                            <div class="row row-cols-1 justify-content-center">
+                                <div class="col text-center" style="height: 320px;">
                                     <h3 class="heading heading-window-1">${plan.price}</h3>
                                     <span class="text-small">You'll get:</span>
                                     <ul id="items-${plan.id}" class="list-item text-start">

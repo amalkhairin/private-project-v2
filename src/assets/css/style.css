@@ -21,7 +21,7 @@ body {
 .rabbit {
     position: relative;
     transform-origin: center;
-    animation: rabbit-left 7s steps(1) 1s infinite;
+    animation: rabbit-left 7s steps(1) 1s both;
     z-index: -1;
     display: none !important;
     opacity: 0;
@@ -127,6 +127,7 @@ body {
         transform: translateX(2.5vw,-10px);
     }
     100% {
+        opacity: 1;
         transform: translateX(0vw,0px);
     }
 }
@@ -363,7 +364,7 @@ body {
     color: #83B0E1;
 }
 
-.heading-window-1 {
+.work-name {
     color: #83B0E1;
     overflow: hidden;
     white-space: nowrap;
