@@ -363,6 +363,9 @@ body {
 
 .heading-window-1 {
     color: #83B0E1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .window .window-decoration > svg {
