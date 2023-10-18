@@ -7,8 +7,6 @@ function observeElementIntersection(selector, threshold=0) {
         entries.forEach(function(entry){
             if(entry.isIntersecting){
                 $(selector).addClass("animated");
-            } else {
-                // $(selector).removeClass("animated");
             }
         });
     }, {
