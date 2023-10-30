@@ -1,292 +1,146 @@
-{
-    "data": [
-        {
-            "id": 1,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/yPCzvpJ/Screenshot-2023-07-26-234223.png",
-            "name": "Makotoshi Ch. 【ARVI】",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/aCNSb-jJZDM"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@MakotoshiCh"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/7r6Fc8T/Screenshot-2023-07-19-192407.png",
-            "name": "Lydia Diabolis [Himawari]",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/w5AULlrj6ns"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@LydiaDiabolis"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/8gp6bZF/Screenshot-2023-07-19-192806.png",
-            "name": "RISBOL (Ricebowl)",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/1pkoykibwyc"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@risboloho"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/JvPq9SQ/Screenshot-2023-07-22-222232.png",
-            "name": "Wilma Miashi",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/PU_-qWbDdF4"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@WilmaMiashi"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/ryPRDYz/Screenshot-2023-07-22-224412.png",
-            "name": "Aluna Diva Ch.【TRADE】",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/GMVPACMJ1ME"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@AlunaDivaCh"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/wW7N21P/Screenshot-2023-07-27-055909.png",
-            "name": "Peony Ch",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/rUF_S1Hfgro"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@peonyasashi"
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/ZGRRS9X/Screenshot-2023-07-22-222722.png",
-            "name": "Keiko Lynx Ch. #villain",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/ey6sccdKUPE"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@keizee"
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "platform": "youtube",
-            "image": "https://i.ibb.co/HYm5CBH/Screenshot-2023-07-23-002531.png",
-            "name": "Hera Olufemi Ch.〔ETERNAL〕",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": "https://youtu.be/LAmV3msKjT8"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/@HeraOlulu"
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "platform": "youtube",
-            "image": "",
-            "name": "Jows",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "platform": "youtube",
-            "image": "",
-            "name": "Ameru Nomi",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "platform": "youtube",
-            "image": "",
-            "name": "Gacchan",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "platform": "youtube",
-            "image": "",
-            "name": "Yumetsukie",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 13,
-            "platform": "youtube",
-            "image": "",
-            "name": "Nasstasha Lubov [Virtunix]",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 14,
-            "platform": "youtube",
-            "image": "",
-            "name": "Cecilia Lieberia Ch.『 Re:Memories 』",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 15,
-            "platform": "youtube",
-            "image": "",
-            "name": "Pink Miruku",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 16,
-            "platform": "youtube",
-            "image": "",
-            "name": "DombeaR Cave",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 17,
-            "platform": "youtube",
-            "image": "",
-            "name": "Bakedeath",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Youtube",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "id": 18,
-            "platform": "twitch",
-            "image": "",
-            "name": "Calypzia",
-            "link": [
-                {
-                    "name": "Showcase",
-                    "url": ""
-                },
-                {
-                    "name": "Twitch",
-                    "url": "https://www.twitch.tv/calypzia"
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": "work-1",
+        "name": "Lydia Diabolis",
+        "type": "Youtube",
+        "url": "https://youtu.be/w5AULlrj6ns?si=CeggewcMkxWKe68i"
+    },
+    {
+        "id": "work-2",
+        "name": "Makotoshi",
+        "type": "Youtube",
+        "url": "https://youtu.be/aCNSb-jJZDM?si=Iq44qkTyRYRI0Xlb"
+    },
+    {
+        "id": "work-3",
+        "name": "Risbol",
+        "type": "Youtube",
+        "url": "https://youtu.be/1pkoykibwyc?si=7iqhx7Fg28KXkBSF"
+    },
+    {
+        "id": "work-4",
+        "name": "Wilma Miashi",
+        "type": "Youtube",
+        "url": "https://youtu.be/PU_-qWbDdF4?si=qgU54X20S10AqGbC"
+    },
+    {
+        "id": "work-5",
+        "name": "Aluna Diva",
+        "type": "Youtube",
+        "url": "https://youtu.be/GMVPACMJ1ME?si=I0MWeS6y_J6TeKgg"
+    },
+    {
+        "id": "work-6",
+        "name": "Keiko Lynx",
+        "type": "Youtube",
+        "url": "https://youtu.be/ey6sccdKUPE?si=CmvneCbkFfDC9JJn"
+    },
+    {
+        "id": "work-7",
+        "name": "Peony",
+        "type": "Youtube",
+        "url": "https://youtu.be/rUF_S1Hfgro?si=ysaiJRTJsqJ2kJL1"
+    },
+    {
+        "id": "work-8",
+        "name": "Syahril MI",
+        "type": "Youtube",
+        "url": "https://youtu.be/AJDt4YyDVtE?si=15XvURPdHXaC_piM"
+    },
+    {
+        "id": "work-9",
+        "name": "Jows",
+        "type": "Youtube",
+        "url": "https://youtu.be/OxMcK1hl3j0?si=DqI2efT7k2KbAS4k"
+    },
+    {
+        "id": "work-10",
+        "name": "Erol Sultan",
+        "type": "Youtube",
+        "url": "https://youtu.be/tohQl-Cu9yI?si=iKk7KJUCzfUmPtfr"
+    },
+    {
+        "id": "work-11",
+        "name": "Ameru Nomi",
+        "type": "Youtube",
+        "url": "https://youtu.be/h2C6fHWES-s?si=nExsQcZSOZVOrNkb"
+    },
+    {
+        "id": "work-12",
+        "name": "Alicia Ravenna",
+        "type": "Youtube",
+        "url": "https://youtu.be/BBAjpGHLMI8?si=sQ-Jw-hSwzeNaq9G"
+    },
+    {
+        "id": "work-13",
+        "name": "Nasstasha Lubov",
+        "type": "Youtube",
+        "url": "https://youtu.be/_-QvJqizEec?si=Ihwl-Bli0wf4ufrp"
+    },
+    {
+        "id": "work-14",
+        "name": "Yumetsukie",
+        "type": "Youtube",
+        "url": "https://youtu.be/x2Dotrh6b2s?si=XV4rDiGfB5S9L4_R"
+    },
+    {
+        "id": "work-15",
+        "name": "Gacchan",
+        "type": "Youtube",
+        "url": "https://youtu.be/ZNAHXqrOgs0?si=ixdckpIOVpKygRU8"
+    },
+    {
+        "id": "work-16",
+        "name": "Cecilia Lieberia",
+        "type": "Youtube",
+        "url": "https://youtu.be/J-OAe6FVPTY?si=-DQmVIzh7TjtzMRy"
+    },
+    {
+        "id": "work-17",
+        "name": "Pink Miruku",
+        "type": "Youtube",
+        "url": "https://youtu.be/jhSfH8RgXys?si=abjBFrNmANPSPbuQ"
+    },
+    {
+        "id": "work-18",
+        "name": "DoombeaR Cave",
+        "type": "Youtube",
+        "url": "https://youtu.be/DFTOUQaMg-Y?si=8-Eqba6Jn-waljIR"
+    },
+    {
+        "id": "work-19",
+        "name": "Chakra Eisen",
+        "type": "Youtube",
+        "url": "https://youtu.be/15PAKPPhQQA?si=REtXWWCX7it8SYcr"
+    },
+    {
+        "id": "work-20",
+        "name": "Bakedeath",
+        "type": "Youtube",
+        "url": "https://youtu.be/0vqf7G-gbQw?si=KYaNGXftGLavutyp"
+    },
+    {
+        "id": "work-21",
+        "name": "Calypzia",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-22",
+        "name": "Dugong",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-23",
+        "name": "Noa Orophia",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-24",
+        "name": "Miki Kujira",
+        "type": "Twitch",
+        "url": ""
+    }
+]

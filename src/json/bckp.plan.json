@@ -1,0 +1,132 @@
+{
+    "data": [
+        {
+            "id": "plan-1",
+            "plan_type": "Basic",
+            "type": "youtube",
+            "price": "80K/$8",
+            "items": [
+                {
+                    "id": 1,
+                    "desc": "Chat-only customization (Fixed color and font size)"
+                },
+                {
+                    "id": 4,
+                    "desc": "Unilimited Revisions"
+                },
+                {
+                    "id": 5,
+                    "desc": "PDF Instruction"
+                }
+            ]
+        },
+        {
+            "id": "plan-2",
+            "plan_type": "Standard",
+            "type": "youtube",
+            "price": "130K/$13",
+            "items": [
+                {
+                    "id": 1,
+                    "desc": "Chat customization"
+                },
+                {
+                    "id": 2,
+                    "desc": "Editable color and font size (Editor Apps)"
+                },
+                {
+                    "id": 3,
+                    "desc": "1 in-chat alert customization (superchat/supersticker/membership/gift)"
+                },
+                {
+                    "id": 4,
+                    "desc": "Unilimited Revisions"
+                },
+                {
+                    "id": 5,
+                    "desc": "PDF Instruction"
+                }
+            ]
+        },
+        {
+            "id": "plan-3",
+            "plan_type": "Full",
+            "type": "youtube",
+            "price": "160K/$16",
+            "items": [
+                {
+                    "id": 1,
+                    "desc": "Chat customization"
+                },
+                {
+                    "id": 2,
+                    "desc": "Editable color and font size (Editor Apps)"
+                },
+                {
+                    "id": 3,
+                    "desc": "All in-chat alert customization (superchat,supersticker,membership & gift)"
+                },
+                {
+                    "id": 4,
+                    "desc": "Unilimited Revisions"
+                },
+                {
+                    "id": 5,
+                    "desc": "PDF Instruction"
+                }
+            ]
+        },
+        {
+            "id": "plan-4",
+            "plan_type": "Standard",
+            "type": "twitch",
+            "price": "150K/$15",
+            "items": [
+                {
+                    "id": 1,
+                    "desc": "Chat customization"
+                },
+                {
+                    "id": 2,
+                    "desc": "Editable colors and font size"
+                },
+                {
+                    "id": 3,
+                    "desc": "Unilimited Revisions"
+                },
+                {
+                    "id": 4,
+                    "desc": "PDF Instruction"
+                }
+            ]
+        },
+        {
+            "id": "plan-5",
+            "plan_type": "Full",
+            "type": "twitch",
+            "price": "180K/$18",
+            "items": [
+                {
+                    "id": 1,
+                    "desc": "Chat customization"
+                },
+                {
+                    "id": 2,
+                    "desc": "Editable colors and font size"
+                },
+                {
+                    "id": 3,
+                    "desc": "In-chat alert customization (Follow, Subscribe, Tip, Cheers, Raid)"
+                },
+                {
+                    "id": 4,
+                    "desc": "Unilimited Revisions"
+                },
+                {
+                    "id": 5,
+                    "desc": "PDF Instruction"
+                }
+            ]
+        }
+    ]
+}

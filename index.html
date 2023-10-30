@@ -1,267 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maruhodo</title>
-    <meta name="description" content="Maruu's personal website"/>
-    <meta name="keywords" content="CSS, Youtube, Twitch, Widget, Chat Widget, Livechat, Live Chat, Stream, Assets, Commission">
+    <meta name="description" content="Maruu's personal website" />
+    <meta name="keywords"
+        content="CSS, Youtube, Twitch, Widget, Chat Widget, Livechat, Live Chat, Stream, Assets, Commission">
     <meta name="og:site_name" content="Maruu's website" />
     <meta name="theme-color" content="#71A5DE" />
     <meta property="og:title" content="Maruu's website" />
     <meta property="og:description" content="Maruu's personal website" />
-    <meta property="og:image" content="https://i.ibb.co/Dbw4pYV/image-6.png" />
+    <meta property="og:image" content="https://i.ibb.co/dpMFhRv/yt-full-2.png" />
     <meta property="og:image:alt" content="thumbnail image" />
     <meta name="twitter:title" content="Maruu's website" />
     <meta name="twitter:description" content="Maruu's personal website" />
     <meta name="twitter:url" content="https://twitter.com/maruu_snk" />
-    <meta name="twitter:image:src" content="https://i.ibb.co/Dbw4pYV/image-6.png" />
+    <meta name="twitter:image:src" content="https://i.ibb.co/dpMFhRv/yt-full-2.png" />
     <meta name="twitter:image:alt" content="thumbnail image" />
     <meta name="twitter:creator" content="@maruu_snk" />
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- tailwind -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script src="./src/assets/js/tailwind.config.js"></script>
     <!-- external css -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <link rel="icon" type="image/png" href="./src/assets/img/favicon.ico" />
 </head>
+
 <body>
-    <!-- navbar -->
-    <section id="section-navbar">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <span class="navbar__logo"><span>.</span>Maruu</span>
+    <!-- Main navigation container -->
+    <nav
+        class="flex-no-wrap relative flex w-full items-center justify-between py-2">
+        <div class="flex w-full flex-wrap items-center justify-between px-5 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
+
+            <div class="items-center"
+                id="navbarSupportedContent1" data-te-collapse-item>
+                <!-- Logo -->
+                <a href="" class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                    <h1 class="font-black text-white text-2xl">.MARUU</h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            </div>
+
+            <!-- Right elements -->
+            <div class="relative flex items-center">
+                <button
+                    type="button"
+                    class="inline-block rounded border-[1px] border-gray-500 px-2 pb-[6px] pt-2 text-xs font-medium text-white transition duration-150 ease-in-out hover:border-0 hover:bg-white hover:text-[#25282E] focus:border-0 focus:bg-white focus:text-[#25282E] active:border-0 active:bg-white active:text-[#25282E]"
+                    data-te-ripple-init>
+                    VGen Comms
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="/showcase.html">Our Works</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-section">
+        <div class="pt-2 px-2 md:px-4 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
+            <div class="grid grid-cols-12 gap-4 flex">
+                <div id="left-menu" class="col-span-12 lg:col-span-4 xl:col-span-4 w-full flex flex-col items-center px-3 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
+                    <div class="flex flex-col items-center lg:top-6 lg:sticky xl:top-6 xl:sticky 2xl:top-6 2xl:sticky">
+                        <div id="image">
+                            <!-- <div class="h-[120px] w-[150px] rounded-lg bg-[#1D1E22]"></div> -->
+                            <img
+                            src="https://i.ibb.co/rZwJsJ6/mee3.png"
+                            class="h-[100px] w-[150px] rounded-lg object-cover"
+                            alt="" />
+                        </div>
+                        <div id="profile" class="justify-center">
+                            <h2 class="text-xl text-white mt-3 text-center">Maruu マル</h2>
+                            <p class="text-xs text-white mt-2">Hi, I'm Maruu. I am a self-claimed illustrator and programmer. I coded for Youtube and Twitch chat widgets.</p>
+                        </div>
+                        <div id="social-media" class="mt-4 text-left w-full border-t border-t-[#3C3F47] border-b border-b-[#3C3F47]">
+                            <h5 class="text-xs font-bold mt-3 text-white text-left">Social Media</h5>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-2 text-sm mt-2 mb-3">
+                                <a href="https://www.youtube.com/@maruhodooo" target="_blank" class="col-auto bg-[#D64A45] text-xs text-white hover:bg-white hover:text-[#D64A45] text-center px-2 py-[4px] rounded-2xl">
+                                    Youtube
+                                </a>
+                                <a href="https://twitter.com/maruu_snk" target="_blank" class="col-auto bg-[#3DABDB] text-xs text-white hover:bg-white hover:text-[#3DABDB] text-center px-2 py-[4px] rounded-2xl">
+                                    Twitter
+                                </a>
+                                <a href="https://www.instagram.com/maruhodooo/" target="_blank" class="col-auto bg-[#DB704F] text-xs text-white hover:bg-white hover:text-[#DB704F] text-center px-2 py-[4px] rounded-2xl">
+                                    Instagram
+                                </a>
+                                <a href="https://facebook.com/maruu.snk" target="_blank" class="col-auto bg-[#477FC1] text-xs text-white hover:bg-white hover:text-[#477FC1] text-center px-2 py-[4px] rounded-2xl">
+                                    Facebook
+                                </a>
+                            </div>
+                        </div>
+                        <div class="justify-center mt-3 border-[1px] border-[#3C3F47] rounded-lg p-3 w-full hidden">
+                            <h2 class="mb-3 text-md text-white font-bold text-center">Latest Support</h2>
+                            <div class="mt-1 flex flex-row text-xs justify-between">
+                                <div class="text-gray-300">username</div>
+                                <div class="text-gray-500">x50</div>
+                            </div>
+                            <div class="mt-1 flex flex-row text-xs justify-between">
+                                <div class="text-gray-300">username</div>
+                                <div class="text-gray-500">x50</div>
+                            </div>
+                            <div class="mt-1 flex flex-row text-xs justify-between">
+                                <div class="text-gray-300">username</div>
+                                <div class="text-gray-500">x50</div>
+                            </div>
+                            <div class="mt-1 flex flex-row text-xs justify-between">
+                                <div class="text-gray-300">username</div>
+                                <div class="text-gray-500">x50</div>
+                            </div>
+                        </div>
+                        <div class="mt-1 mb-5 flex flex-col w-full items-start">
+                            <h5 class="text-xs font-bold my-1 text-white text-center">Support me on:</h5>
+                            <div class="flex flex-row">
+                                <a href="https://trakteer.id/maru-maru" target="_blank" class="bg-[#D64A45] mr-2 text-xs text-white hover:bg-white hover:text-[#D64A45] text-center px-2 py-[4px] rounded-2xl">
+                                    Trakteer
+                                </a>
+                                <a href="https://ko-fi.com/maruhodo/tip" target="_blank" class="bg-gray-600 text-xs text-gray-300 hover:text-gray-800 hover:bg-gray-300 text-center px-2 py-[4px] rounded-2xl">
+                                    Ko-fi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-menu" class="col-span-12 lg:col-span-8 xl:col-span-8 h-full w-full lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
+                    <ul class="mb-0 mx-4 flex list-none flex-row flex-no-wrap overflow-x-scroll border-b-0 pl-0" role="tablist" data-te-nav-ref>
+                        <li role="presentation">
+                            <a href="#tabs-home" class=" pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
+                            data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab" aria-controls="tabs-home" aria-selected="true">
+                            Feeds
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#services">Services</a>
+                        <li role="presentation">
+                            <a href="#tabs-commission" class="pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
+                            data-te-toggle="pill" data-te-target="#tabs-commission" role="tab" aria-controls="tabs-commission"
+                            aria-selected="false">
+                            Commissions
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/progress.html">Progress</a>
+                        <li role="presentation">
+                            <a href="#tabs-portfolio" class="whitespace-nowrap items-center  pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
+                            data-te-toggle="pill" data-te-target="#tabs-portfolio" role="tab" aria-controls="tabs-portfolio"
+                            aria-selected="false">
+                            Portfolio <span id="work-count" class="inline items-center text-[10px] p-1 bg-[#3C3F47] rounded-2xl"></span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                        <li role="presentation">
+                            <a href="#tabs-tos" class="whitespace-nowrap items-center relative pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
+                            data-te-toggle="pill" data-te-target="#tabs-tos" role="tab" aria-controls="tabs-tos"
+                            aria-selected="false">
+                            ToS <span class="absolute bg-red-600 text-red-100 w-[5px] h-[5px] text-xs font-bold rounded-full top-2 right-3"></span>
+                            </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <section id="main">
-        <div class="container">
-            <div class="row justify-content-center mx-0 mt-4">
-                <div class="col-md-8 col-sm-12 text-center">
-                    <h1 class="heading heading-1 letters">let's level up your live stream with our CSS design</h1>
-                    <p class="other-text mt-3 text-white fs-6"><span>Commission status:</span></p>
-                    <a href="#services" class="btn button-white btn-open">Open</a>
-                    <div class="arrow-down my-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 29 23" fill="none">
-                            <path d="M14.3232 21.718V21.718L14.3355 21.718C15.0133 21.7145 15.6819 21.5603 16.2927 21.2664C16.9012 20.9735 17.4373 20.5494 17.8621 20.0244L26.0454 10.1112L26.0511 10.1044L26.0566 10.0974C26.6782 9.32169 27.0693 8.38697 27.1854 7.39978C27.301 6.4178 27.1398 5.42318 26.7202 4.52809C26.36 3.7186 25.7758 3.02891 25.0362 2.54054C24.2922 2.04921 23.4225 1.78242 22.5309 1.77204L22.5238 1.77196H22.5167H6.14204H6.13493L6.12782 1.77204C5.23627 1.78242 4.36654 2.04921 3.62252 2.54054C2.88298 3.02892 2.29871 3.71862 1.93853 4.52812C1.51899 5.42321 1.35781 6.41781 1.47334 7.39978C1.58948 8.38697 1.9806 9.32169 2.60214 10.0974L2.60771 10.1044L2.61339 10.1112L10.7967 20.0245C11.2216 20.5494 11.7575 20.9735 12.3661 21.2664C12.9769 21.5603 13.6454 21.7145 14.3232 21.718Z" fill="#F8F9FB" stroke="#AECBEB" stroke-width="2.44339"/>
-                          </svg>
+                    <div class="py-4 px-4">
+                        <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                        id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+                            <div id="feed-list" class="grid grid-cols-1"></div>
+                        </div>
+                        <div
+                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                          id="tabs-commission" role="tabpanel" aria-labelledby="tabs-commission-tab">  
+                          <div id="commission-list" class="grid grid-cols-1">
+                            <button id="btn-generate" type="button" data-te-ripple-init data-te-ripple-color="light"
+                                data-te-toggle="modal"
+                                data-te-target="#workModal"
+                                class="ml-2 inline-block rounded bg-primary px-4 py-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-700 focus:bg-primary-700 focus:outline-none focus:ring-0 active:bg-primary-700">
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                          id="tabs-portfolio" role="tabpanel" aria-labelledby="tabs-portfolio-tab">
+                            <div id="type-filter" class="flex flex-row my-3">
+                                <button id="filter-youtube" class="bg-transparent border-[1px] border-gray-600 mr-2 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
+                                    Youtube
+                                </button>
+                                <button id="filter-twitch" class="bg-transparent border-[1px] border-gray-600 mr-2 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
+                                    Twitch
+                                </button>
+                            </div>
+                            <div id="work-list" class="grid grid-cols-3 gap-4">
+                                
+                            </div>
+                        </div>
+                        <div
+                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                          id="tabs-tos" role="tabpanel" aria-labelledby="tabs-tos-tab">
+                            <h4 class="font-bold text-white">Term of Services</h4>
+                            <div id="tos-list"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="rabbit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 86 71" fill="none">
-                    <path d="M16.2334 3.59965L22.3055 4.96504H29.121L30.8559 11.2955L28.0058 18.743V26.6871L50.4352 28.4248L55.7637 29.2937L60.1009 34.1346L63.8184 36.2448L71.3775 53.7465L82.1585 52.6294V60.201L78.6888 62.4353L69.7666 63.6766L62.951 67.1521H44.9827L40.0259 63.6766H30.8559L26.6427 68.3934H17.8444V62.4353L20.4467 57.8427L14.7464 52.6294L8.67435 43.0717L4.70893 37.8584V26.6871L10.5331 22.2185L11.6484 15.6399L16.2334 3.59965Z" fill="white"/>
-                    <path d="M20.8184 3.72378H15.1182V9.18531H12.1441V14.8951H17.8444V12.1643H20.8184V3.72378Z" fill="#DEEFFF"/>
-                    <path d="M27.5101 35.2517H21.8098V35.5H17.8444V38.2308H14.6225V37.9825H8.92219V43.6923H14.6225V43.9406H20.3228V41.2098H23.5447V40.9615H27.5101V35.2517Z" fill="#DEEFFF"/>
-                    <path d="M35.9366 27.0594H53.0375V29.542H55.7637V33.0175H60.2248V37.9825H60.9683V38.7273H64.9337V41.7063H68.8991V47.4161H63.1988V47.1678H59.2334V43.6923H55.268V38.7273H52.5418V37.9825H41.6369V32.7692H35.9366V27.0594Z" fill="#DEEFFF"/>
-                    <path d="M67.6599 67.028H63.1988V68.5175H57.4986V62.8077H61.9597V61.3182H64.9337V58.5874H70.634V64.2972H67.6599V67.028Z" fill="#DEEFFF"/>
-                    <path d="M33.2104 49.6504H38.9107V52.8776H43.1239V54.1189H46.098V59.8287H41.6369V61.0699H33.9539V62.8077H31.2277V65.7867H25.5274V60.0769H28.2536V57.0979H32.9625V55.3601H33.2104V49.6504Z" fill="#DEEFFF"/>
-                    <path d="M81.2911 52.6294H75.5908V58.3392H81.2911V52.6294Z" fill="#DEEFFF"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6138 0H21.3141V1.98601H33.2104V7.6958H34.2017V13.4056H32.219V19.1154H30.2363V24.0804H31.4755V24.8252H36.928V24.0804H53.781V27.8042H59.4813V33.514H53.781V29.7902H36.928V30.535H31.2277V29.7902H25.7752V24.8252H24.536V19.1154H26.5187V13.4056H28.5014V7.6958H24.536V12.9091H21.8098V18.6189H20.0749V20.6049H14.8703V23.5839H9.17003V28.0524H5.70029V39.2238H20.0749V37.9825H23.049V35.2517H28.7493V40.9615H25.7752V43.6923H20.5706V44.9336H14.8703V50.6434H19.3314V54.8636H24.2882V60.5734H19.8271V65.2902H27.2622V60.8217H29.4928V55.1119H31.2277V49.4021H36.928V55.1119H35.1931V60.5734H40.3977V56.3531H45.6023V52.3811H51.3026V58.0909H46.098V62.0629H43.1239V65.2902H62.4553V63.5524H67.4121V44.9336H64.6859V39.2238H59.4813V33.514H65.1816V39.2238H70.3862V44.9336H73.1124V50.8916H75.5908V49.4021H81.2911V50.8916H86V62.0629H83.2738V65.2902H78.8127V66.5315H73.1124V66.2832H68.1556V69.2622H62.4553V71H40.3977V66.2832H32.9625V66.5315H29.7406V71H13.1354V65.2902H14.1268V59.5804H18.5879V56.3531H13.6311V52.1329H9.17003V44.9336H5.45245V39.2238H0V28.0524H3.46974V22.3427H9.17003V17.8741H10.1614V7.6958H11.8963V2.97902H15.6138V0ZM19.0836 7.1993V5.70979H17.5965V8.68881H15.8617V14.8951H16.1095V12.9091H18.8357V7.1993H19.0836ZM73.1124 60.8217H77.5735V59.5804H80.2997V55.1119H78.317V56.6014H73.1124V60.8217Z" fill="#3F3F3F"/>
-                    <path d="M15.1182 25.5699H19.3314V31.2797H15.1182V25.5699Z" fill="#3F3F3F"/>
-                  </svg>
             </div>
         </div>
     </section>
 
-    <section id="works">
-        <div class="bg-white bg-image">
-            <div class="container py-4">
-
-                <!-- <div class="row justify-content-center my-5 mx-0">
-                    <div id="test" class="col-md-10">
-                        <h2 class="heading heading-3 text-center" style="font-family: var(--font-family-2);">More than 20 VTubers/Streamers have entrusted us with their live chat design and CSS</h2>
-                        <div class="mx-auto line-decoration"></div>
+    <!--Extra large modal-->
+    <div data-te-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-hidden overflow-x-hidden outline-none"
+        id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true" role="dialog">
+        <div data-te-modal-dialog-ref
+            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] items-center w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1140px]">
+            <div
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-gray-800 bg-clip-padding text-current shadow-lg outline-none">
+                <div class="flex items-center justify-end rounded-t-md">
+                    <!--Close button-->
+                    <div class="">
+                        <button id="btn-close" type="button" data-te-ripple-init data-te-ripple-color="danger"
+                            data-te-modal-dismiss aria-label="Close"
+                            class="ml-2 box-content inline-block rounded border-danger m-2 px-2 py-2 text-sm font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-5 w-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
                     </div>
-                </div> -->
+                </div>
 
-                <div class="row row-cols-1 justify-content-center mb-5 d-none">
-                    <!-- new items -->
-                    <div class="col-md-6">
-                        <h3 class="heading heading-3 text-center">New Items</h3>
-                        <div class="window mt-3">
-                            <div class="header px-3 py-1">
-                                <div class="row justify-content-between">
-                                    <div class="col-auto">
-                                        New items
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="window-decoration">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="29" viewBox="0 0 98 29" fill="none">
-                                                <rect x="71.8667" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                <path d="M90.0039 10.2256L88.464 8.68568L83.8442 13.3054L79.2245 8.68568L77.6846 10.2256L82.3043 14.8454L77.6846 19.4651L79.2245 21.0051L83.8442 16.3853L88.464 21.0051L90.0039 19.4651L85.3842 14.8454L90.0039 10.2256Z" fill="#83B0E1"/>
-                                                <rect x="37.022" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                <rect x="42.4668" y="12.6665" width="8.71111" height="8.71111" stroke="#83B0E1" stroke-width="2.17778"/>
-                                                <path d="M43.5557 9.3999H54.4446V20.2888" stroke="#83B0E1" stroke-width="2.17778"/>
-                                                <rect x="2.17778" y="2.86674" width="23.9556" height="23.9556" rx="6.53333" fill="#E1ECF7" stroke="#83B0E1" stroke-width="4.35556"/>
-                                                <rect x="21.7778" y="20.2891" width="2.17778" height="15.2444" transform="rotate(90 21.7778 20.2891)" fill="#83B0E1"/>
-                                              </svg>
-                                        </div>
+                <!--Modal body-->
+                <div class="relative">
+                    <div class="h-[80vh] w-full overflow-y-scroll">
+                        <div class="grid grid grid-cols-3 lg:grid-cols-3 px-3">
+                            <div class="col-span-3 lg:col-span-2">
+                                <div class="flex flex-col items-center lg:top-6 lg:sticky xl:top-6 xl:sticky 2xl:top-6 2xl:sticky">
+                                    <div id="image-carousel" class="swiper mySwiper w-full h-full rounded-2xl">
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="content p-3">
-                                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 justify-content-center align-items-center">
-                                    <div class="col-md-6">
-                                        <div class="image-container mx-auto" style="width: 200px; height: 250px; background: rgb(134, 134, 168);"></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h2 class="heading heading-window-1 text-center">Nama CSS nya</h2>
-                                        <div class="row justify-content-center">
-                                            <div class="col-auto">
-                                                <button class="btn button-small b-green">Showcase</button>
-                                            </div>
-                                            <div class="col-auto">
-                                                <button class="btn button-small b-red">Youtube</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div id="detail-list" class="col-span-3 lg:col-span-1 px-6 py-3 overflow-y-scroll">
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="row justify-content-center mt-5 mb-3 mx-0">
-                    <div class="col">
-                        <h3 id="works-title" class="heading heading-3 text-center">Our Works
-                            <a href="./showcase.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                    <path d="M12.9999 1.05C12.9999 0.784784 12.8946 0.530429 12.707 0.342893C12.5195 0.155357 12.2652 0.0500002 11.9999 0.0500002L3.99994 0C3.73472 0 3.48037 0.105357 3.29283 0.292893C3.1053 0.48043 2.99994 0.734784 2.99994 1C2.99994 1.26522 3.1053 1.51957 3.29283 1.70711C3.48037 1.89464 3.73472 2 3.99994 2H9.55994L1.28994 10.29C1.19621 10.383 1.12182 10.4936 1.07105 10.6154C1.02028 10.7373 0.994141 10.868 0.994141 11C0.994141 11.132 1.02028 11.2627 1.07105 11.3846C1.12182 11.5064 1.19621 11.617 1.28994 11.71C1.3829 11.8037 1.4935 11.8781 1.61536 11.9289C1.73722 11.9797 1.86793 12.0058 1.99994 12.0058C2.13195 12.0058 2.26266 11.9797 2.38452 11.9289C2.50638 11.8781 2.61698 11.8037 2.70994 11.71L10.9999 3.42V9C10.9999 9.26522 11.1053 9.51957 11.2928 9.70711C11.4804 9.89464 11.7347 10 11.9999 10C12.2652 10 12.5195 9.89464 12.707 9.70711C12.8946 9.51957 12.9999 9.26522 12.9999 9V1.05Z" fill="#495772"/>
-                                </svg>
-                            </a>
-                        </h3>
-                        <div class="filter-wrapper d-flex justify-content-center">
-                            <div id="filter-1" class="filter-item px-3 mx-1 active">All</div>
-                            <div id="filter-2" class="filter-item px-3 mx-1">Youtube</div>
-                            <div id="filter-3" class="filter-item px-3 mx-1">Twitch</div>
-                        </div>
-                        <!-- <div id="works-wrapper"></div> -->
-                        <div id="carousel-wrapper" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                            </div>
-                            <div class="row justify-content-center mx-0">
-                                <div class="col-auto">
-                                    <div class="carousel__prev" type="button" data-bs-target="#carousel-wrapper" data-bs-slide="prev">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="none">
-                                            <path d="M22.758 11.0791H27.8415V16.1626H24.0289V21.2462H20.0044V26.7533H24.0289V31.8368H27.8415V36.9204H22.758V31.8368H18.9454V26.7533H14.9209V21.2462H18.9454V16.1626H22.758V11.0791Z" fill="#83B0E1"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.77778 0V4.88889H4.88889V9.77778H0V38.2222H4.88889V43.1111H9.77778V48H38.2222V43.1111H43.1111V38.2222H48V9.77778H43.1111V4.88889H38.2222V0H9.77778ZM38.2222 36.3047V39.1111H39.1111V35.4537L40.3973 34.2222H44V13.7778H40.2999L39.1111 12.5678V8.88889H35.4967L34.2222 7.5916V4H13.7778V8.88889H8.88889V12.4869L7.56118 13.7778H4V34.2222H8.88889V39.1111H13.7778V44H34.2222V43.1111H31.1133L38.2222 36.3047Z" fill="#83B0E1"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="carousel__next" type="button" data-bs-target="#carousel-wrapper" data-bs-slide="next">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="none">
-                                            <path d="M36.2222 2H11.7778V6.77353L11.6644 6.88889H6.88889V11.7497L6.86132 11.7778H2V36.2222H6.79965L6.88889 36.3077V41.1111H11.7778V40.9885L11.9058 41.1111H11.7778V46H36.2222V41.1111H41.1111V36.2222H46V11.7778H41.2508L41.1111 11.642V6.88889H36.2222V2Z" fill="#C5DEDD"/>
-                                            <path d="M11.7778 41.1111H6.88889V36.3077L6.79965 36.2222H2V11.7778H6.86132L6.88889 11.7497V6.88889H11.6644L11.7778 6.77353V2H36.2222V6.88889H41.1111V11.642L41.2508 11.7778H46V36.2222H41.1111V41.1111H36.2222V46H11.7778V41.1111ZM11.7778 41.1111V40.9885L11.9058 41.1111H11.7778Z" stroke="#83B0E1" stroke-width="4"/>
-                                            <path d="M19.9998 11H25.0833V16.0835H28.896V21.1671H32.9204V26.6742H28.896V31.7577H25.0833V36.8413H19.9998V31.7577H23.8124V26.6742H27.8369V21.1671H23.8124V16.0835H19.9998V11Z" fill="#83B0E1"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Extra large modal 2-->
+    <div data-te-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-hidden overflow-x-hidden outline-none"
+        id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-modal="true" role="dialog">
+        <div data-te-modal-dialog-ref
+            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] items-center w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1140px]">
+            <div
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-gray-800 bg-clip-padding text-current shadow-lg outline-none">
+                <div class="flex items-center justify-between rounded-t-md px-4">
+                    <div class="">
+                        <h3 id="video-title" class="font-bold text-white">Title</h3>
+                    </div>
+                    <!--Close button-->
+                    <div class="">
+                        <button id="btn-close" type="button" data-te-ripple-init data-te-ripple-color="danger"
+                            data-te-modal-dismiss aria-label="Close"
+                            class="ml-2 box-content inline-block rounded border-danger m-2 px-2 py-2 text-sm font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-5 w-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!--Modal body-->
+                <div class="relative">
+                    <div class="h-full lg:h-[80vh] w-full overflow-y-scroll">
+                        <div id="video-container" class="h-full rounded-2xl">
+                            
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="services">
-        <div class="container py-4">
-            <div class="row row-cols-1 justify-content-center my-3 mx-0">
-                <div class="col">
-                    <h3 id="services-title" class="heading heading-white-3 text-center">Our Services</h3>
-                    <div class="switch d-flex justify-content-center my-4">
-                        <div id="switch-opt-1" class="button-switch active mx-2">Youtube</div>
-                        <div id="switch-opt-2" class="button-switch mx-2">Twitch</div>
-                    </div>
-                    <div id="plan-wrapper" class="row g-3 row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 justify-content-center">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tos">
-        <div class="container py-4">
-            <div class="row row-cols-1 justify-content-center my-3 mx-0">
-                <div class="col-auto">
-                    <h3 id="tos-title" class="heading heading-white-3 text-center">Term of Services</h3>
-                    <div id="tos-list" class="text-start">
-                        <ul class="text-white">
-                            <li>DM via Twitter or Discord</li>
-                            <li>Provide some design brief or references</li>
-                            <li>Work will take a maximum of 3 weeks</li>
-                            <li>Progress updates will be provided periodically</li>
-                            <li>File will be sent via google drive or email</li>
-                            <li>Payment via PayPal, BCA, BRI, DANA, OVO, GOPAY</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container py-4">
-            <h3 class="heading heading-white-3 text-center">If you have any questions</h3>
-            <h3 class="heading heading-white-3 text-center">contact us on Twitter or Discord</h3>
-            <div class="text-center">
-                <a href="/contact.html" class="btn button-white">Contact</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="footer">
-        <footer class="py-3 mt-5">
-            <div class="rabbit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 86 71" fill="none">
-                    <path d="M16.2334 3.59965L22.3055 4.96504H29.121L30.8559 11.2955L28.0058 18.743V26.6871L50.4352 28.4248L55.7637 29.2937L60.1009 34.1346L63.8184 36.2448L71.3775 53.7465L82.1585 52.6294V60.201L78.6888 62.4353L69.7666 63.6766L62.951 67.1521H44.9827L40.0259 63.6766H30.8559L26.6427 68.3934H17.8444V62.4353L20.4467 57.8427L14.7464 52.6294L8.67435 43.0717L4.70893 37.8584V26.6871L10.5331 22.2185L11.6484 15.6399L16.2334 3.59965Z" fill="white"/>
-                    <path d="M20.8184 3.72378H15.1182V9.18531H12.1441V14.8951H17.8444V12.1643H20.8184V3.72378Z" fill="#DEEFFF"/>
-                    <path d="M27.5101 35.2517H21.8098V35.5H17.8444V38.2308H14.6225V37.9825H8.92219V43.6923H14.6225V43.9406H20.3228V41.2098H23.5447V40.9615H27.5101V35.2517Z" fill="#DEEFFF"/>
-                    <path d="M35.9366 27.0594H53.0375V29.542H55.7637V33.0175H60.2248V37.9825H60.9683V38.7273H64.9337V41.7063H68.8991V47.4161H63.1988V47.1678H59.2334V43.6923H55.268V38.7273H52.5418V37.9825H41.6369V32.7692H35.9366V27.0594Z" fill="#DEEFFF"/>
-                    <path d="M67.6599 67.028H63.1988V68.5175H57.4986V62.8077H61.9597V61.3182H64.9337V58.5874H70.634V64.2972H67.6599V67.028Z" fill="#DEEFFF"/>
-                    <path d="M33.2104 49.6504H38.9107V52.8776H43.1239V54.1189H46.098V59.8287H41.6369V61.0699H33.9539V62.8077H31.2277V65.7867H25.5274V60.0769H28.2536V57.0979H32.9625V55.3601H33.2104V49.6504Z" fill="#DEEFFF"/>
-                    <path d="M81.2911 52.6294H75.5908V58.3392H81.2911V52.6294Z" fill="#DEEFFF"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6138 0H21.3141V1.98601H33.2104V7.6958H34.2017V13.4056H32.219V19.1154H30.2363V24.0804H31.4755V24.8252H36.928V24.0804H53.781V27.8042H59.4813V33.514H53.781V29.7902H36.928V30.535H31.2277V29.7902H25.7752V24.8252H24.536V19.1154H26.5187V13.4056H28.5014V7.6958H24.536V12.9091H21.8098V18.6189H20.0749V20.6049H14.8703V23.5839H9.17003V28.0524H5.70029V39.2238H20.0749V37.9825H23.049V35.2517H28.7493V40.9615H25.7752V43.6923H20.5706V44.9336H14.8703V50.6434H19.3314V54.8636H24.2882V60.5734H19.8271V65.2902H27.2622V60.8217H29.4928V55.1119H31.2277V49.4021H36.928V55.1119H35.1931V60.5734H40.3977V56.3531H45.6023V52.3811H51.3026V58.0909H46.098V62.0629H43.1239V65.2902H62.4553V63.5524H67.4121V44.9336H64.6859V39.2238H59.4813V33.514H65.1816V39.2238H70.3862V44.9336H73.1124V50.8916H75.5908V49.4021H81.2911V50.8916H86V62.0629H83.2738V65.2902H78.8127V66.5315H73.1124V66.2832H68.1556V69.2622H62.4553V71H40.3977V66.2832H32.9625V66.5315H29.7406V71H13.1354V65.2902H14.1268V59.5804H18.5879V56.3531H13.6311V52.1329H9.17003V44.9336H5.45245V39.2238H0V28.0524H3.46974V22.3427H9.17003V17.8741H10.1614V7.6958H11.8963V2.97902H15.6138V0ZM19.0836 7.1993V5.70979H17.5965V8.68881H15.8617V14.8951H16.1095V12.9091H18.8357V7.1993H19.0836ZM73.1124 60.8217H77.5735V59.5804H80.2997V55.1119H78.317V56.6014H73.1124V60.8217Z" fill="#3F3F3F"/>
-                    <path d="M15.1182 25.5699H19.3314V31.2797H15.1182V25.5699Z" fill="#3F3F3F"/>
-                  </svg>
-            </div>
-            <div class="text-center text-white">2023 © Maruマル</div>
-        </footer>
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../src/assets/js/utilities.js"></script>
-    <script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js"
+        integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/assets/js/utilities.js"></script>
+    <script src="./src/assets/js/app.js"></script>
+    <script src="./src/assets/js/feed.js"></script>
+    <script src="./src/assets/js/commission.js"></script>
+    <script src="./src/assets/js/tos.js"></script>
+    <script src="./src/assets/js/work.js"></script>
+    <script src="./src/assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+        })
+    </script>
+    <!-- <script>
         $(document).ready(function(){
 
             if($("#switch-opt-1").hasClass('active')) {
@@ -364,6 +395,7 @@
             
 
         })
-    </script>
+    </script> -->
 </body>
+
 </html>

@@ -1,132 +1,99 @@
-{
-    "data": [
-        {
-            "id": "plan-1",
-            "plan_type": "Basic",
-            "type": "youtube",
-            "price": "80K/$8",
-            "items": [
-                {
-                    "id": 1,
-                    "desc": "Chat-only customization (Fixed color and font size)"
-                },
-                {
-                    "id": 4,
-                    "desc": "Unilimited Revisions"
-                },
-                {
-                    "id": 5,
-                    "desc": "PDF Instruction"
-                }
-            ]
-        },
-        {
-            "id": "plan-2",
-            "plan_type": "Standard",
-            "type": "youtube",
-            "price": "130K/$13",
-            "items": [
-                {
-                    "id": 1,
-                    "desc": "Chat customization"
-                },
-                {
-                    "id": 2,
-                    "desc": "Editable color and font size (Editor Apps)"
-                },
-                {
-                    "id": 3,
-                    "desc": "1 in-chat alert customization (superchat/supersticker/membership/gift)"
-                },
-                {
-                    "id": 4,
-                    "desc": "Unilimited Revisions"
-                },
-                {
-                    "id": 5,
-                    "desc": "PDF Instruction"
-                }
-            ]
-        },
-        {
-            "id": "plan-3",
-            "plan_type": "Full",
-            "type": "youtube",
-            "price": "160K/$16",
-            "items": [
-                {
-                    "id": 1,
-                    "desc": "Chat customization"
-                },
-                {
-                    "id": 2,
-                    "desc": "Editable color and font size (Editor Apps)"
-                },
-                {
-                    "id": 3,
-                    "desc": "All in-chat alert customization (superchat,supersticker,membership & gift)"
-                },
-                {
-                    "id": 4,
-                    "desc": "Unilimited Revisions"
-                },
-                {
-                    "id": 5,
-                    "desc": "PDF Instruction"
-                }
-            ]
-        },
-        {
-            "id": "plan-4",
-            "plan_type": "Standard",
-            "type": "twitch",
-            "price": "150K/$15",
-            "items": [
-                {
-                    "id": 1,
-                    "desc": "Chat customization"
-                },
-                {
-                    "id": 2,
-                    "desc": "Editable colors and font size"
-                },
-                {
-                    "id": 3,
-                    "desc": "Unilimited Revisions"
-                },
-                {
-                    "id": 4,
-                    "desc": "PDF Instruction"
-                }
-            ]
-        },
-        {
-            "id": "plan-5",
-            "plan_type": "Full",
-            "type": "twitch",
-            "price": "180K/$18",
-            "items": [
-                {
-                    "id": 1,
-                    "desc": "Chat customization"
-                },
-                {
-                    "id": 2,
-                    "desc": "Editable colors and font size"
-                },
-                {
-                    "id": 3,
-                    "desc": "In-chat alert customization (Follow, Subscribe, Tip, Cheers, Raid)"
-                },
-                {
-                    "id": 4,
-                    "desc": "Unilimited Revisions"
-                },
-                {
-                    "id": 5,
-                    "desc": "PDF Instruction"
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": "plan-1",
+        "type": "Youtube",
+        "start_price": "120.000",
+        "title": "Youtube Chat Widget",
+        "description": "I'll design the chat widget and create the CSS code for your stream",
+        "detail": [
+            {
+                "id": "detail-1",
+                "header": "Payments",
+                "text": "Local: BRI/BCA/DANA/GOPAY/OVO|Inter: PayPal"
+            },
+            {
+                "id": "detail-2",
+                "header": "Includes",
+                "text": "Chat customization (editable color and font size)|Animation|Unlimited Revisions"
+            },
+            {
+                "id": "detail-3",
+                "header": "Details",
+                "text": "You will get the Editor Apps file (I'll provide the instructions to use this app) + PDF Instruction|Generate the CSS by yourself in the Editor Apps"
+            },
+            {
+                "id": "detail-4",
+                "header": "Add-ons",
+                "text": "Additional alert (Superchat/Supersticker/Membership Join & Re-join/Membership Gift) +15K / alert|Rush order/commission +40K"
+            },
+            {
+                "id": "detail-5",
+                "header": "Important",
+                "text": "This only works for YouTube and OBS app|please use the OBS app with version 28 and above|Please read the ToS carefully before placing an order"
+            }
+        ],
+        "media": [
+            {
+                "id": 1,
+                "url": "https://i.ibb.co/BrJpBjh/yt-basic-1.png"
+            },
+            {
+                "id": 2,
+                "url": "https://i.ibb.co/RbdhWD1/yt-guidelines-1.png"
+            },
+            {
+                "id": 3,
+                "url": "https://i.ibb.co/RbdhWD1/yt-guidelines-1.png"
+            }
+        ]
+    },
+    {
+        "id": "plan-2",
+        "type": "Twitch",
+        "start_price": "160.000",
+        "thumbnail": "https://i.ibb.co/hYnfzcb/twitch-standard-1.png",
+        "title": "Twitch Chat Widget",
+        "description": "I'll design the chat widget and create the CSS code for your stream",
+        "detail": [
+            {
+                "id": "detail-1",
+                "header": "Payments",
+                "text": "Local: BRI/BCA/DANA/GOPAY/OVO|Inter: PayPal"
+            },
+            {
+                "id": "detail-2",
+                "header": "Includes",
+                "text": "Chat customization|Editable color and font size|Animation|Unlimited Revisions"
+            },
+            {
+                "id": "detail-3",
+                "header": "Details",
+                "text": "You will get the HTML, CSS, JS, Field, and Data files in *.zip format and PDF Instruction"
+            },
+            {
+                "id": "detail-4",
+                "header": "Add-ons",
+                "text": "Additional in-chat alert customization (Follow/Subs/Raid/Cheers/Tip) +$20 / alert|Rush order/commission +50K"
+            },
+            {
+                "id": "detail-5",
+                "header": "Important",
+                "text": "This only works for Twitch and Streamelements|Please read the ToS carefully before placing an order"
+            }
+        ],
+        "media": [
+            {
+                "id": 1,
+                "url": "https://i.ibb.co/hYnfzcb/twitch-standard-1.png"
+            },
+            {
+                "id": 2,
+                "url": "https://i.ibb.co/B4Vzhsw/twitch-guidelines.png"
+            },
+            {
+                "id": 3,
+                "url": "https://i.ibb.co/B4Vzhsw/twitch-guidelines.png"
+            }
+        ]
+    }
+]
