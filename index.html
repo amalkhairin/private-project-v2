@@ -288,9 +288,17 @@
     <script src="./src/assets/js/work.js"></script>
     <script src="./src/assets/js/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            
-        })
+        function redirectIfNotIndonesian() {
+            const userLanguage = navigator.language || navigator.userLanguage;
+            const isIndonesian = userLanguage.toLowerCase().startsWith('id'); // Memeriksa apakah bahasa pengguna dimulai dengan 'id' (kode bahasa untuk Indonesia)
+
+            if (!isIndonesian) {
+                window.location.href = 'https://vgen.co/maru-maru';
+            }
+        }
+
+        // Panggil fungsi redirectIfNotIndonesian saat dokumen dimuat
+        document.addEventListener('DOMContentLoaded', redirectIfNotIndonesian);
     </script>
     <!-- <script>
         $(document).ready(function(){
