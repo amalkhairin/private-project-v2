@@ -5,6 +5,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
+RewriteRule . /404.html [L]
 
 # Atur agar permintaan ke direktori tanpa trailing slash diakhiri dengan /
 RewriteCond %{REQUEST_FILENAME} -d
