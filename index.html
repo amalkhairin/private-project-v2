@@ -288,122 +288,17 @@
     <script src="./src/assets/js/work.js"></script>
     <script src="./src/assets/js/main.js"></script>
     <script type="text/javascript">
-        function redirectIfNotIndonesian() {
-            const userLanguage = navigator.language || navigator.userLanguage;
-            const isIndonesian = userLanguage.toLowerCase().startsWith('id'); // Memeriksa apakah bahasa pengguna dimulai dengan 'id' (kode bahasa untuk Indonesia)
+        // function redirectIfNotIndonesian() {
+        //     const userLanguage = navigator.language || navigator.userLanguage;
+        //     const isIndonesian = userLanguage.toLowerCase().startsWith('id'); // Memeriksa apakah bahasa pengguna dimulai dengan 'id' (kode bahasa untuk Indonesia)
 
-            if (!isIndonesian) {
-                window.location.href = 'https://vgen.co/maru-maru';
-            }
-        }
+        //     if (!isIndonesian) {
+        //         window.location.href = 'https://vgen.co/maru-maru';
+        //     }
+        // }
 
         // Panggil fungsi redirectIfNotIndonesian saat dokumen dimuat
-        document.addEventListener('DOMContentLoaded', redirectIfNotIndonesian);
+        // document.addEventListener('DOMContentLoaded', redirectIfNotIndonesian);
     </script>
-    <!-- <script>
-        $(document).ready(function(){
-
-            if($("#switch-opt-1").hasClass('active')) {
-                $("#plan-wrapper").empty()
-                get_plan('youtube');
-            } else if($("#switch-opt-2").hasClass('active')) {
-                $("#plan-wrapper").empty()
-                get_plan('twitch')
-            }
-
-            if($("#filter-1").hasClass("active")) {
-                $(".carousel-inner").empty();
-                get_works("all",5);
-            } 
-            else if($("#filter-2").hasClass("active")) {
-                $(".carousel-inner").empty();
-                get_works("youtube",5);
-            } else if($("#filter-3").hasClass("active")) {
-                $(".carousel-inner").empty();
-                get_works("twitch",5);
-            }
-
-            $("#switch-opt-1").on("click", function(){
-                if(!$(this).hasClass('active')) {
-                    $(this).addClass('active');
-                    $("#plan-wrapper").empty()
-                    get_plan('youtube');
-                    $("#switch-opt-2").removeClass('active')
-                }
-            });
-            $("#switch-opt-2").on("click", function(){
-                if(!$(this).hasClass('active')) {
-                    $(this).addClass('active');
-                    $("#plan-wrapper").empty()
-                    get_plan('twitch')
-                    $("#switch-opt-1").removeClass('active')
-                }
-            });
-
-            $("#filter-1").on("click", function(){
-                if(!$(this).hasClass("active")) {
-                    $(this).addClass("active");
-                    $("#filter-2").removeClass("active")
-                    $("#filter-3").removeClass("active")
-                    $(".carousel-inner").empty();
-                    get_works("all",5);
-                }
-            })
-            $("#filter-2").on("click", function(){
-                if(!$(this).hasClass("active")) {
-                    $(this).addClass("active");
-                    $("#filter-1").removeClass("active")
-                    $("#filter-3").removeClass("active")
-                    $(".carousel-inner").empty();
-                    get_works("youtube",5);
-                }
-            })
-            $("#filter-3").on("click", function(){
-                if(!$(this).hasClass("active")) {
-                    $(this).addClass("active");
-                    $("#filter-1").removeClass("active")
-                    $("#filter-2").removeClass("active")
-                    $(".carousel-inner").empty();
-                    get_works("twitch",5);
-                }
-            })
-
-            observeElementIntersection("#works .container", 0.5)
-            // observeElementIntersection("#test", 0.5)
-            // observeElementIntersection(".filter-wrapper", 0.5)
-            // observeElementIntersection("#works-title", 0.5)
-            observeElementIntersection("#tos-title", 0.5)
-            observeElementIntersection("#tos-list", 0.5)
-            observeElementIntersection("#services-title", 0.5)
-            observeElementIntersection(".switch", 0.5)
-            // observeElementIntersection("#plan-wrapper", 0.6)
-            observeElementIntersection("#contact", 0.5)
-
-            // const textContainer = $(".letters");
-            // const text = textContainer.text();
-            // textContainer.empty(); // Kosongkan kontainer teks
-
-            // var delay = 60; // Delay dalam milidetik (0.2 detik)
-            // var index = 0;
-
-            // var interval = setInterval(function() {
-            //     if (index < text.length) {
-            //         // Ambil karakter pada index saat ini
-            //         var char = text.charAt(index);
-                    
-            //         // Append karakter ke elemen target
-            //         $('.letters').append(char);
-
-            //         index++;
-            //     } else {
-            //         // Hentikan interval jika sudah selesai
-            //         clearInterval(interval);
-            //     }
-            // }, delay);
-            
-
-        })
-    </script> -->
 </body>
-
 </html>
