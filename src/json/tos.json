@@ -17,7 +17,7 @@
     {
         "id": "tos-4",
         "header": "Deadline",
-        "text": "Deadlines: I have set a maximum of 4 weeks per project. This is done to ensure that the project is completed within the agreed-upon timeframe. However, I am also committed to delivering the highest quality at each stage of the process, so the final result meets your expectations.|Hard Deadlines: Hard deadlines apply when you want to rush commission. make sure the deadline given is at least 7 days.|Delivery: Files, along with related documents, will be sent via Google Drive or through email, according to your preference. I will ensure that all materials you require are easily accessible."
+        "text": "Deadlines: I have set a maximum of 4 weeks per project. This is done to ensure that the project is completed within the agreed-upon timeframe. However, I am also committed to delivering the highest quality at each stage of the process, so the final result meets your expectations.|Hard Deadlines: Hard deadlines apply when you want to rush commission. make sure the deadline given is at least 7 days.|Delivery: Files, along with related documents, will be sent via Google Drive or email, according to your preference. I will ensure that all materials you require are easily accessible."
     },
     {
         "id": "tos-5",
@@ -31,8 +31,8 @@
     },
     {
         "id": "tos-7",
-        "header": "Refunds",
-        "text": "There are no refunds for this commission work. please read the ToS carefully before placing an order."
+        "header": "Refunds & Warranty",
+        "text": "There is no refund after the work is completed. please read the ToS carefully before placing an order.|There is a revision-free guarantee that is valid for 1 year if there is an error in CSS or changes to the youtube/twitch livechat. After the warranty period expires, an additional fee will be charged."
     },
     {
         "id": "tos-8",

@@ -43,7 +43,7 @@ class Commission {
                 </div>
                 <div class="col-span-3 lg:col-span-1 px-6 py-3 flex flex-col justify-center">
                     <h5 class="font-bold text-sm text-white">${this.title}</h5>
-                    <p class="text-gray-400 mt-2 text-md">Price: Rp ${this.startPrice}</p>
+                    <p class="text-gray-400 mt-2 text-md">Start: Rp ${this.startPrice}</p>
                     <p class="text-xs mt-2 mb-3 text-gray-500">${this.description}</p>
                 </div>
             </div>
