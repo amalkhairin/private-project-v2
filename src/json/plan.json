@@ -1,6 +1,7 @@
 [
     {
         "id": "plan-1",
+        "status": "Open",
         "type": "Youtube",
         "start_price": "130.000",
         "title": "Youtube Chat Widget",
@@ -45,6 +46,7 @@
     },
     {
         "id": "plan-2",
+        "status": "Open",
         "type": "Twitch",
         "start_price": "160.000",
         "thumbnail": "https://i.ibb.co/hYnfzcb/twitch-standard-1.png",

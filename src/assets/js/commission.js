@@ -9,8 +9,9 @@ class Commission {
         return this.list.find((cms) => cms.id == id);
     }
 
-    constructor({ id, type, start_price, title, description, detail, media }) {
+    constructor({ id, status, type, start_price, title, description, detail, media }) {
         this.id = id || null;
+        this.status = status || null;
         this.type = type || null;
         this.startPrice = start_price || null;
         this.title = title || null;
@@ -41,10 +42,13 @@ class Commission {
                 <div class="col-span-3 lg:col-span-2">
                     <img class="h-[200px] w-full object-cover" src="${this.media[0].url}" alt="thumbnail" />
                 </div>
-                <div class="col-span-3 lg:col-span-1 px-6 py-3 flex flex-col justify-center">
-                    <h5 class="font-bold text-sm text-white">${this.title}</h5>
-                    <p class="text-gray-400 mt-2 text-md">Start: Rp ${this.startPrice}</p>
-                    <p class="text-xs mt-2 mb-3 text-gray-500">${this.description}</p>
+                <div class="col-span-3 lg:col-span-1 px-6 py-3 flex flex-col justify-between">
+                    <div class="flex flex-col justify-start">
+                        <h5 class="font-bold text-sm text-white">${this.title}</h5>
+                        <p class="text-gray-400 mt-2 text-md">Start: Rp ${this.startPrice}</p>
+                        <p class="text-xs mt-2 mb-3 text-gray-500">${this.description}</p>
+                    </div>
+                    <p class="text-start text-sm text-gray-500">status: <span class="text-white text-xs py-[4px] px-2 rounded-lg ${this.status == "Open"? "bg-[#88CC88]" : "bg-[#D64A45]" }">${this.status}</span></p>
                 </div>
             </div>
         </button>
