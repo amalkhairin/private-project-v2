@@ -7,5 +7,14 @@
         "description": "Halo~ selamat datang di website baru Maru ^^",
         "image": "https://i.ibb.co/jMxxKh5/yt-basic-2.png",
         "url": ""
+    },
+    {
+        "id": "feed-2",
+        "createdAt": "12/11/2023",
+        "editedAt": "",
+        "title": "Domain Changed",
+        "description": "Pergantian domain situs web dari maruhodo.site ke maruhodo.id",
+        "image": "https://i.ibb.co/41RFN7z/yt-basic-3.png",
+        "url": ""
     }
 ]

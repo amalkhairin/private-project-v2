@@ -3,6 +3,11 @@ class Feed {
 
     static init(feeds) {
         this.list = feeds.map((i) => new this(i));
+        this.list.sort((a, b) => {
+            const idA = parseInt(a.id.split('-')[1]);
+            const idB = parseInt(b.id.split('-')[1]);
+            return idB - idA;
+        });
     }
 
     static findById(id) {
