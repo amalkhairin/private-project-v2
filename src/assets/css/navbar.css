@@ -1,0 +1,82 @@
+.hero {
+    color: #DDE4EC !important;
+    font-family: 'Rozha One' !important;
+    position: relative;
+}
+
+.navbar {
+    z-index: 10000;
+}
+
+.hero svg {
+    width: 100px;
+    height: 50px;
+}
+
+.hero:hover::before {
+    content: '';
+    background: var(--sparkle);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    left: -12px;
+    top: -12px;
+    position: absolute;
+    z-index: 99;
+    animation: pulse-anim 1.5s ease-in-out infinite;
+}
+.hero:hover::after {
+    content: '';
+    background: var(--sparkle);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 10px;
+    right: -6px;
+    bottom: -6px;
+    position: absolute;
+    z-index: 99;
+    animation: pulse-anim 1s ease-in-out infinite;
+}
+
+.link-active {
+    background: #B3AFFF !important;
+    filter: drop-shadow(0px 0px 10px #b3afff9e);
+}
+
+.btn-nav {
+    font-family: 'Montserrat' !important;
+    font-size: 14px !important;
+    transition: transform 0.5s ease both;
+}
+
+.btn-nav:hover {
+    /* transform: rotate(-5deg); */
+}
+
+.navbar-element>a:nth-child(1) {
+    animation: slide-to-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.navbar-element>a:nth-child(2) {
+    animation: slide-to-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s both;
+}
+
+.navbar-element>a:nth-child(3) {
+    animation: slide-to-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+}
+
+.navbar-element>a:nth-child(4) {
+    animation: slide-to-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+}
+
+.hero {
+    animation: slide-to-right 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #2b3851be 50%, transparent 100%);
+}

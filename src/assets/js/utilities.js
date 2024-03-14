@@ -24,17 +24,41 @@ function generateYouTubeEmbedUrl(fullUrl) {
     return fullUrl.replace("youtu.be", "youtube.com/embed");
 }
 
+function createObserver(classes) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the animation class to all children of the intersecting element
+                entry.target.querySelectorAll(classes.join(', '))
+                    .forEach(child => child.classList.add('animated'));
+            }
+        });
+    });
+    return observer;
+}
+
+function bindObserver(observer, wrapper) {
+    document.querySelectorAll('.work-container').forEach(container => {
+        observer.observe(container);
+    });
+}
+
 function detailModalWork(id) {
+    console.log(id)
     const work = Work.findById(id);
 
-    $("#video-container").empty()
-    $("#video-title").empty()
+    if (work.url) {
+        $("#custom-modal").removeClass('hidden');
 
-    $("#video-title").text(work.name+" Chat Widget")
+        $("#video-container").empty()
+        $(".modal-title").empty()
 
-    $("#video-container").append(`
-    <iframe class="w-full h-full p-5" src="${generateYouTubeEmbedUrl(work.url)}" frameborder="0" allowfullscreen></iframe>
-    `)
+        $(".modal-title").text(work.name+"'s Chat Widget")
+
+        $("#video-container").append(`
+        <iframe class="w-full h-full p-5" src="${generateYouTubeEmbedUrl(work.url)}" frameborder="0" allowfullscreen></iframe>
+        `)
+    }
 }
 
 function detailModal(id) {

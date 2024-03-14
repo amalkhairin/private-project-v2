@@ -3,144 +3,357 @@
         "id": "work-1",
         "name": "Lydia Diabolis",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/w5AULlrj6ns?si=CeggewcMkxWKe68i"
     },
     {
         "id": "work-2",
         "name": "Makotoshi",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/aCNSb-jJZDM?si=Iq44qkTyRYRI0Xlb"
     },
     {
         "id": "work-3",
         "name": "Risbol",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/1pkoykibwyc?si=7iqhx7Fg28KXkBSF"
     },
     {
         "id": "work-4",
         "name": "Wilma Miashi",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/PU_-qWbDdF4?si=qgU54X20S10AqGbC"
     },
     {
         "id": "work-5",
         "name": "Aluna Diva",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/GMVPACMJ1ME?si=I0MWeS6y_J6TeKgg"
     },
     {
         "id": "work-6",
         "name": "Keiko Lynx",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/ey6sccdKUPE?si=CmvneCbkFfDC9JJn"
     },
     {
         "id": "work-7",
         "name": "Peony",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/rUF_S1Hfgro?si=ysaiJRTJsqJ2kJL1"
     },
     {
         "id": "work-8",
         "name": "Syahril MI",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/AJDt4YyDVtE?si=15XvURPdHXaC_piM"
     },
     {
         "id": "work-9",
         "name": "Jows",
         "type": "Youtube",
+        "note": "Coding by Maruu",
         "url": "https://youtu.be/OxMcK1hl3j0?si=DqI2efT7k2KbAS4k"
     },
     {
         "id": "work-10",
         "name": "Erol Sultan",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/tohQl-Cu9yI?si=iKk7KJUCzfUmPtfr"
     },
     {
         "id": "work-11",
         "name": "Ameru Nomi",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/h2C6fHWES-s?si=nExsQcZSOZVOrNkb"
     },
     {
         "id": "work-12",
         "name": "Alicia Ravenna",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/BBAjpGHLMI8?si=sQ-Jw-hSwzeNaq9G"
     },
     {
         "id": "work-13",
         "name": "Nasstasha Lubov",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/_-QvJqizEec?si=Ihwl-Bli0wf4ufrp"
     },
     {
         "id": "work-14",
         "name": "Yumetsukie",
         "type": "Youtube",
+        "note": "Designed by Yumetsukie, Coding by Maruu",
         "url": "https://youtu.be/x2Dotrh6b2s?si=XV4rDiGfB5S9L4_R"
     },
     {
         "id": "work-15",
         "name": "Gacchan",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/ZNAHXqrOgs0?si=ixdckpIOVpKygRU8"
     },
     {
         "id": "work-16",
         "name": "Cecilia Lieberia",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/J-OAe6FVPTY?si=-DQmVIzh7TjtzMRy"
     },
     {
         "id": "work-17",
         "name": "Pink Miruku",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/jhSfH8RgXys?si=abjBFrNmANPSPbuQ"
     },
     {
         "id": "work-18",
         "name": "DoombeaR Cave",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/DFTOUQaMg-Y?si=8-Eqba6Jn-waljIR"
     },
     {
         "id": "work-19",
         "name": "Chakra Eisen",
         "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/15PAKPPhQQA?si=REtXWWCX7it8SYcr"
     },
     {
         "id": "work-20",
         "name": "Bakedeath",
         "type": "Youtube",
+        "note": "Coding by Maruu",
         "url": "https://youtu.be/0vqf7G-gbQw?si=KYaNGXftGLavutyp"
     },
     {
         "id": "work-21",
         "name": "Calypzia",
         "type": "Twitch",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/Y7VYImn6ovI?si=U08A_I5Q-ggQqdhM"
     },
     {
         "id": "work-22",
         "name": "Dugong",
         "type": "Twitch",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/aS3beyPtvRk?si=exz9L1TcYu2wqMRt"
     },
     {
         "id": "work-23",
         "name": "Noa Orophia",
         "type": "Twitch",
+        "note": "Designed by Yumetsukie, Coding by Maruu",
         "url": "https://youtu.be/8BHAbPJY9OI"
     },
     {
         "id": "work-24",
         "name": "Miki Kujira",
         "type": "Twitch",
+        "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/hjmfNO2bQd0?si=rw2ukdi8i6xRKkKD"
+    },
+    {
+        "id": "work-25",
+        "name": "Xenno Kuuji",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/6iPPc4xWRug"
+    },
+    {
+        "id": "work-26",
+        "name": "Amyllis",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/xZn6QB3jOBY"
+    },
+    {
+        "id": "work-27",
+        "name": "Momochi Sereluna",
+        "type": "Youtube",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/bRFhti32jns"
+    },
+    {
+        "id": "work-28",
+        "name": "Matsukin Konkon",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/aF_H375nHHo"
+    },
+    {
+        "id": "work-29",
+        "name": "Jelly CB",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/HVmp3Yj-1iw"
+    },
+    {
+        "id": "work-30",
+        "name": "Ayurin Chlorisya",
+        "type": "Youtube|Twitch",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/gzJSzWqZJKo"
+    },
+    {
+        "id": "work-31",
+        "name": "Quin Cyrene",
+        "type": "Youtube",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/3UluzkzQVBs"
+    },
+    {
+        "id": "work-32",
+        "name": "Celestia Etoile",
+        "type": "Twitch",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/YCuSjCDF4tg"
+    },
+    {
+        "id": "work-33",
+        "name": "Zanyra",
+        "type": "Twitch",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/9lunBi1hOUA"
+    },
+    {
+        "id": "work-34",
+        "name": "Monitor Comics",
+        "type": "Youtube|Twitch",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/GROvDdGefbU"
+    },
+    {
+        "id": "work-35",
+        "name": "Lian Yunxia",
+        "type": "Twitch",
+        "note": "Designed by Jows, Coding by Maruu",
+        "url": "https://youtu.be/-lWPj71yM2s"
+    },
+    {
+        "id": "work-36",
+        "name": "Umemire Hasu",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/cRu67u5dLw4"
+    },
+    {
+        "id": "work-37",
+        "name": "Yanji Balanza",
+        "type": "Twitch",
+        "note": "Designed by Yumetsukie, Coding by Maruu",
+        "url": "https://youtu.be/HxLNMMNXAtw"
+    },
+    {
+        "id": "work-38",
+        "name": "Keiko Lynx",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/bsdrp-lxSh4"
+    },
+    {
+        "id": "work-39",
+        "name": "Lylia Rose",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": "https://youtu.be/pLGqdNuVLOU"
+    },
+    {
+        "id": "work-40",
+        "name": "YourLuLunie",
+        "type": "Youtube",
+        "note": "Designed by Esmeraeys, Coding by Maruu",
+        "url": "https://youtu.be/wvl8diR06YY"
+    },
+    {
+        "id": "work-41",
+        "name": "Aluna Diva",
+        "type": "Youtube",
+        "note": "Designed & Coding by Maruu",
+        "url": ""
+    },
+    {
+        "id": "work-42",
+        "name": "Fanelia Miho",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-43",
+        "name": "Lilian Grimmxandra",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-44",
+        "name": "Migo Haswel",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-45",
+        "name": "Christine",
+        "note": "Coding by Maruu",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-46",
+        "name": "Rannia Taiga",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-47",
+        "name": "Rin Kouka",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-48",
+        "name": "Alicia Ravenna",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-49",
+        "name": "Key Oriesa",
+        "note": "Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-50",
+        "name": "Viyushi Winko",
+        "note": "Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
+    },
+    {
+        "id": "work-51",
+        "name": "Mikazuki Arion",
+        "note": "Designed & Coding by Maruu",
+        "type": "Youtube",
+        "url": ""
     }
 ]

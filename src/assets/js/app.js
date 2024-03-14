@@ -3,8 +3,11 @@ class App {
     constructor() {
         this.feedContainer = document.getElementById('feed-list')
         this.commsContainer = document.getElementById('commission-list')
-        this.tosContainer = document.getElementById('tos-list')
-        this.workContainer = document.getElementById('work-list')
+        this.tosContainer = document.getElementById('list-tos')
+        // this.workContainer = document.getElementsByClassName('work-list')
+        this.workContainer = document.getElementById('list-work')
+        this.sampleWorkContainer = document.getElementById('sample-work')
+        this.collaboratorContainer = document.getElementById('list-collaborator')
     }
 
     async init() {
@@ -33,14 +36,23 @@ class App {
     }
 
     async get_works() {
+
         const response = await fetch('./src/json/works.json');
         const works = await response.json()
 
         return works
     }
 
+    async get_collaborators() {
+
+        const response = await fetch('./src/json/collaborator.json');
+        const collaborator = await response.json()
+
+        return collaborator
+    }
+
     async get_trakteer(){
-        const headers = {
+        const headers = { 
             Accept: 'application/json',
             key: 'trapi-9TF1jWkoUrVeETgKqAbie0o0',
             'X-Requested-With': 'XMLHttpRequest',
@@ -52,14 +64,16 @@ class App {
     }
 
     async load(){
-        const feeds = await this.get_feeds();
-        const comms = await this.get_comms();
+        // const feeds = await this.get_feeds();
+        // const comms = await this.get_comms();
         const services = await this.get_tos();
         const works = await this.get_works();
-        Feed.init(feeds);
-        Commission.init(comms);
+        const collaborator = await this.get_collaborators();
+        // Feed.init(feeds);
+        // Commission.init(comms);
         TOS.init(services);
         Work.init(works);
+        Collaborator.init(collaborator)
     }
 
     render_feeds() {
@@ -109,12 +123,33 @@ class App {
             this.workContainer.innerHTML = listHtml.join('')
         } else {
             this.workContainer.innerHTML = ""
+            this.sampleWorkContainer.innerHTML = ""
             const listHtml = []
+            const listHtmlSample = []
+            const sampleWork = Work.list.slice(0,3)
+            sampleWork.forEach((sample) =>{
+                listHtmlSample.push(sample.render())
+            })
+            this.sampleWorkContainer.innerHTML = listHtmlSample.join('')
             Work.list.forEach((work) => {
                 listHtml.push(work.render())
             })
             this.workContainer.innerHTML = listHtml.join('')
         }
+
+        const workClasses = ['.bg-content', '.media', '.logo', '.title', '.credit', '.big-sparkle', '.small-sparkle', '.showcase-button'];
+        const wrapper = ['.work-container'];
+        var workObserver = createObserver(workClasses);
+        bindObserver(workObserver, wrapper)
+    }
+
+    render_collaborators() {
+        this.collaboratorContainer.innerHTML = ""
+        const listHtml = []
+        Collaborator.list.forEach((partner) => {
+            listHtml.push(partner.render())
+        })
+        this.collaboratorContainer.innerHTML = listHtml.join('')
     }
 
      render_trakteer() {

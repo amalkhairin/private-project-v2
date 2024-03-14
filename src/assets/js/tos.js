@@ -17,10 +17,12 @@ class TOS {
 
     render() {
         let template = `
-        <div class="my-4">
-            <h5 class="font-bold text-gray-300">${this.header}</h5>
-            <ol id="${this.id}" class="text-gray-400 list-disc list-inside">
-            </ol>
+        <div class="point-section mb-8">
+            <div class="point-title text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-white">${this.header}</div>
+            <div class="sub-point mt-2 text-[14px] sm:text-[14px] md:text-[14px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">
+                <ul id="${this.id}">
+                </ul>
+            </div>
         </div>
         `
         return template;

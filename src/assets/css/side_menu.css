@@ -1,0 +1,179 @@
+.side-menu {
+    border-left: 1px solid #FFFFFF;
+    z-index: 100000;
+}
+
+.menu-icon {
+    width: 62px;
+    height: 62px;
+    position: relative;
+    transform: scale(0.7);
+}
+
+.menu-icon.open {
+    animation: menu-open-anim 0.5s ease forwards;
+    filter: drop-shadow(0px 0px 10px #b3afffbb);
+}
+
+.menu-icon.open .top-icon {
+    transform: translate(-50%, -5px);
+}
+
+.menu-icon.open .left-icon {
+    transform: translate(-5px, -50%);
+}
+
+.menu-icon.open .bottom-icon {
+    transform: translate(-50%, 5px);
+}
+
+.menu-icon.open .right-icon {
+    transform: translate(5px, -50%);
+}
+
+@keyframes menu-open-anim {
+    0% {
+        transform: scale(0.7) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(0.7) rotate(135deg);
+    }
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #b3afffbb);
+}
+
+.top-icon {
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 0.5s ease;
+    position: absolute;
+    animation: menu-slide-to-bottom 0.5s ease 0.2s both;
+}
+
+.menu-icon:hover .top-icon {
+    transform: translate(-50%, -5px);
+}
+
+.menu-icon:hover .left-icon {
+    transform: translate(-5px, -50%);
+}
+
+.menu-icon:hover .bottom-icon {
+    transform: translate(-50%, 5px);
+}
+
+.menu-icon:hover .right-icon {
+    transform: translate(5px, -50%);
+}
+
+.left-icon {
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    animation: menu-slide-to-right 0.5s ease 0.3s both;
+}
+
+.bottom-icon {
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    animation: menu-slide-to-top 0.5s ease 0.4s both;
+}
+
+.right-icon {
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    animation: menu-slide-to-left 0.5s ease 0.5s both;
+}
+
+@keyframes menu-slide-to-left {
+    from {
+        opacity: 0;
+        transform: translate(30px, -50%);
+    }
+}
+
+@keyframes menu-slide-to-right {
+    from {
+        opacity: 0;
+        transform: translate(-30px, -50%);
+    }
+}
+
+@keyframes menu-slide-to-bottom {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -30px);
+    }
+}
+
+@keyframes menu-slide-to-top {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+}
+
+
+
+.menu-container {
+    z-index: 99;
+    position: relative;
+}
+
+.menu-item:nth-child(1) {
+    animation: slide-to-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.menu-item:nth-child(2) {
+    animation: slide-to-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s both;
+}
+
+.menu-item:nth-child(3) {
+    animation: slide-to-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+}
+
+.menu-item:nth-child(4) {
+    animation: slide-to-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+}
+
+.menu-item a:hover {
+    filter: drop-shadow(0px 0px 10px #b3afffbb);
+}
+
+.menu-item div {
+    display: none;
+}
+
+.menu-item a {
+    font-family: 'Montserrat' !important;
+    text-wrap: nowrap;
+}
+
+.menu-item:hover div {
+    display: block;
+}
+
+.menu-container .decoration {
+    position: absolute;
+    left: -200px;
+    bottom: -150px;
+    opacity: 0.1;
+}
+
+.menu-container .decoration svg {
+    width: 500px;
+    height: 500px;
+}

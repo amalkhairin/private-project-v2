@@ -29,208 +29,988 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/navbar.css">
+    <link rel="stylesheet" href="./src/assets/css/contact.css">
+    <link rel="stylesheet" href="./src/assets/css/side_menu.css">
+    <link rel="stylesheet" href="./src/assets/css/works.css">
+    <link rel="stylesheet" href="./src/assets/css/collaborator.css">
+    <link rel="stylesheet" href="./src/assets/css/tos.css">
+    <link rel="stylesheet" href="./src/assets/css/commission.css">
     <link rel="icon" type="image/png" href="./src/assets/img/favicon.ico" />
 </head>
 
 <body>
-    <!-- Main navigation container -->
-    <nav
-        class="flex-no-wrap relative flex w-full items-center justify-between py-2">
-        <div class="flex w-full flex-wrap items-center justify-between px-5 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
-
-            <div class="items-center"
-                id="navbarSupportedContent1" data-te-collapse-item>
-                <!-- Logo -->
-                <a href="" class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
-                    <h1 class="font-black text-white text-2xl">.MARUU</h1>
-                </a>
+    <section id="body-section">
+        <div class="main-body w-screen h-screen relative overflow-y-hidden overflow-x-hidden">
+            <div class="bg-container w-screen h-screen absolute overflow-visible">
+                <div class="bg h-full w-full absolute inset-0"></div>
+                <div class="bg-anim hidden w-full h-full">
+                    <div class="meteor-container w-full h-full">
+                        <div class="meteor-1"></div>
+                        <div class="meteor-2"></div>
+                        <div class="meteor-3"></div>
+                        <div class="meteor-4"></div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Right elements -->
-            <div class="relative flex items-center">
-                <a href="https://vgen.co/maru-maru" target="_blank"
-                    type="button"
-                    class="inline-block rounded border-[1px] border-gray-500 px-2 pb-[6px] pt-2 text-xs font-medium text-white transition duration-150 ease-in-out hover:border-0 hover:bg-white hover:text-[#25282E] focus:border-0 focus:bg-white focus:text-[#25282E] active:border-0 active:bg-white active:text-[#25282E]"
-                    data-te-ripple-init>
-                    VGen Comms
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <section id="main-section">
-        <div class="pt-2 px-2 md:px-4 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
-            <div class="grid grid-cols-12 gap-4 flex">
-                <div id="left-menu" class="col-span-12 lg:col-span-4 xl:col-span-4 w-full flex flex-col items-center px-3 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
-                    <div class="flex flex-col items-center lg:top-6 lg:sticky xl:top-6 xl:sticky 2xl:top-6 2xl:sticky">
-                        <div id="image">
-                            <!-- <div class="h-[120px] w-[150px] rounded-lg bg-[#1D1E22]"></div> -->
-                            <img
-                            src="https://i.ibb.co/rZwJsJ6/mee3.png"
-                            class="h-[100px] w-[150px] rounded-lg object-cover"
-                            alt="" />
+            <div class="body-wrapper relative w-full h-full overflow-y-scroll custom-scrollbar overflow-x-hidden">
+                <!-- menu -->
+                <div class="menu-container hidden w-full h-screen overflow-hidden bg-[#243047]">
+                    <div class="decoration">
+                        <svg id="mySvg" width="521" height="521" viewBox="0 0 521 521" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M247.929 67.5089L260.5 5.06681L273.071 67.5088C291.389 158.495 362.505 229.611 453.491 247.929L515.933 260.5L453.491 273.071C362.505 291.389 291.389 362.505 273.071 453.491L260.5 515.933L247.929 453.491C229.611 362.505 158.495 291.389 67.5089 273.071L5.06681 260.5L67.5088 247.929C158.495 229.611 229.611 158.495 247.929 67.5089Z"
+                                stroke="#B3AFFF" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="w-full flex flex-col items-end pr-5">
+                        <div class="flex menu-item justify-end items-center w-full">
+                            <div class="w-full mx-5">
+                                <hr class="opacity-50">
+                            </div>
+                            <a href="#home"
+                                class="text-gray-500 home-button my-5 hover:text-white font-bold text-lg sm:text-lg md:text-lg lg:text-6xl xl:text-6xl 2xl:text-6xl">Home</a>
                         </div>
-                        <div id="profile" class="justify-center">
-                            <h2 class="text-xl text-white mt-3 text-center">Maruu マル</h2>
-                            <p class="text-xs text-white mt-2">Hi! We are the Maruhodo team. We design and code chat widgets for YouTube and Twitch. For International commissions, please chek <a href="https://vgen.co/maru-maru" class="text-[#88CC88] italic font-bold" target="_blank">here</a></p>
+                        <div class="flex menu-item justify-end items-center w-full">
+                            <div class="w-full mx-5">
+                                <hr class="opacity-50">
+                            </div>
+                            <a href="#commission"
+                                class="text-gray-500 commission-button my-5 hover:text-white font-bold text-lg sm:text-lg md:text-lg lg:text-6xl xl:text-6xl 2xl:text-6xl">Commission</a>
                         </div>
-                        <div id="social-media" class="mt-4 text-left w-full border-t border-t-[#3C3F47] border-b border-b-[#3C3F47]">
-                            <h5 class="text-xs font-bold mt-3 text-white text-left">Social Media</h5>
-                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-2 text-sm mt-2 mb-3">
-                                <a href="https://www.youtube.com/@maruhodooo" target="_blank" class="col-auto bg-[#D64A45] text-xs text-white hover:bg-white hover:text-[#D64A45] text-center px-2 py-[4px] rounded-2xl">
-                                    Youtube
-                                </a>
-                                <a href="https://twitter.com/maruu_snk" target="_blank" class="col-auto bg-[#3DABDB] text-xs text-white hover:bg-white hover:text-[#3DABDB] text-center px-2 py-[4px] rounded-2xl">
-                                    Twitter
-                                </a>
-                                <a href="https://www.instagram.com/maruhodooo/" target="_blank" class="col-auto bg-[#DB704F] text-xs text-white hover:bg-white hover:text-[#DB704F] text-center px-2 py-[4px] rounded-2xl">
-                                    Instagram
-                                </a>
-                                <a href="https://facebook.com/maruu.snk" target="_blank" class="col-auto bg-[#477FC1] text-xs text-white hover:bg-white hover:text-[#477FC1] text-center px-2 py-[4px] rounded-2xl">
-                                    Facebook
-                                </a>
+                        <div class="flex menu-item justify-end items-center w-full">
+                            <div class="w-full mx-5">
+                                <hr class="opacity-50">
                             </div>
+                            <a href="#our-works"
+                                class="text-gray-500 works-button my-5 hover:text-white font-bold text-lg sm:text-lg md:text-lg lg:text-6xl xl:text-6xl 2xl:text-6xl">Our
+                                Works</a>
                         </div>
-                        <div class="justify-center mt-3 border-[1px] border-[#3C3F47] rounded-lg p-3 w-full hidden">
-                            <h2 class="mb-3 text-md text-white font-bold text-center">Latest Support</h2>
-                            <div class="mt-1 flex flex-row text-xs justify-between">
-                                <div class="text-gray-300">username</div>
-                                <div class="text-gray-500">x50</div>
+                        <div class="flex menu-item justify-end items-center w-full">
+                            <div class="w-full mx-5">
+                                <hr class="opacity-50">
                             </div>
-                            <div class="mt-1 flex flex-row text-xs justify-between">
-                                <div class="text-gray-300">username</div>
-                                <div class="text-gray-500">x50</div>
-                            </div>
-                            <div class="mt-1 flex flex-row text-xs justify-between">
-                                <div class="text-gray-300">username</div>
-                                <div class="text-gray-500">x50</div>
-                            </div>
-                            <div class="mt-1 flex flex-row text-xs justify-between">
-                                <div class="text-gray-300">username</div>
-                                <div class="text-gray-500">x50</div>
-                            </div>
-                        </div>
-                        <div class="mt-1 mb-5 flex flex-col w-full items-start">
-                            <h5 class="text-xs font-bold my-1 text-white text-center">Support me on:</h5>
-                            <div class="flex flex-row">
-                                <a href="https://trakteer.id/maru-maru" target="_blank" class="bg-[#D64A45] mr-2 text-xs text-white hover:bg-white hover:text-[#D64A45] text-center px-2 py-[4px] rounded-2xl">
-                                    Trakteer
-                                </a>
-                                <a href="https://ko-fi.com/maruhodo/tip" target="_blank" class="bg-gray-600 text-xs text-gray-300 hover:text-gray-800 hover:bg-gray-300 text-center px-2 py-[4px] rounded-2xl">
-                                    Ko-fi
-                                </a>
-                            </div>
+                            <a href="#tos"
+                                class="text-gray-500 tos-button my-5 hover:text-white font-bold text-lg sm:text-lg md:text-lg lg:text-6xl xl:text-6xl 2xl:text-6xl">ToS</a>
                         </div>
                     </div>
                 </div>
+                <!-- end menu -->
 
-                <div id="right-menu" class="col-span-12 lg:col-span-8 xl:col-span-8 h-full w-full lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
-                    <ul class="mb-0 mx-4 flex list-none flex-row flex-no-wrap overflow-x-scroll border-b-0 pl-0" role="tablist" data-te-nav-ref>
-                        <li role="presentation">
-                            <a href="#tabs-home" class=" pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
-                            data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab" aria-controls="tabs-home" aria-selected="true">
-                            Feeds
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tabs-commission" class="pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
-                            data-te-toggle="pill" data-te-target="#tabs-commission" role="tab" aria-controls="tabs-commission"
-                            aria-selected="false">
-                            Commissions
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tabs-portfolio" class="whitespace-nowrap items-center  pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
-                            data-te-toggle="pill" data-te-target="#tabs-portfolio" role="tab" aria-controls="tabs-portfolio"
-                            aria-selected="false">
-                            Portfolio <span id="work-count" class="inline items-center text-[10px] p-1 bg-[#3C3F47] rounded-2xl"></span>
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tabs-tos" class="whitespace-nowrap items-center relative pt-3 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 text-xs font-medium leading-tight text-neutral-500 hover:bg-[#1F2126] data-[te-nav-active]:border-primary data-[te-nav-active]:bg-[#1F2126] data-[te-nav-active]:text-white"
-                            data-te-toggle="pill" data-te-target="#tabs-tos" role="tab" aria-controls="tabs-tos"
-                            aria-selected="false">
-                            ToS <span class="absolute bg-red-600 text-red-100 w-[5px] h-[5px] text-xs font-bold rounded-full top-2 right-3"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="py-4 px-4">
-                        <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-                        id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
-                            <div id="feed-list" class="grid grid-cols-1"></div>
-                        </div>
+                <div class="main-container w-full">
+                    <!-- navbar -->
+                    <nav class="fixed navbar top-0 flex flex-col w-full items-center justify-between py-2 mr-[50px]">
                         <div
-                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-                          id="tabs-commission" role="tabpanel" aria-labelledby="tabs-commission-tab">  
-                          <div id="commission-list" class="grid grid-cols-1">
-                            <button id="btn-generate" type="button" data-te-ripple-init data-te-ripple-color="light"
-                                data-te-toggle="modal"
-                                data-te-target="#workModal"
-                                class="ml-2 inline-block rounded bg-primary px-4 py-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-700 focus:bg-primary-700 focus:outline-none focus:ring-0 active:bg-primary-700">
-                            </button>
-                          </div>
-                        </div>
-                        <div
-                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-                          id="tabs-portfolio" role="tabpanel" aria-labelledby="tabs-portfolio-tab">
-                            <div id="type-filter" class="flex flex-row my-3">
-                                <button id="filter-youtube" class="bg-transparent border-[1px] border-gray-600 mr-2 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
-                                    Youtube
-                                </button>
-                                <button id="filter-twitch" class="bg-transparent border-[1px] border-gray-600 mr-2 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
-                                    Twitch
-                                </button>
+                            class="flex w-full flex-wrap items-center justify-between px-5 lg:px-[50px] xl:px-[50px] 2xl:px-[50px]">
+                            <div class="items-center" id="navbarSupportedContent1" data-te-collapse-item>
+                                <!-- Logo -->
+                                <a href=""
+                                    class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                                    <h1 class="hero"><svg width="254" height="100" viewBox="0 0 254 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M70.1334 3.85311H65.3049V54.0686H70.1334V56H45.9913V54.0686H50.8197V7.42613L31.6992 56.9657H29.4781L8.03993 6.07418V54.0686H15.7654V56H0.314464V54.0686H6.10856V3.85311H0.217896V1.92174H21.7526L36.8173 38.1349L50.8197 1.92174H70.1334V3.85311Z"
+                                                fill="white" />
+                                            <path
+                                                d="M134.176 54.0686V56H108.778V54.0686H114.476L108.005 40.6456H88.4987L82.8977 54.0686H90.5266V56H74.0134V54.0686H80.4835L102.598 0.956055H105.012L129.54 54.0686H134.176ZM89.3678 38.6177H107.04L97.5761 18.9178L89.3678 38.6177Z"
+                                                fill="white" />
+                                            <path
+                                                d="M157.311 3.85311V28.7677C163.749 28.7677 168.062 27.8342 170.251 25.9673C172.44 24.1003 173.535 20.9779 173.535 16.6001C173.535 12.2224 172.408 9.00342 170.155 6.94329C167.901 4.88317 163.62 3.85311 157.311 3.85311ZM195.263 56.9657H191.014C182.966 56.9657 177.365 55.2275 174.211 51.751C171.7 49.0471 169.994 45.4741 169.092 41.0319C168.706 39.1649 168.288 37.4589 167.837 35.9138C166.807 32.4373 164.715 30.6991 161.56 30.6991H157.311V54.0686H162.14V56H137.997V54.0686H142.826V3.85311H137.997V1.92174H163.395C179.812 1.92174 188.02 6.71797 188.02 16.3104C188.02 20.1088 186.636 23.199 183.867 25.581C181.099 27.963 177.558 29.154 173.245 29.154V29.83C179.683 29.83 184.157 34.079 186.668 42.577C187.956 47.0835 189.243 50.3025 190.531 52.2338C191.883 54.1008 193.46 55.0343 195.263 55.0343V56.9657Z"
+                                                fill="white" />
+                                            <path
+                                                d="M248.84 32.4373C248.84 49.1115 241.823 57.4485 227.788 57.4485C219.998 57.4485 213.914 55.4528 209.537 51.4613C205.159 47.4698 202.97 41.4504 202.97 33.403V3.85311H198.141V1.92174H223.249V3.85311H218.421V34.4653C218.421 47.9204 222.927 54.648 231.94 54.648C235.61 54.648 238.925 52.8454 241.887 49.2402C244.913 45.5706 246.426 40.6134 246.426 34.3687V3.85311H238.797V1.92174H253.668V3.85311H248.84V32.4373Z"
+                                                fill="white" />
+                                            <path
+                                                d="M51.9593 99.5108C48.3541 99.5108 46.5515 97.8691 46.5515 94.5858C46.5515 91.4956 48.0644 87.15 51.0902 81.5491C51.4121 80.9697 51.7984 80.2937 52.249 79.5211C52.6997 78.7486 53.4079 77.5898 54.3735 76.0447C55.3392 74.4352 56.7234 72.1498 58.526 69.1883C64.4488 59.4027 67.4103 51.806 67.4103 46.3982C67.4103 41.8917 65.0604 39.6384 60.3608 39.6384C55.0173 39.6384 48.2575 42.7608 40.0814 49.0055C32.871 54.4777 27.431 59.9178 23.7614 65.3256C21.315 68.9308 20.0918 71.9244 20.0918 74.3064C20.0918 76.3666 21.2506 77.3966 23.5682 77.3966C24.212 77.3966 25.3065 77.1391 26.8516 76.6241C28.3967 76.1091 29.3623 75.8515 29.7486 75.8515C30.4568 75.8515 30.8109 76.0447 30.8109 76.4309C30.8109 77.3323 29.6842 78.1692 27.431 78.9417C25.564 79.5855 24.0511 79.9074 22.8923 79.9074C19.3514 79.9074 17.581 78.0404 17.581 74.3064C17.581 69.2849 20.2849 63.7483 25.6927 57.6967C28.0748 55.0572 30.7143 52.5464 33.6113 50.1644C36.5728 47.718 39.8883 45.4003 43.5579 43.2114C50.5752 39.0912 56.5302 37.0311 61.423 37.0311C68.7622 37.0311 72.4318 40.1856 72.4318 46.4948C72.4318 49.3274 71.5949 52.5786 69.921 56.2482C69.0197 58.2439 67.9575 60.4328 66.7343 62.8148C65.5111 65.1325 64.0626 67.6754 62.3887 70.4437C61.0367 72.7613 59.6526 75.079 58.2363 77.3966C56.8199 79.6499 55.4358 81.9353 54.0838 84.253C51.7018 88.2445 50.5108 91.5278 50.5108 94.103C50.5108 96.2275 51.4121 97.2897 53.2147 97.2897C55.4036 97.2897 58.4294 95.9377 62.2921 93.2338C72.2709 86.3453 82.6037 76.3666 93.2906 63.2977C93.3549 63.1689 93.6768 62.7826 94.2562 62.1388C94.8357 61.4307 95.4794 60.6581 96.1876 59.8212C97.0889 59.113 98.0224 58.7589 98.9881 58.7589C99.6963 58.7589 100.05 59.0486 100.05 59.6281C100.05 60.0787 99.825 60.6581 99.3744 61.3663C93.1296 72.2463 90.0072 81.2272 90.0072 88.3089C90.0072 93.0729 91.2626 95.4549 93.7734 95.4549C95.8979 95.4549 98.7628 93.5557 102.368 89.7574C105.394 86.5384 107.615 83.6414 109.031 81.0662C113.345 73.2764 115.501 67.3213 115.501 63.2011C115.501 62.8792 115.437 62.4607 115.308 61.9457C115.179 61.3663 115.018 60.7547 114.825 60.1109C114.632 59.4671 114.439 58.9199 114.246 58.4692C114.117 57.9542 114.053 57.4392 114.053 56.9241C114.053 54.7353 114.761 53.6408 116.177 53.6408C116.95 53.6408 117.626 54.4777 118.205 56.1516C118.656 57.3104 118.881 58.4692 118.881 59.6281C118.881 59.95 118.881 60.304 118.881 60.6903C118.881 61.0122 118.849 61.3985 118.785 61.8491C119.107 62.4929 119.686 62.9758 120.523 63.2977C121.36 63.5552 121.778 63.9093 121.778 64.3599C121.778 64.8749 121.424 65.1325 120.716 65.1325C119.943 65.1325 119.107 64.9393 118.205 64.553C117.497 67.5789 116.564 70.5403 115.405 73.4373C114.31 76.3344 112.926 79.2314 111.252 82.1285C109.45 85.283 107.486 88.0191 105.362 90.3368C103.237 92.6544 101.048 94.5536 98.795 96.0343C96.9924 97.1931 95.1254 97.7725 93.194 97.7725C88.6875 97.7725 86.4342 94.9721 86.4342 89.3711C86.4342 85.8303 87.8505 79.4568 90.6832 70.2506C86.563 74.3708 82.9899 77.9439 79.9641 80.9697C76.9383 83.9955 74.9104 85.959 73.8803 86.8603C69.7601 90.5943 66.1227 93.4592 62.9681 95.4549C59.8135 97.4506 57.2062 98.6739 55.1461 99.1245C54.631 99.1889 54.0838 99.2533 53.5044 99.3176C52.9894 99.4464 52.4744 99.5108 51.9593 99.5108Z"
+                                                fill="#B3AFFF" />
+                                            <path
+                                                d="M121.275 98.1588C119.022 98.1588 117.895 96.8391 117.895 94.1995C117.895 90.5299 119.505 86.2165 122.724 81.2594C122.659 80.9375 122.595 80.5834 122.53 80.1971C122.53 79.8108 122.53 79.4568 122.53 79.1349C122.53 76.8172 123.303 74.564 124.848 72.3751C126.393 70.1862 128.292 69.0918 130.546 69.0918C132.477 69.0918 133.765 69.7677 134.408 71.1197C135.116 72.4716 135.471 73.9846 135.471 75.6584C135.471 77.0747 135.31 78.4267 134.988 79.7143C134.666 81.0662 134.183 82.5791 133.539 84.253C132.895 85.9268 132.091 87.6973 131.125 89.5642C132.091 90.1436 133.185 90.4333 134.408 90.4333C135.503 90.4333 136.533 90.3046 137.498 90.0471C138.464 89.7252 139.365 89.1458 140.202 88.3089C141.039 87.4719 141.683 86.7316 142.134 86.0878C142.649 85.444 142.874 85.1543 142.81 85.2187C142.938 85.0899 143.067 85.0255 143.196 85.0255C143.454 85.0255 143.647 85.1865 143.775 85.5084C143.969 85.8303 143.936 86.1522 143.679 86.4741C142.649 87.9548 141.297 89.2745 139.623 90.4333C138.014 91.5278 136.243 92.075 134.312 92.075C132.831 92.075 131.543 91.7531 130.449 91.1093C127.488 95.809 124.43 98.1588 121.275 98.1588ZM129.87 88.6951C130.707 86.635 131.35 84.8646 131.801 83.3839C132.252 81.9032 132.477 80.519 132.477 79.2314V78.4589C132.477 76.7207 132.187 75.1112 131.608 73.6305C131.028 72.0854 130.191 71.3128 129.097 71.3128C127.616 71.3128 126.458 72.2141 125.621 74.0167C125.041 75.2399 124.751 76.5919 124.751 78.0726V78.652C125.782 77.4288 126.812 76.8172 127.842 76.8172C128.807 76.8172 129.516 77.1391 129.966 77.7829C130.159 78.0404 130.256 78.2657 130.256 78.4589C130.256 78.8452 129.87 79.0383 129.097 79.0383C127.938 79.0383 126.715 80.2615 125.427 82.7079C126.329 85.2187 127.809 87.2144 129.87 88.6951ZM122.82 95.8412C123.657 95.8412 124.848 95.0686 126.393 93.5235C127.037 92.8797 127.584 92.2682 128.035 91.6887C128.485 91.1093 128.84 90.5621 129.097 90.0471C126.908 88.5664 125.299 86.9247 124.269 85.1221C122.337 89.178 121.372 92.1072 121.372 93.9098C121.372 95.1974 121.854 95.8412 122.82 95.8412Z"
+                                                fill="#B3AFFF" />
+                                            <path
+                                                d="M157.248 98.5451C155.059 98.5451 153.514 97.9657 152.613 96.8069C151.776 95.648 151.358 94.1673 151.358 92.3647C151.358 90.884 151.583 89.3389 152.034 87.7294C152.549 86.0556 153.16 84.5105 153.868 83.0942C154.576 81.6778 155.188 80.5512 155.703 79.7143C155.51 79.7787 155.317 79.843 155.124 79.9074C154.931 79.9074 154.705 79.9074 154.448 79.9074C153.546 79.9074 152.549 79.5855 151.454 78.9417C150.295 78.1692 149.716 77.3644 149.716 76.5275C149.33 77.4288 148.782 78.4589 148.074 79.6177C147.43 80.7765 146.658 82.0319 145.757 83.3839C143.375 87.1178 141.797 88.9848 141.025 88.9848C140.767 88.9848 140.638 88.8561 140.638 88.5986C140.638 88.341 140.832 87.9548 141.218 87.4397C142.441 85.7659 143.664 83.8345 144.887 81.6456C146.175 79.4568 147.463 77.0104 148.75 74.3064C148.686 73.9845 148.621 73.6627 148.557 73.3408C148.557 73.0189 148.557 72.6326 148.557 72.1819C148.557 70.7012 148.847 68.9952 149.426 67.0638C150.134 64.6174 151.003 63.3942 152.034 63.3942C152.677 63.3942 153.289 63.9736 153.868 65.1325C154.061 65.5831 154.222 66.0338 154.351 66.4844C154.48 66.8707 154.544 67.2891 154.544 67.7398C154.544 69.2849 153.225 71.6347 150.585 74.7893C151.164 76.785 152.291 77.7829 153.965 77.7829C155.188 77.7829 156.315 77.1713 157.345 75.9481C158.439 74.6605 159.212 74.0167 159.662 74.0167C160.242 74.0167 160.757 74.2421 161.208 74.6927C161.658 75.1434 161.883 75.7228 161.883 76.4309C161.883 76.3666 161.465 76.946 160.628 78.1692C159.856 79.3924 158.954 81.0984 157.924 83.2873C156.894 85.4762 156.154 87.3432 155.703 88.8883C155.317 90.4334 155.124 91.8175 155.124 93.0407C155.124 95.294 156.186 96.4206 158.31 96.4206C160.371 96.4206 162.978 94.8433 166.132 91.6887C167.163 90.5943 168.354 89.2102 169.706 87.5363C171.379 85.4762 172.216 84.4461 172.216 84.4461C172.474 84.4461 172.603 84.6393 172.603 85.0255C172.603 85.5406 172.409 86.0878 172.023 86.6672C171.122 88.0835 170.124 89.4999 169.03 90.9162C167.999 92.2681 167.034 93.3626 166.132 94.1995C163.171 97.0966 160.21 98.5451 157.248 98.5451Z"
+                                                fill="#B3AFFF" />
+                                            <path
+                                                d="M189.591 97.8691C188.11 97.8691 186.758 97.3863 185.535 96.4206C184.312 95.4549 183.25 94.2639 182.348 92.8476C181.447 91.3668 180.739 89.8861 180.224 88.4054C179.709 86.8603 179.451 85.5727 179.451 84.5427C178.679 85.444 177.81 86.3775 176.844 87.3432C175.878 88.3089 175.041 89.2423 174.333 90.1436C173.368 91.3025 172.692 92.9763 172.305 95.1652C172.305 95.2296 172.241 95.4549 172.112 95.8412C172.048 96.1631 172.016 96.3884 172.016 96.5172C171.243 96.8391 170.503 97 169.795 97C168.378 97 167.67 96.6781 167.67 96.0343C167.67 94.5536 169.022 90.7231 171.726 84.5427C173.722 79.9718 175.814 75.594 178.003 71.4094C180.192 67.2248 182.638 62.9758 185.342 58.6624C193.196 46.1085 199.602 39.8316 204.559 39.8316C207.456 39.8316 208.905 41.1513 208.905 43.7909C208.905 48.4261 204.849 54.8962 196.737 63.2011C194.162 65.8406 191.265 68.5445 188.046 71.3128C184.827 74.0167 181.415 76.7528 177.81 79.5211C177.166 80.8731 176.554 82.1929 175.975 83.4804C175.46 84.768 174.977 86.0556 174.526 87.3432L184.57 77.4932C187.016 75.0468 189.108 73.3086 190.846 72.2785C192.649 71.2484 194.065 70.7334 195.095 70.7334C196.769 70.7334 197.606 71.9566 197.606 74.403C197.606 76.8494 195.868 79.2958 192.392 81.7422C190.846 82.7723 189.173 83.6092 187.37 84.253C185.632 84.8968 184.022 85.2187 182.542 85.2187C183.25 88.3089 184.441 90.5943 186.115 92.075C187.788 93.4913 189.559 94.1995 191.426 94.1995C195.16 94.1995 199.248 91.2703 203.69 85.4118C204.076 84.8324 204.463 84.5427 204.849 84.5427C205.171 84.5427 205.332 84.7036 205.332 85.0255C205.332 85.3474 205.203 85.6693 204.945 85.9912C203.4 88.2445 201.211 90.6265 198.379 93.1373C196.705 94.6824 195.192 95.809 193.84 96.5172C192.488 97.2253 191.329 97.6438 190.364 97.7725C190.235 97.7725 190.106 97.7725 189.977 97.7725C189.849 97.8369 189.72 97.8691 189.591 97.8691ZM179.065 76.2378C181.383 74.7571 184.022 72.697 186.984 70.0574C189.945 67.4179 192.971 64.5209 196.061 61.3663C203.143 54.0915 206.684 48.6837 206.684 45.1428C206.684 43.7909 206.136 43.1149 205.042 43.1149C203.433 43.1149 200.857 44.5956 197.317 47.557C194.291 50.1322 191.361 53.5443 188.529 57.7933C185.696 62.0423 183.057 66.7741 180.61 71.9888C180.031 73.212 179.612 74.1777 179.355 74.8859C179.162 75.594 179.065 76.0447 179.065 76.2378ZM183.411 83.6736C185.278 83.6736 187.434 82.8366 189.881 81.1628C192.263 79.4246 193.454 77.6541 193.454 75.8515C193.454 74.564 193.035 73.9202 192.198 73.9202C190.911 73.9202 187.402 76.9138 181.672 82.901C181.994 83.4161 182.574 83.6736 183.411 83.6736Z"
+                                                fill="#B3AFFF" />
+                                            <path
+                                                d="M210.924 99.2211C207.899 99.2211 205.162 98.1266 202.716 95.9377C200.205 93.6845 198.95 91.1093 198.95 88.2123C198.95 86.3453 199.465 85.4118 200.495 85.4118C201.139 85.4118 201.815 85.8625 202.523 86.7638C203.424 85.9912 205.034 83.577 207.351 79.5211C208.381 77.7829 209.508 76.0125 210.731 74.2099C211.954 72.3429 213.274 70.7978 214.691 69.5746C216.107 68.287 217.588 67.6432 219.133 67.6432C220.356 67.6432 221.386 67.9329 222.223 68.5123C223.189 69.0918 223.671 69.7999 223.671 70.6368C223.671 71.1519 222.931 71.4094 221.45 71.4094C220.034 71.4094 218.682 71.86 217.394 72.7614C216.171 73.727 215.56 74.918 215.56 76.3344C215.56 76.8494 215.656 77.3966 215.849 77.976L218.264 84.253C218.779 85.4762 219.1 86.6672 219.229 87.826C219.422 88.9205 219.519 89.9183 219.519 90.8196C223.253 90.2402 226.44 88.341 229.079 85.1221C229.208 84.929 229.369 84.8324 229.562 84.8324C229.948 84.8324 230.141 85.0899 230.141 85.6049C230.141 85.7337 230.109 85.8625 230.045 85.9912C230.045 86.12 230.013 86.2487 229.948 86.3775C227.824 89.7252 224.251 91.8819 219.229 92.8476C219.036 93.8776 218.682 94.7789 218.167 95.5515C217.652 96.324 217.04 96.9678 216.332 97.4828C214.723 98.6417 212.92 99.2211 210.924 99.2211ZM216.139 91.3025V90.3368C216.139 89.6286 215.978 88.6629 215.656 87.4397C215.399 86.2165 214.98 84.6393 214.401 82.7079C213.821 80.7765 213.371 79.0383 213.049 77.4932C212.791 75.8837 212.695 74.8537 212.759 74.403C211.085 77.1069 209.411 79.6821 207.738 82.1285C206.128 84.5105 204.68 86.4419 203.392 87.9226C205.388 88.8883 207.512 89.6608 209.766 90.2402C212.019 90.8196 214.143 91.1737 216.139 91.3025ZM209.669 96.5172C210.957 96.5172 212.212 96.2918 213.435 95.8412C214.723 95.3261 215.592 94.4248 216.042 93.1373C213.145 93.1373 210.442 92.8476 207.931 92.2682C205.484 91.6887 203.521 90.7874 202.04 89.5642L201.461 90.1436C203.199 94.3927 205.935 96.5172 209.669 96.5172Z"
+                                                fill="#B3AFFF" />
+                                        </svg></h1>
+                                </a>
                             </div>
-                            <div id="work-list" class="grid grid-cols-3 gap-4">
+
+                            <!-- Right elements -->
+                            <div
+                                class="navbar-element hidden sm:hidden md:block lg:block xl:block 2xl:block relative flex items-center mr-[50px]">
+                                <a href="#home" id="home-nav-btn" type="button"
+                                    class="btn-nav home-button text-white px-[20px] link-active rounded-[100px] hover:bg-[#354462] py-[2px] mx-3"
+                                    data-te-ripple-init>
+                                    Home
+                                </a>
+                                <a href="#commission" id="commission-nav-btn" type="button"
+                                    class="btn-nav commission-button text-white px-[20px] rounded-[100px] hover:bg-[#354462] py-[2px] mx-3"
+                                    data-te-ripple-init>
+                                    Commission
+                                </a>
+                                <a href="#our-works" id="works-nav-btn" type="button"
+                                    class="btn-nav works-button text-white px-[20px] rounded-[100px] hover:bg-[#354462] py-[2px] mx-3"
+                                    data-te-ripple-init>
+                                    Our Works
+                                </a>
+                                <a href="#tos" id="tos-nav-btn" type="button"
+                                    class="btn-nav tos-button text-white px-[20px] rounded-[100px] hover:bg-[#354462] py-[2px] mx-3"
+                                    data-te-ripple-init>
+                                    ToS
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- end navbar -->
+
+                    <!-- home section -->
+                    <div class="main-wrapper m-0 mt-[80px] pt-7 sm:pt-7 md:pt-7 lg:pt-12 xl:pt-12 2xl:pt-12 w-auto">
+                        <div
+                            class="onboarding flex flex-col m-0 mb-[90px] pt-4 px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12">
+                            <!-- <div class="onboard-text text-white mb-5">Let's try<br>Our services</div> -->
+                            <div
+                                class="onboard-text text-white text-3xl sm:text-lg md:text-lg lg:text-4xl xl:text-7xl 2xl:text-7xl">
+                                Explore a dreamy journey<br> with our enchanting<br> chat widget design</div>
+                            <div
+                                class="sub-text text-white text-[14px] sm:text-[14px] md:text-[14px] lg:text-lg xl:text-lg 2xl:text-lg my-5">
+                                Let's try our services</div>
+                            <a href="#commission" type="button" data-te-ripple-init
+                                class="flex flex-row commission-nav-btn items-center justify-center btn btn-primary cms-button rounded-[100px] text-white py-2 px-[20px]">Commission
+                                <div class="ml-3"><svg width="20" height="10" viewBox="0 0 33 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.15381 9.62119C1.39231 9.62119 0.774999 10.2385 0.774999 11C0.774998 11.7615 1.39231 12.3788 2.15381 12.3788L2.15381 9.62119ZM32.3595 11.975C32.898 11.4365 32.898 10.5635 32.3595 10.025L23.5849 1.25034C23.0464 0.711884 22.1734 0.711884 21.6349 1.25034C21.0965 1.7888 21.0965 2.66182 21.6349 3.20027L29.4346 11L21.6349 18.7997C21.0965 19.3382 21.0965 20.2112 21.6349 20.7497C22.1734 21.2881 23.0464 21.2881 23.5849 20.7497L32.3595 11.975ZM2.15381 12.3788L31.3846 12.3788L31.3846 9.62119L2.15381 9.62119L2.15381 12.3788Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="separator-1 w-full mb-8 flex flex-row justify-center items-center opacity-50 px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12">
+                            <div class="line-left w-full animated">
+                                <hr>
+                            </div>
+                            <div class="star animated mx-2">
+                                <svg width="20" height="29" viewBox="0 0 77 79" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.5394 0.578766L48.9357 24.0022L38.5394 37.6554L28.1431 24.0022L38.5394 0.578766Z"
+                                        fill="white" />
+                                    <path
+                                        d="M38.5394 78.4212L48.9357 54.9978L38.5394 41.3446L28.1431 54.9978L38.5394 78.4212Z"
+                                        fill="white" />
+                                    <path d="M77 39.3652L53.5765 49.7615L39.9234 39.3652L53.5765 28.9688L77 39.3652Z"
+                                        fill="white" />
+                                    <path
+                                        d="M0.516358 39.3652L23.9398 49.7615L37.593 39.3652L23.9398 28.9688L0.516358 39.3652Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="line-right animated w-full">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home-porto-section w-full flex flex-col px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 justify-center items-center mb-[80px]">
+                            <div
+                                class="title-section text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-white">
+                                Our Works</div>
+                            <div id="sample-work"
+                                class="work-list-sample m-0 mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-[50px]">
+                                
+                            </div>
+                            <a href="#our-works" type="button" data-te-ripple-init
+                                class="flex flex-row works-nav-btn items-center justify-center btn btn-secondary my-5 showcase-button rounded-[100px] text-white py-2 px-[20px]">More
+                                showcase
+                                <div class="ml-3"><svg width="20" height="10" viewBox="0 0 33 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.15381 9.62119C1.39231 9.62119 0.774999 10.2385 0.774999 11C0.774998 11.7615 1.39231 12.3788 2.15381 12.3788L2.15381 9.62119ZM32.3595 11.975C32.898 11.4365 32.898 10.5635 32.3595 10.025L23.5849 1.25034C23.0464 0.711884 22.1734 0.711884 21.6349 1.25034C21.0965 1.7888 21.0965 2.66182 21.6349 3.20027L29.4346 11L21.6349 18.7997C21.0965 19.3382 21.0965 20.2112 21.6349 20.7497C22.1734 21.2881 23.0464 21.2881 23.5849 20.7497L32.3595 11.975ZM2.15381 12.3788L31.3846 12.3788L31.3846 9.62119L2.15381 9.62119L2.15381 12.3788Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div
+                            class="w-full mb-8 flex flex-row justify-center items-center px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 opacity-50">
+                            <div class="w-full">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div
+                            class="collaborator-section w-full flex flex-col justify-center items-center px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 mb-[80px]">
+                            <div
+                                class="title-section text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-white">
+                                Our Collaborators</div>
+                            <div id="list-collaborator"
+                                class="collaborator-list mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-[30px]">
                                 
                             </div>
                         </div>
+
+
+                        <div class="w-full mb-8 flex flex-row justify-center items-center opacity-50">
+                            <div class="w-full">
+                                <hr>
+                            </div>
+                        </div>
+
                         <div
-                          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-                          id="tabs-tos" role="tabpanel" aria-labelledby="tabs-tos-tab">
-                            <h4 class="font-bold text-white">Term of Services</h4>
-                            <div id="tos-list"></div>
+                            class="inquiries-section w-full mt-20 flex flex-col justify-center items-center px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 mb-[80px]">
+                            <div
+                                class="title-section mx-0 sm:mx-0 md:mx-0 lg:mx-24 xl:mx-24 2xl:mx-24 text-xl sm:text-xl md:text-xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-white">
+                                Embark on a dreamy journey with our chat widget design</div>
+                            <div
+                                class="inquiries text-white text-center mt-8 text-[12px] sm:text-[12px] md:text-[12px] lg:text-lg xl:text-lg 2xl:text-lg">
+                                Have any inquiries, looking to collaborate, or want to discuss something?<br>Feel free
+                                to reach out to us!</div>
+                            <div
+                                class="inquiries-form mt-8 w-[70vw] sm:w-[70vw] md:w-[70vw] lg:w-[50vw] xl:w-[50vw] 2xl:w-[50vw]">
+                                <form action="" class="flex flex-col justify-center items-center">
+                                    <div class="form-title mb-1 text-white text-lg">Get in touch</div>
+                                    <div class="input-container flex flex-col mb-5 w-full">
+                                        <label for="name-input" class="text-gray-300">Name</label>
+                                        <input class="custom-input-text w-full" id="name-input" name="name-input"
+                                            placeholder="Your name" type="text" required>
+                                    </div>
+                                    <div class="input-container flex flex-col mb-5 w-full">
+                                        <label for="email-input" class="text-gray-300">Email</label>
+                                        <input class="custom-input-text w-full" id="email-input" name="email-input"
+                                            placeholder="example@mail.com" type="email" required>
+                                    </div>
+                                    <div class="input-container flex flex-col mb-5 w-full">
+                                        <label for="message-input" class="text-gray-300">Message</label>
+                                        <input class="custom-input-text w-full" id="message-input" name="message-input"
+                                            placeholder="Type your message" type="text" required>
+                                    </div>
+                                    <button type="submit" data-te-ripple-init
+                                        class="flex flex-row items-center justify-center btn btn-primary submit-button rounded-[100px] text-white py-1 px-[20px]">Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- footer -->
+                        <div
+                            class="footer-section flex flex-col justify-center items-center w-full px-16 pt-12 bg-gray-800">
+                            <div
+                                class="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[40px] w-full">
+                                <div class="col-span-1">
+                                    <div class="navigation-list-footbar flex flex-col">
+                                        <a href="#home"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Home</a>
+                                        <a href="#commission"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Commission</a>
+                                        <a href="#our-works" class="text-gray-500 my-4 hover:text-white font-bold text-xl">Our
+                                            Works</a>
+                                        <a href="#tos" class="text-gray-500 my-4 hover:text-white font-bold text-xl">ToS</a>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <div
+                                        class="flex flex-col justify-end sm:justify-center md:justify-center lg:justify-center xl:justify-end 2xl:justify-end items-center sm:items-center md:items-center lg:items-end xl:items-end 2xl:items-end">
+                                        <a href=""
+                                            class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                                            <h1 class="hero-footbar"><svg width="200" height="80" viewBox="0 0 254 100"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M70.1334 3.85311H65.3049V54.0686H70.1334V56H45.9913V54.0686H50.8197V7.42613L31.6992 56.9657H29.4781L8.03993 6.07418V54.0686H15.7654V56H0.314464V54.0686H6.10856V3.85311H0.217896V1.92174H21.7526L36.8173 38.1349L50.8197 1.92174H70.1334V3.85311Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M134.176 54.0686V56H108.778V54.0686H114.476L108.005 40.6456H88.4987L82.8977 54.0686H90.5266V56H74.0134V54.0686H80.4835L102.598 0.956055H105.012L129.54 54.0686H134.176ZM89.3678 38.6177H107.04L97.5761 18.9178L89.3678 38.6177Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M157.311 3.85311V28.7677C163.749 28.7677 168.062 27.8342 170.251 25.9673C172.44 24.1003 173.535 20.9779 173.535 16.6001C173.535 12.2224 172.408 9.00342 170.155 6.94329C167.901 4.88317 163.62 3.85311 157.311 3.85311ZM195.263 56.9657H191.014C182.966 56.9657 177.365 55.2275 174.211 51.751C171.7 49.0471 169.994 45.4741 169.092 41.0319C168.706 39.1649 168.288 37.4589 167.837 35.9138C166.807 32.4373 164.715 30.6991 161.56 30.6991H157.311V54.0686H162.14V56H137.997V54.0686H142.826V3.85311H137.997V1.92174H163.395C179.812 1.92174 188.02 6.71797 188.02 16.3104C188.02 20.1088 186.636 23.199 183.867 25.581C181.099 27.963 177.558 29.154 173.245 29.154V29.83C179.683 29.83 184.157 34.079 186.668 42.577C187.956 47.0835 189.243 50.3025 190.531 52.2338C191.883 54.1008 193.46 55.0343 195.263 55.0343V56.9657Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M248.84 32.4373C248.84 49.1115 241.823 57.4485 227.788 57.4485C219.998 57.4485 213.914 55.4528 209.537 51.4613C205.159 47.4698 202.97 41.4504 202.97 33.403V3.85311H198.141V1.92174H223.249V3.85311H218.421V34.4653C218.421 47.9204 222.927 54.648 231.94 54.648C235.61 54.648 238.925 52.8454 241.887 49.2402C244.913 45.5706 246.426 40.6134 246.426 34.3687V3.85311H238.797V1.92174H253.668V3.85311H248.84V32.4373Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M51.9593 99.5108C48.3541 99.5108 46.5515 97.8691 46.5515 94.5858C46.5515 91.4956 48.0644 87.15 51.0902 81.5491C51.4121 80.9697 51.7984 80.2937 52.249 79.5211C52.6997 78.7486 53.4079 77.5898 54.3735 76.0447C55.3392 74.4352 56.7234 72.1498 58.526 69.1883C64.4488 59.4027 67.4103 51.806 67.4103 46.3982C67.4103 41.8917 65.0604 39.6384 60.3608 39.6384C55.0173 39.6384 48.2575 42.7608 40.0814 49.0055C32.871 54.4777 27.431 59.9178 23.7614 65.3256C21.315 68.9308 20.0918 71.9244 20.0918 74.3064C20.0918 76.3666 21.2506 77.3966 23.5682 77.3966C24.212 77.3966 25.3065 77.1391 26.8516 76.6241C28.3967 76.1091 29.3623 75.8515 29.7486 75.8515C30.4568 75.8515 30.8109 76.0447 30.8109 76.4309C30.8109 77.3323 29.6842 78.1692 27.431 78.9417C25.564 79.5855 24.0511 79.9074 22.8923 79.9074C19.3514 79.9074 17.581 78.0404 17.581 74.3064C17.581 69.2849 20.2849 63.7483 25.6927 57.6967C28.0748 55.0572 30.7143 52.5464 33.6113 50.1644C36.5728 47.718 39.8883 45.4003 43.5579 43.2114C50.5752 39.0912 56.5302 37.0311 61.423 37.0311C68.7622 37.0311 72.4318 40.1856 72.4318 46.4948C72.4318 49.3274 71.5949 52.5786 69.921 56.2482C69.0197 58.2439 67.9575 60.4328 66.7343 62.8148C65.5111 65.1325 64.0626 67.6754 62.3887 70.4437C61.0367 72.7613 59.6526 75.079 58.2363 77.3966C56.8199 79.6499 55.4358 81.9353 54.0838 84.253C51.7018 88.2445 50.5108 91.5278 50.5108 94.103C50.5108 96.2275 51.4121 97.2897 53.2147 97.2897C55.4036 97.2897 58.4294 95.9377 62.2921 93.2338C72.2709 86.3453 82.6037 76.3666 93.2906 63.2977C93.3549 63.1689 93.6768 62.7826 94.2562 62.1388C94.8357 61.4307 95.4794 60.6581 96.1876 59.8212C97.0889 59.113 98.0224 58.7589 98.9881 58.7589C99.6963 58.7589 100.05 59.0486 100.05 59.6281C100.05 60.0787 99.825 60.6581 99.3744 61.3663C93.1296 72.2463 90.0072 81.2272 90.0072 88.3089C90.0072 93.0729 91.2626 95.4549 93.7734 95.4549C95.8979 95.4549 98.7628 93.5557 102.368 89.7574C105.394 86.5384 107.615 83.6414 109.031 81.0662C113.345 73.2764 115.501 67.3213 115.501 63.2011C115.501 62.8792 115.437 62.4607 115.308 61.9457C115.179 61.3663 115.018 60.7547 114.825 60.1109C114.632 59.4671 114.439 58.9199 114.246 58.4692C114.117 57.9542 114.053 57.4392 114.053 56.9241C114.053 54.7353 114.761 53.6408 116.177 53.6408C116.95 53.6408 117.626 54.4777 118.205 56.1516C118.656 57.3104 118.881 58.4692 118.881 59.6281C118.881 59.95 118.881 60.304 118.881 60.6903C118.881 61.0122 118.849 61.3985 118.785 61.8491C119.107 62.4929 119.686 62.9758 120.523 63.2977C121.36 63.5552 121.778 63.9093 121.778 64.3599C121.778 64.8749 121.424 65.1325 120.716 65.1325C119.943 65.1325 119.107 64.9393 118.205 64.553C117.497 67.5789 116.564 70.5403 115.405 73.4373C114.31 76.3344 112.926 79.2314 111.252 82.1285C109.45 85.283 107.486 88.0191 105.362 90.3368C103.237 92.6544 101.048 94.5536 98.795 96.0343C96.9924 97.1931 95.1254 97.7725 93.194 97.7725C88.6875 97.7725 86.4342 94.9721 86.4342 89.3711C86.4342 85.8303 87.8505 79.4568 90.6832 70.2506C86.563 74.3708 82.9899 77.9439 79.9641 80.9697C76.9383 83.9955 74.9104 85.959 73.8803 86.8603C69.7601 90.5943 66.1227 93.4592 62.9681 95.4549C59.8135 97.4506 57.2062 98.6739 55.1461 99.1245C54.631 99.1889 54.0838 99.2533 53.5044 99.3176C52.9894 99.4464 52.4744 99.5108 51.9593 99.5108Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M121.275 98.1588C119.022 98.1588 117.895 96.8391 117.895 94.1995C117.895 90.5299 119.505 86.2165 122.724 81.2594C122.659 80.9375 122.595 80.5834 122.53 80.1971C122.53 79.8108 122.53 79.4568 122.53 79.1349C122.53 76.8172 123.303 74.564 124.848 72.3751C126.393 70.1862 128.292 69.0918 130.546 69.0918C132.477 69.0918 133.765 69.7677 134.408 71.1197C135.116 72.4716 135.471 73.9846 135.471 75.6584C135.471 77.0747 135.31 78.4267 134.988 79.7143C134.666 81.0662 134.183 82.5791 133.539 84.253C132.895 85.9268 132.091 87.6973 131.125 89.5642C132.091 90.1436 133.185 90.4333 134.408 90.4333C135.503 90.4333 136.533 90.3046 137.498 90.0471C138.464 89.7252 139.365 89.1458 140.202 88.3089C141.039 87.4719 141.683 86.7316 142.134 86.0878C142.649 85.444 142.874 85.1543 142.81 85.2187C142.938 85.0899 143.067 85.0255 143.196 85.0255C143.454 85.0255 143.647 85.1865 143.775 85.5084C143.969 85.8303 143.936 86.1522 143.679 86.4741C142.649 87.9548 141.297 89.2745 139.623 90.4333C138.014 91.5278 136.243 92.075 134.312 92.075C132.831 92.075 131.543 91.7531 130.449 91.1093C127.488 95.809 124.43 98.1588 121.275 98.1588ZM129.87 88.6951C130.707 86.635 131.35 84.8646 131.801 83.3839C132.252 81.9032 132.477 80.519 132.477 79.2314V78.4589C132.477 76.7207 132.187 75.1112 131.608 73.6305C131.028 72.0854 130.191 71.3128 129.097 71.3128C127.616 71.3128 126.458 72.2141 125.621 74.0167C125.041 75.2399 124.751 76.5919 124.751 78.0726V78.652C125.782 77.4288 126.812 76.8172 127.842 76.8172C128.807 76.8172 129.516 77.1391 129.966 77.7829C130.159 78.0404 130.256 78.2657 130.256 78.4589C130.256 78.8452 129.87 79.0383 129.097 79.0383C127.938 79.0383 126.715 80.2615 125.427 82.7079C126.329 85.2187 127.809 87.2144 129.87 88.6951ZM122.82 95.8412C123.657 95.8412 124.848 95.0686 126.393 93.5235C127.037 92.8797 127.584 92.2682 128.035 91.6887C128.485 91.1093 128.84 90.5621 129.097 90.0471C126.908 88.5664 125.299 86.9247 124.269 85.1221C122.337 89.178 121.372 92.1072 121.372 93.9098C121.372 95.1974 121.854 95.8412 122.82 95.8412Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M157.248 98.5451C155.059 98.5451 153.514 97.9657 152.613 96.8069C151.776 95.648 151.358 94.1673 151.358 92.3647C151.358 90.884 151.583 89.3389 152.034 87.7294C152.549 86.0556 153.16 84.5105 153.868 83.0942C154.576 81.6778 155.188 80.5512 155.703 79.7143C155.51 79.7787 155.317 79.843 155.124 79.9074C154.931 79.9074 154.705 79.9074 154.448 79.9074C153.546 79.9074 152.549 79.5855 151.454 78.9417C150.295 78.1692 149.716 77.3644 149.716 76.5275C149.33 77.4288 148.782 78.4589 148.074 79.6177C147.43 80.7765 146.658 82.0319 145.757 83.3839C143.375 87.1178 141.797 88.9848 141.025 88.9848C140.767 88.9848 140.638 88.8561 140.638 88.5986C140.638 88.341 140.832 87.9548 141.218 87.4397C142.441 85.7659 143.664 83.8345 144.887 81.6456C146.175 79.4568 147.463 77.0104 148.75 74.3064C148.686 73.9845 148.621 73.6627 148.557 73.3408C148.557 73.0189 148.557 72.6326 148.557 72.1819C148.557 70.7012 148.847 68.9952 149.426 67.0638C150.134 64.6174 151.003 63.3942 152.034 63.3942C152.677 63.3942 153.289 63.9736 153.868 65.1325C154.061 65.5831 154.222 66.0338 154.351 66.4844C154.48 66.8707 154.544 67.2891 154.544 67.7398C154.544 69.2849 153.225 71.6347 150.585 74.7893C151.164 76.785 152.291 77.7829 153.965 77.7829C155.188 77.7829 156.315 77.1713 157.345 75.9481C158.439 74.6605 159.212 74.0167 159.662 74.0167C160.242 74.0167 160.757 74.2421 161.208 74.6927C161.658 75.1434 161.883 75.7228 161.883 76.4309C161.883 76.3666 161.465 76.946 160.628 78.1692C159.856 79.3924 158.954 81.0984 157.924 83.2873C156.894 85.4762 156.154 87.3432 155.703 88.8883C155.317 90.4334 155.124 91.8175 155.124 93.0407C155.124 95.294 156.186 96.4206 158.31 96.4206C160.371 96.4206 162.978 94.8433 166.132 91.6887C167.163 90.5943 168.354 89.2102 169.706 87.5363C171.379 85.4762 172.216 84.4461 172.216 84.4461C172.474 84.4461 172.603 84.6393 172.603 85.0255C172.603 85.5406 172.409 86.0878 172.023 86.6672C171.122 88.0835 170.124 89.4999 169.03 90.9162C167.999 92.2681 167.034 93.3626 166.132 94.1995C163.171 97.0966 160.21 98.5451 157.248 98.5451Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M189.591 97.8691C188.11 97.8691 186.758 97.3863 185.535 96.4206C184.312 95.4549 183.25 94.2639 182.348 92.8476C181.447 91.3668 180.739 89.8861 180.224 88.4054C179.709 86.8603 179.451 85.5727 179.451 84.5427C178.679 85.444 177.81 86.3775 176.844 87.3432C175.878 88.3089 175.041 89.2423 174.333 90.1436C173.368 91.3025 172.692 92.9763 172.305 95.1652C172.305 95.2296 172.241 95.4549 172.112 95.8412C172.048 96.1631 172.016 96.3884 172.016 96.5172C171.243 96.8391 170.503 97 169.795 97C168.378 97 167.67 96.6781 167.67 96.0343C167.67 94.5536 169.022 90.7231 171.726 84.5427C173.722 79.9718 175.814 75.594 178.003 71.4094C180.192 67.2248 182.638 62.9758 185.342 58.6624C193.196 46.1085 199.602 39.8316 204.559 39.8316C207.456 39.8316 208.905 41.1513 208.905 43.7909C208.905 48.4261 204.849 54.8962 196.737 63.2011C194.162 65.8406 191.265 68.5445 188.046 71.3128C184.827 74.0167 181.415 76.7528 177.81 79.5211C177.166 80.8731 176.554 82.1929 175.975 83.4804C175.46 84.768 174.977 86.0556 174.526 87.3432L184.57 77.4932C187.016 75.0468 189.108 73.3086 190.846 72.2785C192.649 71.2484 194.065 70.7334 195.095 70.7334C196.769 70.7334 197.606 71.9566 197.606 74.403C197.606 76.8494 195.868 79.2958 192.392 81.7422C190.846 82.7723 189.173 83.6092 187.37 84.253C185.632 84.8968 184.022 85.2187 182.542 85.2187C183.25 88.3089 184.441 90.5943 186.115 92.075C187.788 93.4913 189.559 94.1995 191.426 94.1995C195.16 94.1995 199.248 91.2703 203.69 85.4118C204.076 84.8324 204.463 84.5427 204.849 84.5427C205.171 84.5427 205.332 84.7036 205.332 85.0255C205.332 85.3474 205.203 85.6693 204.945 85.9912C203.4 88.2445 201.211 90.6265 198.379 93.1373C196.705 94.6824 195.192 95.809 193.84 96.5172C192.488 97.2253 191.329 97.6438 190.364 97.7725C190.235 97.7725 190.106 97.7725 189.977 97.7725C189.849 97.8369 189.72 97.8691 189.591 97.8691ZM179.065 76.2378C181.383 74.7571 184.022 72.697 186.984 70.0574C189.945 67.4179 192.971 64.5209 196.061 61.3663C203.143 54.0915 206.684 48.6837 206.684 45.1428C206.684 43.7909 206.136 43.1149 205.042 43.1149C203.433 43.1149 200.857 44.5956 197.317 47.557C194.291 50.1322 191.361 53.5443 188.529 57.7933C185.696 62.0423 183.057 66.7741 180.61 71.9888C180.031 73.212 179.612 74.1777 179.355 74.8859C179.162 75.594 179.065 76.0447 179.065 76.2378ZM183.411 83.6736C185.278 83.6736 187.434 82.8366 189.881 81.1628C192.263 79.4246 193.454 77.6541 193.454 75.8515C193.454 74.564 193.035 73.9202 192.198 73.9202C190.911 73.9202 187.402 76.9138 181.672 82.901C181.994 83.4161 182.574 83.6736 183.411 83.6736Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M210.924 99.2211C207.899 99.2211 205.162 98.1266 202.716 95.9377C200.205 93.6845 198.95 91.1093 198.95 88.2123C198.95 86.3453 199.465 85.4118 200.495 85.4118C201.139 85.4118 201.815 85.8625 202.523 86.7638C203.424 85.9912 205.034 83.577 207.351 79.5211C208.381 77.7829 209.508 76.0125 210.731 74.2099C211.954 72.3429 213.274 70.7978 214.691 69.5746C216.107 68.287 217.588 67.6432 219.133 67.6432C220.356 67.6432 221.386 67.9329 222.223 68.5123C223.189 69.0918 223.671 69.7999 223.671 70.6368C223.671 71.1519 222.931 71.4094 221.45 71.4094C220.034 71.4094 218.682 71.86 217.394 72.7614C216.171 73.727 215.56 74.918 215.56 76.3344C215.56 76.8494 215.656 77.3966 215.849 77.976L218.264 84.253C218.779 85.4762 219.1 86.6672 219.229 87.826C219.422 88.9205 219.519 89.9183 219.519 90.8196C223.253 90.2402 226.44 88.341 229.079 85.1221C229.208 84.929 229.369 84.8324 229.562 84.8324C229.948 84.8324 230.141 85.0899 230.141 85.6049C230.141 85.7337 230.109 85.8625 230.045 85.9912C230.045 86.12 230.013 86.2487 229.948 86.3775C227.824 89.7252 224.251 91.8819 219.229 92.8476C219.036 93.8776 218.682 94.7789 218.167 95.5515C217.652 96.324 217.04 96.9678 216.332 97.4828C214.723 98.6417 212.92 99.2211 210.924 99.2211ZM216.139 91.3025V90.3368C216.139 89.6286 215.978 88.6629 215.656 87.4397C215.399 86.2165 214.98 84.6393 214.401 82.7079C213.821 80.7765 213.371 79.0383 213.049 77.4932C212.791 75.8837 212.695 74.8537 212.759 74.403C211.085 77.1069 209.411 79.6821 207.738 82.1285C206.128 84.5105 204.68 86.4419 203.392 87.9226C205.388 88.8883 207.512 89.6608 209.766 90.2402C212.019 90.8196 214.143 91.1737 216.139 91.3025ZM209.669 96.5172C210.957 96.5172 212.212 96.2918 213.435 95.8412C214.723 95.3261 215.592 94.4248 216.042 93.1373C213.145 93.1373 210.442 92.8476 207.931 92.2682C205.484 91.6887 203.521 90.7874 202.04 89.5642L201.461 90.1436C203.199 94.3927 205.935 96.5172 209.669 96.5172Z"
+                                                        fill="#B3AFFF" />
+                                                </svg></h1>
+                                        </a>
+                                        <div class="contact-footbar flex flex-col justify-center items-end">
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Email Us</div>
+                                                <a href="mailto:maruhodooo@gmail.com" target="_blank" title="Email"
+                                                    class="contact-item relative ml-5 contact-mail w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-mail w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Twitter/X</div>
+                                                <a href="https://twitter.com/maruu_snk" target="_blank" title="X"
+                                                    class="contact-item relative ml-5 contact-twitter w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-twitter w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Instagram</div>
+                                                <a href="https://instagram.com/maruhodooo" target="_blank"
+                                                    title="Instagram"
+                                                    class="contact-item relative ml-5 contact-instagram w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-instagram w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 py-5 text-gray-500 font-bold text-center">Copyright ©️ Maruhodo 2024</div>
+                        </div>
+
+                    </div>
+                    <!-- end home section -->
+
+                    <!-- commission section -->
+                    <div class="commission-wrapper hidden m-0 mt-[80px] pt-7 sm:pt-7 md:pt-7 lg:pt-12 xl:pt-12 2xl:pt-12 w-auto">
+                        <div class="commission-section w-full flex flex-col px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 justify-center items-start">
+                            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                                <div class="flex flex-col justify-center items-start">
+                                    <div class="title-page text-start text-5xl sm:text-5xl md:text-5xl lg:text-8xl xl:text-8xl 2xl:text-8xl text-white">Our<br>Services</div>
+                                    <div class="sub-title-page mt-8 text-gray-400 text-start text-[14px] sm:text-[14px] md:text-[14px] lg:text-xl xl:text-xl 2xl:text-xl">We offer chat widget-related services compatible with platforms such as YouTube and Twitch.</div>
+                                    <div class="sub-title-page mt-6 mb-16">
+                                        <div class="text-[14px] sm:text-[14px] md:text-[14px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">For International commission:</div>
+                                        <a href="https://vgen.co/maru-maru" target="_blank" type="button" data-te-ripple-init
+                                            class="flex flex-row items-center justify-center btn btn-secondary mt-2 showcase-button rounded-[100px] text-white py-2 px-[20px]">VGEN Commission
+                                            <div class="ml-3"><svg width="20" height="10" viewBox="0 0 33 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.15381 9.62119C1.39231 9.62119 0.774999 10.2385 0.774999 11C0.774998 11.7615 1.39231 12.3788 2.15381 12.3788L2.15381 9.62119ZM32.3595 11.975C32.898 11.4365 32.898 10.5635 32.3595 10.025L23.5849 1.25034C23.0464 0.711884 22.1734 0.711884 21.6349 1.25034C21.0965 1.7888 21.0965 2.66182 21.6349 3.20027L29.4346 11L21.6349 18.7997C21.0965 19.3382 21.0965 20.2112 21.6349 20.7497C22.1734 21.2881 23.0464 21.2881 23.5849 20.7497L32.3595 11.975ZM2.15381 12.3788L31.3846 12.3788L31.3846 9.62119L2.15381 9.62119L2.15381 12.3788Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full mt-8 flex flex-col">
+                                <div class="w-full cms-wrapper">
+                                    <div class="yt-section cms-card w-full mb-14 px-4 sm:px-4 md:px-4 lg:px-8 xl:px-8 2xl:px-8 py-4 bg-[#354462] rounded-2xl">
+                                        <div class="w-full grid grid-cols-2 items-end justify-between">
+                                            <div class="col-span-1 flex flex-col items-start">
+                                                <div class="cms-title text-start text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-white">Youtube</div>
+                                                <div class="cms-status">
+                                                    <div class="available flex flex-row justify-start items-center">
+                                                        <svg class="w-[8px] sm:w-[8px] md:w-[8px] lg:w-[10px] xl:w-[10px] 2xl:w-[10px] h-[8px] sm:h-[8px] md:h-[8px] lg:h-[10px] xl:h-[10px] 2xl:h-[10px]" width="10" height="10" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.6 14.6L15.65 7.55L14.25 6.15L8.6 11.8L5.75 8.95L4.35 10.35L8.6 14.6ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6867 3.825 17.9743 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.263333 12.6833 0.000666667 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31333 4.88333 2.02567 3.825 2.925 2.925C3.825 2.025 4.88333 1.31267 6.1 0.788C7.31667 0.263333 8.61667 0.000666667 10 0C11.3833 0 12.6833 0.262667 13.9 0.788C15.1167 1.31333 16.175 2.02567 17.075 2.925C17.975 3.825 18.6877 4.88333 19.213 6.1C19.7383 7.31667 20.0007 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6867 15.1167 17.9743 16.175 17.075 17.075C16.175 17.975 15.1167 18.6877 13.9 19.213C12.6833 19.7383 11.3833 20.0007 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z"
+                                                                fill="#96B68D" />
+                                                        </svg>
+                                                        <div class="text-[#96B68D] ml-1 text-[8px] sm:text-[8px] md:text-[8px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px]">Open for Commission</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-span-1 flex flex-col justify-end items-end">
+                                                <div class="text-white font-thin text-[10px] sm:text-[10px] md:text-[10px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px]">Start from</div>
+                                                <div class="cms-price text-white text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-6xl 2xl:text-6xl">130K</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="w-full mt-3 mb-4 flex flex-row justify-center items-center opacity-50">
+                                            <div class="w-full">
+                                                <hr>
+                                            </div>
+                                        </div>
+    
+                                        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                                            <div class="point-section mx-6 mb-3 col-span-1 flex flex-col items-start">
+                                                <div class="flex flex-col mb-5">
+                                                    <div class="point-title text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl text-white">Detail</div>
+                                                    <div class="sub-point mt-1 text-[12px] sm:text-[12px] md:text-[12px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1 flex">Basic/Chat-only</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">130K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Superchat/Supersticker Event</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Membership Join/Rejoin/Gift Event</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col mb-5">
+                                                    <div class="point-title text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl text-white">Includes</div>
+                                                    <div class="sub-point mt-1 text-[12px] sm:text-[12px] md:text-[12px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">
+                                                        <ul>
+                                                            <li>Customized Livechat CSS</li>
+                                                            <li>Livechat Editor App</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="https://forms.fillout.com/t/8FXszcUB6Rus" target="_blank" type="button" data-te-ripple-init
+                                                    class="flex flex-row items-center mt-2 justify-center btn btn-primary cms-button rounded-[100px] text-white text-[10px] sm:text-[10px] md:text-[10px] lg:text-xl xl:text-xl 2xl:text-xl py-2 px-[20px]">Make an Order
+                                                    <div class="ml-3">
+                                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="white"/>
+                                                        </svg>                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-span-1 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex flex flex-col items-end pr-8 justify-center">
+                                                <div class="glow">
+                                                    <svg class="w-[160px] h-[160px]" width="330" height="329" viewBox="0 0 330 329" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="27.8418" y="164.387" width="193.988" height="193.988" transform="rotate(-45 27.8418 164.387)" fill="#D13F3F"/>
+                                                        <rect x="3.94019" y="164.387" width="227.791" height="227.791" transform="rotate(-45 3.94019 164.387)" stroke="#D13F3F" stroke-width="4.35141"/>
+                                                        <path d="M228.437 163.251C229.345 163.736 229.345 165.037 228.437 165.522L141.803 211.861C140.945 212.32 139.908 211.698 139.908 210.726L139.908 118.048C139.908 117.075 140.945 116.454 141.803 116.912L228.437 163.251Z" fill="white"/>
+                                                    </svg>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full cms-wrapper">
+                                    <div class="tw-section cms-card w-full mb-16 px-4 sm:px-4 md:px-4 lg:px-8 xl:px-8 2xl:px-8 py-4 bg-[#354462] rounded-2xl">
+                                        <div class="w-full grid grid-cols-2 items-end justify-between">
+                                            <div class="col-span-1 flex flex-col items-start">
+                                                <div class="cms-title text-start text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-white">Twitch</div>
+                                                <div class="cms-status">
+                                                    <div class="available flex flex-row justify-start items-center">
+                                                        <svg class="w-[8px] sm:w-[8px] md:w-[8px] lg:w-[10px] xl:w-[10px] 2xl:w-[10px] h-[8px] sm:h-[8px] md:h-[8px] lg:h-[10px] xl:h-[10px] 2xl:h-[10px]" width="10" height="10" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.6 14.6L15.65 7.55L14.25 6.15L8.6 11.8L5.75 8.95L4.35 10.35L8.6 14.6ZM10 20C8.61667 20 7.31667 19.7373 6.1 19.212C4.88333 18.6867 3.825 17.9743 2.925 17.075C2.025 16.175 1.31267 15.1167 0.788 13.9C0.263333 12.6833 0.000666667 11.3833 0 10C0 8.61667 0.262667 7.31667 0.788 6.1C1.31333 4.88333 2.02567 3.825 2.925 2.925C3.825 2.025 4.88333 1.31267 6.1 0.788C7.31667 0.263333 8.61667 0.000666667 10 0C11.3833 0 12.6833 0.262667 13.9 0.788C15.1167 1.31333 16.175 2.02567 17.075 2.925C17.975 3.825 18.6877 4.88333 19.213 6.1C19.7383 7.31667 20.0007 8.61667 20 10C20 11.3833 19.7373 12.6833 19.212 13.9C18.6867 15.1167 17.9743 16.175 17.075 17.075C16.175 17.975 15.1167 18.6877 13.9 19.213C12.6833 19.7383 11.3833 20.0007 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z"
+                                                                fill="#96B68D" />
+                                                        </svg>
+                                                        <div class="text-[#96B68D] ml-1 text-[8px] sm:text-[8px] md:text-[8px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px]">Open for Commission</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-span-1 flex flex-col justify-end items-end">
+                                                <div class="text-white font-thin text-[10px] sm:text-[10px] md:text-[10px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px]">Start from</div>
+                                                <div class="cms-price text-white text-2xl sm:text-2xl md:text-2xl lg:text-6xl xl:text-6xl 2xl:text-6xl">160K</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="w-full mt-3 mb-4 flex flex-row justify-center items-center opacity-50">
+                                            <div class="w-full">
+                                                <hr>
+                                            </div>
+                                        </div>
+    
+                                        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                                            <div class="point-section mx-6 mb-3 col-span-1 flex flex-col items-start">
+                                                <div class="flex flex-col mb-5">
+                                                    <div class="point-title text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl text-white">Detail</div>
+                                                    <div class="sub-point mt-1 text-[12px] sm:text-[12px] md:text-[12px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1 flex">Basic/Chat-only</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">160K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Follow Alert (In-chat alert)</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Subs Alert (In-chat alert)</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Tip Alert (In-chat alert)</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="grid grid-cols-2 gap-5">
+                                                                    <div class="col-span-1">Cheers Alert (In-chat alert)</div>
+                                                                    <div class="col-span-1 flex justify-end text-white">15K</div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col mb-5">
+                                                    <div class="point-title text-lg sm:text-lg md:text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl text-white">Includes</div>
+                                                    <div class="sub-point mt-1 text-[12px] sm:text-[12px] md:text-[12px] lg:text-lg xl:text-lg 2xl:text-lg text-gray-400">
+                                                        <ul>
+                                                            <li>A StreamElements widget, compatible with only the Twitch</li>
+                                                            <li>Editable Colors and Fonts</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button type="button" data-te-ripple-init
+                                                    class="flex flex-row items-center mt-2 justify-center btn btn-primary cms-button rounded-[100px] text-white text-[10px] sm:text-[10px] md:text-[10px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px] py-2 px-[20px]">Make an Order
+                                                    <div class="ml-3">
+                                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="white"/>
+                                                        </svg>                                                        
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <div class="col-span-1 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex flex flex-col items-end pr-8 justify-center">
+                                                <div class="glow">
+                                                    <svg class="w-[160px] h-[160px]" width="330" height="330" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="27.8418" y="165.002" width="193.988" height="193.988" transform="rotate(-45 27.8418 165.002)" fill="#6C63FF"/>
+                                                        <rect x="3.94019" y="165.002" width="227.791" height="227.791" transform="rotate(-45 3.94019 165.002)" stroke="#6C63FF" stroke-width="4.35141"/>
+                                                        <path d="M167.095 144.175H174.712V166.504H167.095M188.029 144.175H195.646V166.504H188.029M142.38 123.672L123.363 142.297V209.389H146.161V228.014L165.231 209.389H180.412L214.663 175.843V123.672M207.045 172.139L191.864 187.007H176.63L163.313 200.05V187.007H146.161V131.132H207.045V172.139Z" fill="white"/>
+                                                    </svg>                                                                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer -->
+                        <div
+                            class="footer-section mt-5 flex flex-col justify-center items-center w-full px-16 pt-12 bg-gray-800">
+                            <div
+                                class="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[40px] w-full">
+                                <div class="col-span-1">
+                                    <div class="navigation-list-footbar flex flex-col">
+                                        <a href="#home"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Home</a>
+                                        <a href="#commission"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Commission</a>
+                                        <a href="#our-works" class="text-gray-500 my-4 hover:text-white font-bold text-xl">Our
+                                            Works</a>
+                                        <a href="#tos" class="text-gray-500 my-4 hover:text-white font-bold text-xl">ToS</a>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <div
+                                        class="flex flex-col justify-end sm:justify-center md:justify-center lg:justify-center xl:justify-end 2xl:justify-end items-center sm:items-center md:items-center lg:items-end xl:items-end 2xl:items-end">
+                                        <a href=""
+                                            class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                                            <h1 class="hero-footbar"><svg width="200" height="80" viewBox="0 0 254 100"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M70.1334 3.85311H65.3049V54.0686H70.1334V56H45.9913V54.0686H50.8197V7.42613L31.6992 56.9657H29.4781L8.03993 6.07418V54.0686H15.7654V56H0.314464V54.0686H6.10856V3.85311H0.217896V1.92174H21.7526L36.8173 38.1349L50.8197 1.92174H70.1334V3.85311Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M134.176 54.0686V56H108.778V54.0686H114.476L108.005 40.6456H88.4987L82.8977 54.0686H90.5266V56H74.0134V54.0686H80.4835L102.598 0.956055H105.012L129.54 54.0686H134.176ZM89.3678 38.6177H107.04L97.5761 18.9178L89.3678 38.6177Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M157.311 3.85311V28.7677C163.749 28.7677 168.062 27.8342 170.251 25.9673C172.44 24.1003 173.535 20.9779 173.535 16.6001C173.535 12.2224 172.408 9.00342 170.155 6.94329C167.901 4.88317 163.62 3.85311 157.311 3.85311ZM195.263 56.9657H191.014C182.966 56.9657 177.365 55.2275 174.211 51.751C171.7 49.0471 169.994 45.4741 169.092 41.0319C168.706 39.1649 168.288 37.4589 167.837 35.9138C166.807 32.4373 164.715 30.6991 161.56 30.6991H157.311V54.0686H162.14V56H137.997V54.0686H142.826V3.85311H137.997V1.92174H163.395C179.812 1.92174 188.02 6.71797 188.02 16.3104C188.02 20.1088 186.636 23.199 183.867 25.581C181.099 27.963 177.558 29.154 173.245 29.154V29.83C179.683 29.83 184.157 34.079 186.668 42.577C187.956 47.0835 189.243 50.3025 190.531 52.2338C191.883 54.1008 193.46 55.0343 195.263 55.0343V56.9657Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M248.84 32.4373C248.84 49.1115 241.823 57.4485 227.788 57.4485C219.998 57.4485 213.914 55.4528 209.537 51.4613C205.159 47.4698 202.97 41.4504 202.97 33.403V3.85311H198.141V1.92174H223.249V3.85311H218.421V34.4653C218.421 47.9204 222.927 54.648 231.94 54.648C235.61 54.648 238.925 52.8454 241.887 49.2402C244.913 45.5706 246.426 40.6134 246.426 34.3687V3.85311H238.797V1.92174H253.668V3.85311H248.84V32.4373Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M51.9593 99.5108C48.3541 99.5108 46.5515 97.8691 46.5515 94.5858C46.5515 91.4956 48.0644 87.15 51.0902 81.5491C51.4121 80.9697 51.7984 80.2937 52.249 79.5211C52.6997 78.7486 53.4079 77.5898 54.3735 76.0447C55.3392 74.4352 56.7234 72.1498 58.526 69.1883C64.4488 59.4027 67.4103 51.806 67.4103 46.3982C67.4103 41.8917 65.0604 39.6384 60.3608 39.6384C55.0173 39.6384 48.2575 42.7608 40.0814 49.0055C32.871 54.4777 27.431 59.9178 23.7614 65.3256C21.315 68.9308 20.0918 71.9244 20.0918 74.3064C20.0918 76.3666 21.2506 77.3966 23.5682 77.3966C24.212 77.3966 25.3065 77.1391 26.8516 76.6241C28.3967 76.1091 29.3623 75.8515 29.7486 75.8515C30.4568 75.8515 30.8109 76.0447 30.8109 76.4309C30.8109 77.3323 29.6842 78.1692 27.431 78.9417C25.564 79.5855 24.0511 79.9074 22.8923 79.9074C19.3514 79.9074 17.581 78.0404 17.581 74.3064C17.581 69.2849 20.2849 63.7483 25.6927 57.6967C28.0748 55.0572 30.7143 52.5464 33.6113 50.1644C36.5728 47.718 39.8883 45.4003 43.5579 43.2114C50.5752 39.0912 56.5302 37.0311 61.423 37.0311C68.7622 37.0311 72.4318 40.1856 72.4318 46.4948C72.4318 49.3274 71.5949 52.5786 69.921 56.2482C69.0197 58.2439 67.9575 60.4328 66.7343 62.8148C65.5111 65.1325 64.0626 67.6754 62.3887 70.4437C61.0367 72.7613 59.6526 75.079 58.2363 77.3966C56.8199 79.6499 55.4358 81.9353 54.0838 84.253C51.7018 88.2445 50.5108 91.5278 50.5108 94.103C50.5108 96.2275 51.4121 97.2897 53.2147 97.2897C55.4036 97.2897 58.4294 95.9377 62.2921 93.2338C72.2709 86.3453 82.6037 76.3666 93.2906 63.2977C93.3549 63.1689 93.6768 62.7826 94.2562 62.1388C94.8357 61.4307 95.4794 60.6581 96.1876 59.8212C97.0889 59.113 98.0224 58.7589 98.9881 58.7589C99.6963 58.7589 100.05 59.0486 100.05 59.6281C100.05 60.0787 99.825 60.6581 99.3744 61.3663C93.1296 72.2463 90.0072 81.2272 90.0072 88.3089C90.0072 93.0729 91.2626 95.4549 93.7734 95.4549C95.8979 95.4549 98.7628 93.5557 102.368 89.7574C105.394 86.5384 107.615 83.6414 109.031 81.0662C113.345 73.2764 115.501 67.3213 115.501 63.2011C115.501 62.8792 115.437 62.4607 115.308 61.9457C115.179 61.3663 115.018 60.7547 114.825 60.1109C114.632 59.4671 114.439 58.9199 114.246 58.4692C114.117 57.9542 114.053 57.4392 114.053 56.9241C114.053 54.7353 114.761 53.6408 116.177 53.6408C116.95 53.6408 117.626 54.4777 118.205 56.1516C118.656 57.3104 118.881 58.4692 118.881 59.6281C118.881 59.95 118.881 60.304 118.881 60.6903C118.881 61.0122 118.849 61.3985 118.785 61.8491C119.107 62.4929 119.686 62.9758 120.523 63.2977C121.36 63.5552 121.778 63.9093 121.778 64.3599C121.778 64.8749 121.424 65.1325 120.716 65.1325C119.943 65.1325 119.107 64.9393 118.205 64.553C117.497 67.5789 116.564 70.5403 115.405 73.4373C114.31 76.3344 112.926 79.2314 111.252 82.1285C109.45 85.283 107.486 88.0191 105.362 90.3368C103.237 92.6544 101.048 94.5536 98.795 96.0343C96.9924 97.1931 95.1254 97.7725 93.194 97.7725C88.6875 97.7725 86.4342 94.9721 86.4342 89.3711C86.4342 85.8303 87.8505 79.4568 90.6832 70.2506C86.563 74.3708 82.9899 77.9439 79.9641 80.9697C76.9383 83.9955 74.9104 85.959 73.8803 86.8603C69.7601 90.5943 66.1227 93.4592 62.9681 95.4549C59.8135 97.4506 57.2062 98.6739 55.1461 99.1245C54.631 99.1889 54.0838 99.2533 53.5044 99.3176C52.9894 99.4464 52.4744 99.5108 51.9593 99.5108Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M121.275 98.1588C119.022 98.1588 117.895 96.8391 117.895 94.1995C117.895 90.5299 119.505 86.2165 122.724 81.2594C122.659 80.9375 122.595 80.5834 122.53 80.1971C122.53 79.8108 122.53 79.4568 122.53 79.1349C122.53 76.8172 123.303 74.564 124.848 72.3751C126.393 70.1862 128.292 69.0918 130.546 69.0918C132.477 69.0918 133.765 69.7677 134.408 71.1197C135.116 72.4716 135.471 73.9846 135.471 75.6584C135.471 77.0747 135.31 78.4267 134.988 79.7143C134.666 81.0662 134.183 82.5791 133.539 84.253C132.895 85.9268 132.091 87.6973 131.125 89.5642C132.091 90.1436 133.185 90.4333 134.408 90.4333C135.503 90.4333 136.533 90.3046 137.498 90.0471C138.464 89.7252 139.365 89.1458 140.202 88.3089C141.039 87.4719 141.683 86.7316 142.134 86.0878C142.649 85.444 142.874 85.1543 142.81 85.2187C142.938 85.0899 143.067 85.0255 143.196 85.0255C143.454 85.0255 143.647 85.1865 143.775 85.5084C143.969 85.8303 143.936 86.1522 143.679 86.4741C142.649 87.9548 141.297 89.2745 139.623 90.4333C138.014 91.5278 136.243 92.075 134.312 92.075C132.831 92.075 131.543 91.7531 130.449 91.1093C127.488 95.809 124.43 98.1588 121.275 98.1588ZM129.87 88.6951C130.707 86.635 131.35 84.8646 131.801 83.3839C132.252 81.9032 132.477 80.519 132.477 79.2314V78.4589C132.477 76.7207 132.187 75.1112 131.608 73.6305C131.028 72.0854 130.191 71.3128 129.097 71.3128C127.616 71.3128 126.458 72.2141 125.621 74.0167C125.041 75.2399 124.751 76.5919 124.751 78.0726V78.652C125.782 77.4288 126.812 76.8172 127.842 76.8172C128.807 76.8172 129.516 77.1391 129.966 77.7829C130.159 78.0404 130.256 78.2657 130.256 78.4589C130.256 78.8452 129.87 79.0383 129.097 79.0383C127.938 79.0383 126.715 80.2615 125.427 82.7079C126.329 85.2187 127.809 87.2144 129.87 88.6951ZM122.82 95.8412C123.657 95.8412 124.848 95.0686 126.393 93.5235C127.037 92.8797 127.584 92.2682 128.035 91.6887C128.485 91.1093 128.84 90.5621 129.097 90.0471C126.908 88.5664 125.299 86.9247 124.269 85.1221C122.337 89.178 121.372 92.1072 121.372 93.9098C121.372 95.1974 121.854 95.8412 122.82 95.8412Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M157.248 98.5451C155.059 98.5451 153.514 97.9657 152.613 96.8069C151.776 95.648 151.358 94.1673 151.358 92.3647C151.358 90.884 151.583 89.3389 152.034 87.7294C152.549 86.0556 153.16 84.5105 153.868 83.0942C154.576 81.6778 155.188 80.5512 155.703 79.7143C155.51 79.7787 155.317 79.843 155.124 79.9074C154.931 79.9074 154.705 79.9074 154.448 79.9074C153.546 79.9074 152.549 79.5855 151.454 78.9417C150.295 78.1692 149.716 77.3644 149.716 76.5275C149.33 77.4288 148.782 78.4589 148.074 79.6177C147.43 80.7765 146.658 82.0319 145.757 83.3839C143.375 87.1178 141.797 88.9848 141.025 88.9848C140.767 88.9848 140.638 88.8561 140.638 88.5986C140.638 88.341 140.832 87.9548 141.218 87.4397C142.441 85.7659 143.664 83.8345 144.887 81.6456C146.175 79.4568 147.463 77.0104 148.75 74.3064C148.686 73.9845 148.621 73.6627 148.557 73.3408C148.557 73.0189 148.557 72.6326 148.557 72.1819C148.557 70.7012 148.847 68.9952 149.426 67.0638C150.134 64.6174 151.003 63.3942 152.034 63.3942C152.677 63.3942 153.289 63.9736 153.868 65.1325C154.061 65.5831 154.222 66.0338 154.351 66.4844C154.48 66.8707 154.544 67.2891 154.544 67.7398C154.544 69.2849 153.225 71.6347 150.585 74.7893C151.164 76.785 152.291 77.7829 153.965 77.7829C155.188 77.7829 156.315 77.1713 157.345 75.9481C158.439 74.6605 159.212 74.0167 159.662 74.0167C160.242 74.0167 160.757 74.2421 161.208 74.6927C161.658 75.1434 161.883 75.7228 161.883 76.4309C161.883 76.3666 161.465 76.946 160.628 78.1692C159.856 79.3924 158.954 81.0984 157.924 83.2873C156.894 85.4762 156.154 87.3432 155.703 88.8883C155.317 90.4334 155.124 91.8175 155.124 93.0407C155.124 95.294 156.186 96.4206 158.31 96.4206C160.371 96.4206 162.978 94.8433 166.132 91.6887C167.163 90.5943 168.354 89.2102 169.706 87.5363C171.379 85.4762 172.216 84.4461 172.216 84.4461C172.474 84.4461 172.603 84.6393 172.603 85.0255C172.603 85.5406 172.409 86.0878 172.023 86.6672C171.122 88.0835 170.124 89.4999 169.03 90.9162C167.999 92.2681 167.034 93.3626 166.132 94.1995C163.171 97.0966 160.21 98.5451 157.248 98.5451Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M189.591 97.8691C188.11 97.8691 186.758 97.3863 185.535 96.4206C184.312 95.4549 183.25 94.2639 182.348 92.8476C181.447 91.3668 180.739 89.8861 180.224 88.4054C179.709 86.8603 179.451 85.5727 179.451 84.5427C178.679 85.444 177.81 86.3775 176.844 87.3432C175.878 88.3089 175.041 89.2423 174.333 90.1436C173.368 91.3025 172.692 92.9763 172.305 95.1652C172.305 95.2296 172.241 95.4549 172.112 95.8412C172.048 96.1631 172.016 96.3884 172.016 96.5172C171.243 96.8391 170.503 97 169.795 97C168.378 97 167.67 96.6781 167.67 96.0343C167.67 94.5536 169.022 90.7231 171.726 84.5427C173.722 79.9718 175.814 75.594 178.003 71.4094C180.192 67.2248 182.638 62.9758 185.342 58.6624C193.196 46.1085 199.602 39.8316 204.559 39.8316C207.456 39.8316 208.905 41.1513 208.905 43.7909C208.905 48.4261 204.849 54.8962 196.737 63.2011C194.162 65.8406 191.265 68.5445 188.046 71.3128C184.827 74.0167 181.415 76.7528 177.81 79.5211C177.166 80.8731 176.554 82.1929 175.975 83.4804C175.46 84.768 174.977 86.0556 174.526 87.3432L184.57 77.4932C187.016 75.0468 189.108 73.3086 190.846 72.2785C192.649 71.2484 194.065 70.7334 195.095 70.7334C196.769 70.7334 197.606 71.9566 197.606 74.403C197.606 76.8494 195.868 79.2958 192.392 81.7422C190.846 82.7723 189.173 83.6092 187.37 84.253C185.632 84.8968 184.022 85.2187 182.542 85.2187C183.25 88.3089 184.441 90.5943 186.115 92.075C187.788 93.4913 189.559 94.1995 191.426 94.1995C195.16 94.1995 199.248 91.2703 203.69 85.4118C204.076 84.8324 204.463 84.5427 204.849 84.5427C205.171 84.5427 205.332 84.7036 205.332 85.0255C205.332 85.3474 205.203 85.6693 204.945 85.9912C203.4 88.2445 201.211 90.6265 198.379 93.1373C196.705 94.6824 195.192 95.809 193.84 96.5172C192.488 97.2253 191.329 97.6438 190.364 97.7725C190.235 97.7725 190.106 97.7725 189.977 97.7725C189.849 97.8369 189.72 97.8691 189.591 97.8691ZM179.065 76.2378C181.383 74.7571 184.022 72.697 186.984 70.0574C189.945 67.4179 192.971 64.5209 196.061 61.3663C203.143 54.0915 206.684 48.6837 206.684 45.1428C206.684 43.7909 206.136 43.1149 205.042 43.1149C203.433 43.1149 200.857 44.5956 197.317 47.557C194.291 50.1322 191.361 53.5443 188.529 57.7933C185.696 62.0423 183.057 66.7741 180.61 71.9888C180.031 73.212 179.612 74.1777 179.355 74.8859C179.162 75.594 179.065 76.0447 179.065 76.2378ZM183.411 83.6736C185.278 83.6736 187.434 82.8366 189.881 81.1628C192.263 79.4246 193.454 77.6541 193.454 75.8515C193.454 74.564 193.035 73.9202 192.198 73.9202C190.911 73.9202 187.402 76.9138 181.672 82.901C181.994 83.4161 182.574 83.6736 183.411 83.6736Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M210.924 99.2211C207.899 99.2211 205.162 98.1266 202.716 95.9377C200.205 93.6845 198.95 91.1093 198.95 88.2123C198.95 86.3453 199.465 85.4118 200.495 85.4118C201.139 85.4118 201.815 85.8625 202.523 86.7638C203.424 85.9912 205.034 83.577 207.351 79.5211C208.381 77.7829 209.508 76.0125 210.731 74.2099C211.954 72.3429 213.274 70.7978 214.691 69.5746C216.107 68.287 217.588 67.6432 219.133 67.6432C220.356 67.6432 221.386 67.9329 222.223 68.5123C223.189 69.0918 223.671 69.7999 223.671 70.6368C223.671 71.1519 222.931 71.4094 221.45 71.4094C220.034 71.4094 218.682 71.86 217.394 72.7614C216.171 73.727 215.56 74.918 215.56 76.3344C215.56 76.8494 215.656 77.3966 215.849 77.976L218.264 84.253C218.779 85.4762 219.1 86.6672 219.229 87.826C219.422 88.9205 219.519 89.9183 219.519 90.8196C223.253 90.2402 226.44 88.341 229.079 85.1221C229.208 84.929 229.369 84.8324 229.562 84.8324C229.948 84.8324 230.141 85.0899 230.141 85.6049C230.141 85.7337 230.109 85.8625 230.045 85.9912C230.045 86.12 230.013 86.2487 229.948 86.3775C227.824 89.7252 224.251 91.8819 219.229 92.8476C219.036 93.8776 218.682 94.7789 218.167 95.5515C217.652 96.324 217.04 96.9678 216.332 97.4828C214.723 98.6417 212.92 99.2211 210.924 99.2211ZM216.139 91.3025V90.3368C216.139 89.6286 215.978 88.6629 215.656 87.4397C215.399 86.2165 214.98 84.6393 214.401 82.7079C213.821 80.7765 213.371 79.0383 213.049 77.4932C212.791 75.8837 212.695 74.8537 212.759 74.403C211.085 77.1069 209.411 79.6821 207.738 82.1285C206.128 84.5105 204.68 86.4419 203.392 87.9226C205.388 88.8883 207.512 89.6608 209.766 90.2402C212.019 90.8196 214.143 91.1737 216.139 91.3025ZM209.669 96.5172C210.957 96.5172 212.212 96.2918 213.435 95.8412C214.723 95.3261 215.592 94.4248 216.042 93.1373C213.145 93.1373 210.442 92.8476 207.931 92.2682C205.484 91.6887 203.521 90.7874 202.04 89.5642L201.461 90.1436C203.199 94.3927 205.935 96.5172 209.669 96.5172Z"
+                                                        fill="#B3AFFF" />
+                                                </svg></h1>
+                                        </a>
+                                        <div class="contact-footbar flex flex-col justify-center items-end">
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Email Us</div>
+                                                <a href="mailto:maruhodooo@gmail.com" target="_blank" title="Email"
+                                                    class="contact-item relative ml-5 contact-mail w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-mail w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Twitter/X</div>
+                                                <a href="https://twitter.com/maruu_snk" target="_blank" title="X"
+                                                    class="contact-item relative ml-5 contact-twitter w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-twitter w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Instagram</div>
+                                                <a href="https://instagram.com/maruhodooo" target="_blank"
+                                                    title="Instagram"
+                                                    class="contact-item relative ml-5 contact-instagram w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-instagram w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 py-5 text-gray-500 font-bold text-center">Copyright ©️ Maruhodo 2024</div>
+                        </div>
+                    </div>
+                    <!-- end commission section -->
+
+                    <!-- work section -->
+                    <div class="work-wrapper hidden m-0 mt-[80px] pt-7 sm:pt-7 md:pt-7 lg:pt-12 xl:pt-12 2xl:pt-12 w-auto">
+                        <div class="work-section w-full flex flex-col px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 justify-center items-start mb-[80px]">
+                            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                                <div class="flex flex-col justify-center items-start">
+                                    <div class="title-page text-start text-5xl sm:text-5xl md:text-5xl lg:text-8xl xl:text-8xl 2xl:text-8xl text-white">Our Works</div>
+                                    <div class="sub-title-page mt-8 text-gray-400 text-start text-[14px] sm:text-[14px] md:text-[14px] lg:text-xl xl:text-xl 2xl:text-xl">We have worked on more than <b class="text-white">50+ Chat Widget</b> projects for YouTube and Twitch Streamers</div>
+                                </div>
+                            </div>
+                            <div class="w-full mt-16 mb-8 flex flex-row justify-center items-center opacity-50">
+                                <div class="w-full">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div id="type-filter" class="flex filter-col grid-cols-3 gap-3 mt-6">
+                                <button id="filter-youtube" class="bg-transparent border-[1px] border-gray-600 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
+                                    Youtube
+                                </button>
+                                <button id="filter-twitch" class="bg-transparent border-[1px] border-gray-600 text-xs text-white data-[btn-active]:bg-gray-600 data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
+                                    Twitch
+                                </button>
+                            </div>
+                            <div id="list-work"
+                                class="work-list m-0 mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-[30px]">
+                                
+                            </div>
+                        </div>
+                        <!-- footer -->
+                        <div
+                            class="footer-section mt-5 flex flex-col justify-center items-center w-full px-16 pt-12 bg-gray-800">
+                            <div
+                                class="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[40px] w-full">
+                                <div class="col-span-1">
+                                    <div class="navigation-list-footbar flex flex-col">
+                                        <a href="#home"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Home</a>
+                                        <a href="#commission"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Commission</a>
+                                        <a href="#our-works" class="text-gray-500 my-4 hover:text-white font-bold text-xl">Our
+                                            Works</a>
+                                        <a href="#tos" class="text-gray-500 my-4 hover:text-white font-bold text-xl">ToS</a>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <div
+                                        class="flex flex-col justify-end sm:justify-center md:justify-center lg:justify-center xl:justify-end 2xl:justify-end items-center sm:items-center md:items-center lg:items-end xl:items-end 2xl:items-end">
+                                        <a href=""
+                                            class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                                            <h1 class="hero-footbar"><svg width="200" height="80" viewBox="0 0 254 100"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M70.1334 3.85311H65.3049V54.0686H70.1334V56H45.9913V54.0686H50.8197V7.42613L31.6992 56.9657H29.4781L8.03993 6.07418V54.0686H15.7654V56H0.314464V54.0686H6.10856V3.85311H0.217896V1.92174H21.7526L36.8173 38.1349L50.8197 1.92174H70.1334V3.85311Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M134.176 54.0686V56H108.778V54.0686H114.476L108.005 40.6456H88.4987L82.8977 54.0686H90.5266V56H74.0134V54.0686H80.4835L102.598 0.956055H105.012L129.54 54.0686H134.176ZM89.3678 38.6177H107.04L97.5761 18.9178L89.3678 38.6177Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M157.311 3.85311V28.7677C163.749 28.7677 168.062 27.8342 170.251 25.9673C172.44 24.1003 173.535 20.9779 173.535 16.6001C173.535 12.2224 172.408 9.00342 170.155 6.94329C167.901 4.88317 163.62 3.85311 157.311 3.85311ZM195.263 56.9657H191.014C182.966 56.9657 177.365 55.2275 174.211 51.751C171.7 49.0471 169.994 45.4741 169.092 41.0319C168.706 39.1649 168.288 37.4589 167.837 35.9138C166.807 32.4373 164.715 30.6991 161.56 30.6991H157.311V54.0686H162.14V56H137.997V54.0686H142.826V3.85311H137.997V1.92174H163.395C179.812 1.92174 188.02 6.71797 188.02 16.3104C188.02 20.1088 186.636 23.199 183.867 25.581C181.099 27.963 177.558 29.154 173.245 29.154V29.83C179.683 29.83 184.157 34.079 186.668 42.577C187.956 47.0835 189.243 50.3025 190.531 52.2338C191.883 54.1008 193.46 55.0343 195.263 55.0343V56.9657Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M248.84 32.4373C248.84 49.1115 241.823 57.4485 227.788 57.4485C219.998 57.4485 213.914 55.4528 209.537 51.4613C205.159 47.4698 202.97 41.4504 202.97 33.403V3.85311H198.141V1.92174H223.249V3.85311H218.421V34.4653C218.421 47.9204 222.927 54.648 231.94 54.648C235.61 54.648 238.925 52.8454 241.887 49.2402C244.913 45.5706 246.426 40.6134 246.426 34.3687V3.85311H238.797V1.92174H253.668V3.85311H248.84V32.4373Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M51.9593 99.5108C48.3541 99.5108 46.5515 97.8691 46.5515 94.5858C46.5515 91.4956 48.0644 87.15 51.0902 81.5491C51.4121 80.9697 51.7984 80.2937 52.249 79.5211C52.6997 78.7486 53.4079 77.5898 54.3735 76.0447C55.3392 74.4352 56.7234 72.1498 58.526 69.1883C64.4488 59.4027 67.4103 51.806 67.4103 46.3982C67.4103 41.8917 65.0604 39.6384 60.3608 39.6384C55.0173 39.6384 48.2575 42.7608 40.0814 49.0055C32.871 54.4777 27.431 59.9178 23.7614 65.3256C21.315 68.9308 20.0918 71.9244 20.0918 74.3064C20.0918 76.3666 21.2506 77.3966 23.5682 77.3966C24.212 77.3966 25.3065 77.1391 26.8516 76.6241C28.3967 76.1091 29.3623 75.8515 29.7486 75.8515C30.4568 75.8515 30.8109 76.0447 30.8109 76.4309C30.8109 77.3323 29.6842 78.1692 27.431 78.9417C25.564 79.5855 24.0511 79.9074 22.8923 79.9074C19.3514 79.9074 17.581 78.0404 17.581 74.3064C17.581 69.2849 20.2849 63.7483 25.6927 57.6967C28.0748 55.0572 30.7143 52.5464 33.6113 50.1644C36.5728 47.718 39.8883 45.4003 43.5579 43.2114C50.5752 39.0912 56.5302 37.0311 61.423 37.0311C68.7622 37.0311 72.4318 40.1856 72.4318 46.4948C72.4318 49.3274 71.5949 52.5786 69.921 56.2482C69.0197 58.2439 67.9575 60.4328 66.7343 62.8148C65.5111 65.1325 64.0626 67.6754 62.3887 70.4437C61.0367 72.7613 59.6526 75.079 58.2363 77.3966C56.8199 79.6499 55.4358 81.9353 54.0838 84.253C51.7018 88.2445 50.5108 91.5278 50.5108 94.103C50.5108 96.2275 51.4121 97.2897 53.2147 97.2897C55.4036 97.2897 58.4294 95.9377 62.2921 93.2338C72.2709 86.3453 82.6037 76.3666 93.2906 63.2977C93.3549 63.1689 93.6768 62.7826 94.2562 62.1388C94.8357 61.4307 95.4794 60.6581 96.1876 59.8212C97.0889 59.113 98.0224 58.7589 98.9881 58.7589C99.6963 58.7589 100.05 59.0486 100.05 59.6281C100.05 60.0787 99.825 60.6581 99.3744 61.3663C93.1296 72.2463 90.0072 81.2272 90.0072 88.3089C90.0072 93.0729 91.2626 95.4549 93.7734 95.4549C95.8979 95.4549 98.7628 93.5557 102.368 89.7574C105.394 86.5384 107.615 83.6414 109.031 81.0662C113.345 73.2764 115.501 67.3213 115.501 63.2011C115.501 62.8792 115.437 62.4607 115.308 61.9457C115.179 61.3663 115.018 60.7547 114.825 60.1109C114.632 59.4671 114.439 58.9199 114.246 58.4692C114.117 57.9542 114.053 57.4392 114.053 56.9241C114.053 54.7353 114.761 53.6408 116.177 53.6408C116.95 53.6408 117.626 54.4777 118.205 56.1516C118.656 57.3104 118.881 58.4692 118.881 59.6281C118.881 59.95 118.881 60.304 118.881 60.6903C118.881 61.0122 118.849 61.3985 118.785 61.8491C119.107 62.4929 119.686 62.9758 120.523 63.2977C121.36 63.5552 121.778 63.9093 121.778 64.3599C121.778 64.8749 121.424 65.1325 120.716 65.1325C119.943 65.1325 119.107 64.9393 118.205 64.553C117.497 67.5789 116.564 70.5403 115.405 73.4373C114.31 76.3344 112.926 79.2314 111.252 82.1285C109.45 85.283 107.486 88.0191 105.362 90.3368C103.237 92.6544 101.048 94.5536 98.795 96.0343C96.9924 97.1931 95.1254 97.7725 93.194 97.7725C88.6875 97.7725 86.4342 94.9721 86.4342 89.3711C86.4342 85.8303 87.8505 79.4568 90.6832 70.2506C86.563 74.3708 82.9899 77.9439 79.9641 80.9697C76.9383 83.9955 74.9104 85.959 73.8803 86.8603C69.7601 90.5943 66.1227 93.4592 62.9681 95.4549C59.8135 97.4506 57.2062 98.6739 55.1461 99.1245C54.631 99.1889 54.0838 99.2533 53.5044 99.3176C52.9894 99.4464 52.4744 99.5108 51.9593 99.5108Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M121.275 98.1588C119.022 98.1588 117.895 96.8391 117.895 94.1995C117.895 90.5299 119.505 86.2165 122.724 81.2594C122.659 80.9375 122.595 80.5834 122.53 80.1971C122.53 79.8108 122.53 79.4568 122.53 79.1349C122.53 76.8172 123.303 74.564 124.848 72.3751C126.393 70.1862 128.292 69.0918 130.546 69.0918C132.477 69.0918 133.765 69.7677 134.408 71.1197C135.116 72.4716 135.471 73.9846 135.471 75.6584C135.471 77.0747 135.31 78.4267 134.988 79.7143C134.666 81.0662 134.183 82.5791 133.539 84.253C132.895 85.9268 132.091 87.6973 131.125 89.5642C132.091 90.1436 133.185 90.4333 134.408 90.4333C135.503 90.4333 136.533 90.3046 137.498 90.0471C138.464 89.7252 139.365 89.1458 140.202 88.3089C141.039 87.4719 141.683 86.7316 142.134 86.0878C142.649 85.444 142.874 85.1543 142.81 85.2187C142.938 85.0899 143.067 85.0255 143.196 85.0255C143.454 85.0255 143.647 85.1865 143.775 85.5084C143.969 85.8303 143.936 86.1522 143.679 86.4741C142.649 87.9548 141.297 89.2745 139.623 90.4333C138.014 91.5278 136.243 92.075 134.312 92.075C132.831 92.075 131.543 91.7531 130.449 91.1093C127.488 95.809 124.43 98.1588 121.275 98.1588ZM129.87 88.6951C130.707 86.635 131.35 84.8646 131.801 83.3839C132.252 81.9032 132.477 80.519 132.477 79.2314V78.4589C132.477 76.7207 132.187 75.1112 131.608 73.6305C131.028 72.0854 130.191 71.3128 129.097 71.3128C127.616 71.3128 126.458 72.2141 125.621 74.0167C125.041 75.2399 124.751 76.5919 124.751 78.0726V78.652C125.782 77.4288 126.812 76.8172 127.842 76.8172C128.807 76.8172 129.516 77.1391 129.966 77.7829C130.159 78.0404 130.256 78.2657 130.256 78.4589C130.256 78.8452 129.87 79.0383 129.097 79.0383C127.938 79.0383 126.715 80.2615 125.427 82.7079C126.329 85.2187 127.809 87.2144 129.87 88.6951ZM122.82 95.8412C123.657 95.8412 124.848 95.0686 126.393 93.5235C127.037 92.8797 127.584 92.2682 128.035 91.6887C128.485 91.1093 128.84 90.5621 129.097 90.0471C126.908 88.5664 125.299 86.9247 124.269 85.1221C122.337 89.178 121.372 92.1072 121.372 93.9098C121.372 95.1974 121.854 95.8412 122.82 95.8412Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M157.248 98.5451C155.059 98.5451 153.514 97.9657 152.613 96.8069C151.776 95.648 151.358 94.1673 151.358 92.3647C151.358 90.884 151.583 89.3389 152.034 87.7294C152.549 86.0556 153.16 84.5105 153.868 83.0942C154.576 81.6778 155.188 80.5512 155.703 79.7143C155.51 79.7787 155.317 79.843 155.124 79.9074C154.931 79.9074 154.705 79.9074 154.448 79.9074C153.546 79.9074 152.549 79.5855 151.454 78.9417C150.295 78.1692 149.716 77.3644 149.716 76.5275C149.33 77.4288 148.782 78.4589 148.074 79.6177C147.43 80.7765 146.658 82.0319 145.757 83.3839C143.375 87.1178 141.797 88.9848 141.025 88.9848C140.767 88.9848 140.638 88.8561 140.638 88.5986C140.638 88.341 140.832 87.9548 141.218 87.4397C142.441 85.7659 143.664 83.8345 144.887 81.6456C146.175 79.4568 147.463 77.0104 148.75 74.3064C148.686 73.9845 148.621 73.6627 148.557 73.3408C148.557 73.0189 148.557 72.6326 148.557 72.1819C148.557 70.7012 148.847 68.9952 149.426 67.0638C150.134 64.6174 151.003 63.3942 152.034 63.3942C152.677 63.3942 153.289 63.9736 153.868 65.1325C154.061 65.5831 154.222 66.0338 154.351 66.4844C154.48 66.8707 154.544 67.2891 154.544 67.7398C154.544 69.2849 153.225 71.6347 150.585 74.7893C151.164 76.785 152.291 77.7829 153.965 77.7829C155.188 77.7829 156.315 77.1713 157.345 75.9481C158.439 74.6605 159.212 74.0167 159.662 74.0167C160.242 74.0167 160.757 74.2421 161.208 74.6927C161.658 75.1434 161.883 75.7228 161.883 76.4309C161.883 76.3666 161.465 76.946 160.628 78.1692C159.856 79.3924 158.954 81.0984 157.924 83.2873C156.894 85.4762 156.154 87.3432 155.703 88.8883C155.317 90.4334 155.124 91.8175 155.124 93.0407C155.124 95.294 156.186 96.4206 158.31 96.4206C160.371 96.4206 162.978 94.8433 166.132 91.6887C167.163 90.5943 168.354 89.2102 169.706 87.5363C171.379 85.4762 172.216 84.4461 172.216 84.4461C172.474 84.4461 172.603 84.6393 172.603 85.0255C172.603 85.5406 172.409 86.0878 172.023 86.6672C171.122 88.0835 170.124 89.4999 169.03 90.9162C167.999 92.2681 167.034 93.3626 166.132 94.1995C163.171 97.0966 160.21 98.5451 157.248 98.5451Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M189.591 97.8691C188.11 97.8691 186.758 97.3863 185.535 96.4206C184.312 95.4549 183.25 94.2639 182.348 92.8476C181.447 91.3668 180.739 89.8861 180.224 88.4054C179.709 86.8603 179.451 85.5727 179.451 84.5427C178.679 85.444 177.81 86.3775 176.844 87.3432C175.878 88.3089 175.041 89.2423 174.333 90.1436C173.368 91.3025 172.692 92.9763 172.305 95.1652C172.305 95.2296 172.241 95.4549 172.112 95.8412C172.048 96.1631 172.016 96.3884 172.016 96.5172C171.243 96.8391 170.503 97 169.795 97C168.378 97 167.67 96.6781 167.67 96.0343C167.67 94.5536 169.022 90.7231 171.726 84.5427C173.722 79.9718 175.814 75.594 178.003 71.4094C180.192 67.2248 182.638 62.9758 185.342 58.6624C193.196 46.1085 199.602 39.8316 204.559 39.8316C207.456 39.8316 208.905 41.1513 208.905 43.7909C208.905 48.4261 204.849 54.8962 196.737 63.2011C194.162 65.8406 191.265 68.5445 188.046 71.3128C184.827 74.0167 181.415 76.7528 177.81 79.5211C177.166 80.8731 176.554 82.1929 175.975 83.4804C175.46 84.768 174.977 86.0556 174.526 87.3432L184.57 77.4932C187.016 75.0468 189.108 73.3086 190.846 72.2785C192.649 71.2484 194.065 70.7334 195.095 70.7334C196.769 70.7334 197.606 71.9566 197.606 74.403C197.606 76.8494 195.868 79.2958 192.392 81.7422C190.846 82.7723 189.173 83.6092 187.37 84.253C185.632 84.8968 184.022 85.2187 182.542 85.2187C183.25 88.3089 184.441 90.5943 186.115 92.075C187.788 93.4913 189.559 94.1995 191.426 94.1995C195.16 94.1995 199.248 91.2703 203.69 85.4118C204.076 84.8324 204.463 84.5427 204.849 84.5427C205.171 84.5427 205.332 84.7036 205.332 85.0255C205.332 85.3474 205.203 85.6693 204.945 85.9912C203.4 88.2445 201.211 90.6265 198.379 93.1373C196.705 94.6824 195.192 95.809 193.84 96.5172C192.488 97.2253 191.329 97.6438 190.364 97.7725C190.235 97.7725 190.106 97.7725 189.977 97.7725C189.849 97.8369 189.72 97.8691 189.591 97.8691ZM179.065 76.2378C181.383 74.7571 184.022 72.697 186.984 70.0574C189.945 67.4179 192.971 64.5209 196.061 61.3663C203.143 54.0915 206.684 48.6837 206.684 45.1428C206.684 43.7909 206.136 43.1149 205.042 43.1149C203.433 43.1149 200.857 44.5956 197.317 47.557C194.291 50.1322 191.361 53.5443 188.529 57.7933C185.696 62.0423 183.057 66.7741 180.61 71.9888C180.031 73.212 179.612 74.1777 179.355 74.8859C179.162 75.594 179.065 76.0447 179.065 76.2378ZM183.411 83.6736C185.278 83.6736 187.434 82.8366 189.881 81.1628C192.263 79.4246 193.454 77.6541 193.454 75.8515C193.454 74.564 193.035 73.9202 192.198 73.9202C190.911 73.9202 187.402 76.9138 181.672 82.901C181.994 83.4161 182.574 83.6736 183.411 83.6736Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M210.924 99.2211C207.899 99.2211 205.162 98.1266 202.716 95.9377C200.205 93.6845 198.95 91.1093 198.95 88.2123C198.95 86.3453 199.465 85.4118 200.495 85.4118C201.139 85.4118 201.815 85.8625 202.523 86.7638C203.424 85.9912 205.034 83.577 207.351 79.5211C208.381 77.7829 209.508 76.0125 210.731 74.2099C211.954 72.3429 213.274 70.7978 214.691 69.5746C216.107 68.287 217.588 67.6432 219.133 67.6432C220.356 67.6432 221.386 67.9329 222.223 68.5123C223.189 69.0918 223.671 69.7999 223.671 70.6368C223.671 71.1519 222.931 71.4094 221.45 71.4094C220.034 71.4094 218.682 71.86 217.394 72.7614C216.171 73.727 215.56 74.918 215.56 76.3344C215.56 76.8494 215.656 77.3966 215.849 77.976L218.264 84.253C218.779 85.4762 219.1 86.6672 219.229 87.826C219.422 88.9205 219.519 89.9183 219.519 90.8196C223.253 90.2402 226.44 88.341 229.079 85.1221C229.208 84.929 229.369 84.8324 229.562 84.8324C229.948 84.8324 230.141 85.0899 230.141 85.6049C230.141 85.7337 230.109 85.8625 230.045 85.9912C230.045 86.12 230.013 86.2487 229.948 86.3775C227.824 89.7252 224.251 91.8819 219.229 92.8476C219.036 93.8776 218.682 94.7789 218.167 95.5515C217.652 96.324 217.04 96.9678 216.332 97.4828C214.723 98.6417 212.92 99.2211 210.924 99.2211ZM216.139 91.3025V90.3368C216.139 89.6286 215.978 88.6629 215.656 87.4397C215.399 86.2165 214.98 84.6393 214.401 82.7079C213.821 80.7765 213.371 79.0383 213.049 77.4932C212.791 75.8837 212.695 74.8537 212.759 74.403C211.085 77.1069 209.411 79.6821 207.738 82.1285C206.128 84.5105 204.68 86.4419 203.392 87.9226C205.388 88.8883 207.512 89.6608 209.766 90.2402C212.019 90.8196 214.143 91.1737 216.139 91.3025ZM209.669 96.5172C210.957 96.5172 212.212 96.2918 213.435 95.8412C214.723 95.3261 215.592 94.4248 216.042 93.1373C213.145 93.1373 210.442 92.8476 207.931 92.2682C205.484 91.6887 203.521 90.7874 202.04 89.5642L201.461 90.1436C203.199 94.3927 205.935 96.5172 209.669 96.5172Z"
+                                                        fill="#B3AFFF" />
+                                                </svg></h1>
+                                        </a>
+                                        <div class="contact-footbar flex flex-col justify-center items-end">
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Email Us</div>
+                                                <a href="mailto:maruhodooo@gmail.com" target="_blank" title="Email"
+                                                    class="contact-item relative ml-5 contact-mail w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-mail w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Twitter/X</div>
+                                                <a href="https://twitter.com/maruu_snk" target="_blank" title="X"
+                                                    class="contact-item relative ml-5 contact-twitter w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-twitter w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Instagram</div>
+                                                <a href="https://instagram.com/maruhodooo" target="_blank"
+                                                    title="Instagram"
+                                                    class="contact-item relative ml-5 contact-instagram w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-instagram w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 py-5 text-gray-500 font-bold text-center">Copyright ©️ Maruhodo 2024</div>
+                        </div>
+                    </div>
+                    <!-- end work section -->
+
+                    <!-- tos section -->
+                    <div class="tos-wrapper hidden m-0 mt-[80px] pt-7 sm:pt-7 md:pt-7 lg:pt-12 xl:pt-12 2xl:pt-12 w-auto">
+                        <div class="tos-section w-full flex flex-col px-7 sm:px-7 md:px-7 lg:px-12 xl:px-12 2xl:px-12 justify-center items-start mb-[80px]">
+                            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                                <div class="flex flex-col justify-center items-start">
+                                    <div class="title-page text-start text-5xl sm:text-5xl md:text-5xl lg:text-8xl xl:text-8xl 2xl:text-8xl text-white">Terms<br> of Services</div>
+                                    <div class="sub-title-page mt-8 mb-16 text-gray-400 text-start text-[14px] sm:text-[14px] md:text-[14px] lg:text-xl xl:text-xl 2xl:text-xl">These are the terms and conditions that need to be considered and agreed upon before giving us a commission.</div>
+                                </div>
+                            </div>
+                            <div class="separator-1 w-full mb-8 flex flex-row justify-center items-center opacity-50">
+                                <div class="line-left w-full animated">
+                                    <hr>
+                                </div>
+                                <div class="star animated mx-2">
+                                    <svg width="20" height="29" viewBox="0 0 77 79" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38.5394 0.578766L48.9357 24.0022L38.5394 37.6554L28.1431 24.0022L38.5394 0.578766Z"
+                                            fill="white" />
+                                        <path
+                                            d="M38.5394 78.4212L48.9357 54.9978L38.5394 41.3446L28.1431 54.9978L38.5394 78.4212Z"
+                                            fill="white" />
+                                        <path d="M77 39.3652L53.5765 49.7615L39.9234 39.3652L53.5765 28.9688L77 39.3652Z"
+                                            fill="white" />
+                                        <path
+                                            d="M0.516358 39.3652L23.9398 49.7615L37.593 39.3652L23.9398 28.9688L0.516358 39.3652Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="line-right animated w-full">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div id="list-tos" class="w-full mt-8 flex pl-6 flex-col">
+
+                            </div>
+                            <div class="text-white font-bold">By commissioning us, you agree to comply with the terms and conditions outlined above</div>
+                            <a href="https://forms.fillout.com/t/8FXszcUB6Rus" target="_blank" type="button" data-te-ripple-init
+                                class="flex flex-row items-center mt-2 justify-center btn btn-primary cms-button rounded-[100px] text-white text-[10px] sm:text-[10px] md:text-[10px] lg:text-xl xl:text-xl 2xl:text-xl py-2 px-[20px]">Make an Order
+                                <div class="ml-3">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="white"/>
+                                    </svg>                                                        
+                                </div>
+                            </a>
+                        </div>
+                        <!-- footer -->
+                        <div
+                            class="footer-section mt-5 flex flex-col justify-center items-center w-full px-16 pt-12 bg-gray-800">
+                            <div
+                                class="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[40px] w-full">
+                                <div class="col-span-1">
+                                    <div class="navigation-list-footbar flex flex-col">
+                                        <a href="#home"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Home</a>
+                                        <a href="#commission"
+                                            class="text-gray-500 my-4 hover:text-white font-bold text-xl">Commission</a>
+                                        <a href="#our-works" class="text-gray-500 my-4 hover:text-white font-bold text-xl">Our
+                                            Works</a>
+                                        <a href="#tos" class="text-gray-500 my-4 hover:text-white font-bold text-xl">ToS</a>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <div
+                                        class="flex flex-col justify-end sm:justify-center md:justify-center lg:justify-center xl:justify-end 2xl:justify-end items-center sm:items-center md:items-center lg:items-end xl:items-end 2xl:items-end">
+                                        <a href=""
+                                            class="mb-4 ml-2 mr-1 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900">
+                                            <h1 class="hero-footbar"><svg width="200" height="80" viewBox="0 0 254 100"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M70.1334 3.85311H65.3049V54.0686H70.1334V56H45.9913V54.0686H50.8197V7.42613L31.6992 56.9657H29.4781L8.03993 6.07418V54.0686H15.7654V56H0.314464V54.0686H6.10856V3.85311H0.217896V1.92174H21.7526L36.8173 38.1349L50.8197 1.92174H70.1334V3.85311Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M134.176 54.0686V56H108.778V54.0686H114.476L108.005 40.6456H88.4987L82.8977 54.0686H90.5266V56H74.0134V54.0686H80.4835L102.598 0.956055H105.012L129.54 54.0686H134.176ZM89.3678 38.6177H107.04L97.5761 18.9178L89.3678 38.6177Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M157.311 3.85311V28.7677C163.749 28.7677 168.062 27.8342 170.251 25.9673C172.44 24.1003 173.535 20.9779 173.535 16.6001C173.535 12.2224 172.408 9.00342 170.155 6.94329C167.901 4.88317 163.62 3.85311 157.311 3.85311ZM195.263 56.9657H191.014C182.966 56.9657 177.365 55.2275 174.211 51.751C171.7 49.0471 169.994 45.4741 169.092 41.0319C168.706 39.1649 168.288 37.4589 167.837 35.9138C166.807 32.4373 164.715 30.6991 161.56 30.6991H157.311V54.0686H162.14V56H137.997V54.0686H142.826V3.85311H137.997V1.92174H163.395C179.812 1.92174 188.02 6.71797 188.02 16.3104C188.02 20.1088 186.636 23.199 183.867 25.581C181.099 27.963 177.558 29.154 173.245 29.154V29.83C179.683 29.83 184.157 34.079 186.668 42.577C187.956 47.0835 189.243 50.3025 190.531 52.2338C191.883 54.1008 193.46 55.0343 195.263 55.0343V56.9657Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M248.84 32.4373C248.84 49.1115 241.823 57.4485 227.788 57.4485C219.998 57.4485 213.914 55.4528 209.537 51.4613C205.159 47.4698 202.97 41.4504 202.97 33.403V3.85311H198.141V1.92174H223.249V3.85311H218.421V34.4653C218.421 47.9204 222.927 54.648 231.94 54.648C235.61 54.648 238.925 52.8454 241.887 49.2402C244.913 45.5706 246.426 40.6134 246.426 34.3687V3.85311H238.797V1.92174H253.668V3.85311H248.84V32.4373Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M51.9593 99.5108C48.3541 99.5108 46.5515 97.8691 46.5515 94.5858C46.5515 91.4956 48.0644 87.15 51.0902 81.5491C51.4121 80.9697 51.7984 80.2937 52.249 79.5211C52.6997 78.7486 53.4079 77.5898 54.3735 76.0447C55.3392 74.4352 56.7234 72.1498 58.526 69.1883C64.4488 59.4027 67.4103 51.806 67.4103 46.3982C67.4103 41.8917 65.0604 39.6384 60.3608 39.6384C55.0173 39.6384 48.2575 42.7608 40.0814 49.0055C32.871 54.4777 27.431 59.9178 23.7614 65.3256C21.315 68.9308 20.0918 71.9244 20.0918 74.3064C20.0918 76.3666 21.2506 77.3966 23.5682 77.3966C24.212 77.3966 25.3065 77.1391 26.8516 76.6241C28.3967 76.1091 29.3623 75.8515 29.7486 75.8515C30.4568 75.8515 30.8109 76.0447 30.8109 76.4309C30.8109 77.3323 29.6842 78.1692 27.431 78.9417C25.564 79.5855 24.0511 79.9074 22.8923 79.9074C19.3514 79.9074 17.581 78.0404 17.581 74.3064C17.581 69.2849 20.2849 63.7483 25.6927 57.6967C28.0748 55.0572 30.7143 52.5464 33.6113 50.1644C36.5728 47.718 39.8883 45.4003 43.5579 43.2114C50.5752 39.0912 56.5302 37.0311 61.423 37.0311C68.7622 37.0311 72.4318 40.1856 72.4318 46.4948C72.4318 49.3274 71.5949 52.5786 69.921 56.2482C69.0197 58.2439 67.9575 60.4328 66.7343 62.8148C65.5111 65.1325 64.0626 67.6754 62.3887 70.4437C61.0367 72.7613 59.6526 75.079 58.2363 77.3966C56.8199 79.6499 55.4358 81.9353 54.0838 84.253C51.7018 88.2445 50.5108 91.5278 50.5108 94.103C50.5108 96.2275 51.4121 97.2897 53.2147 97.2897C55.4036 97.2897 58.4294 95.9377 62.2921 93.2338C72.2709 86.3453 82.6037 76.3666 93.2906 63.2977C93.3549 63.1689 93.6768 62.7826 94.2562 62.1388C94.8357 61.4307 95.4794 60.6581 96.1876 59.8212C97.0889 59.113 98.0224 58.7589 98.9881 58.7589C99.6963 58.7589 100.05 59.0486 100.05 59.6281C100.05 60.0787 99.825 60.6581 99.3744 61.3663C93.1296 72.2463 90.0072 81.2272 90.0072 88.3089C90.0072 93.0729 91.2626 95.4549 93.7734 95.4549C95.8979 95.4549 98.7628 93.5557 102.368 89.7574C105.394 86.5384 107.615 83.6414 109.031 81.0662C113.345 73.2764 115.501 67.3213 115.501 63.2011C115.501 62.8792 115.437 62.4607 115.308 61.9457C115.179 61.3663 115.018 60.7547 114.825 60.1109C114.632 59.4671 114.439 58.9199 114.246 58.4692C114.117 57.9542 114.053 57.4392 114.053 56.9241C114.053 54.7353 114.761 53.6408 116.177 53.6408C116.95 53.6408 117.626 54.4777 118.205 56.1516C118.656 57.3104 118.881 58.4692 118.881 59.6281C118.881 59.95 118.881 60.304 118.881 60.6903C118.881 61.0122 118.849 61.3985 118.785 61.8491C119.107 62.4929 119.686 62.9758 120.523 63.2977C121.36 63.5552 121.778 63.9093 121.778 64.3599C121.778 64.8749 121.424 65.1325 120.716 65.1325C119.943 65.1325 119.107 64.9393 118.205 64.553C117.497 67.5789 116.564 70.5403 115.405 73.4373C114.31 76.3344 112.926 79.2314 111.252 82.1285C109.45 85.283 107.486 88.0191 105.362 90.3368C103.237 92.6544 101.048 94.5536 98.795 96.0343C96.9924 97.1931 95.1254 97.7725 93.194 97.7725C88.6875 97.7725 86.4342 94.9721 86.4342 89.3711C86.4342 85.8303 87.8505 79.4568 90.6832 70.2506C86.563 74.3708 82.9899 77.9439 79.9641 80.9697C76.9383 83.9955 74.9104 85.959 73.8803 86.8603C69.7601 90.5943 66.1227 93.4592 62.9681 95.4549C59.8135 97.4506 57.2062 98.6739 55.1461 99.1245C54.631 99.1889 54.0838 99.2533 53.5044 99.3176C52.9894 99.4464 52.4744 99.5108 51.9593 99.5108Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M121.275 98.1588C119.022 98.1588 117.895 96.8391 117.895 94.1995C117.895 90.5299 119.505 86.2165 122.724 81.2594C122.659 80.9375 122.595 80.5834 122.53 80.1971C122.53 79.8108 122.53 79.4568 122.53 79.1349C122.53 76.8172 123.303 74.564 124.848 72.3751C126.393 70.1862 128.292 69.0918 130.546 69.0918C132.477 69.0918 133.765 69.7677 134.408 71.1197C135.116 72.4716 135.471 73.9846 135.471 75.6584C135.471 77.0747 135.31 78.4267 134.988 79.7143C134.666 81.0662 134.183 82.5791 133.539 84.253C132.895 85.9268 132.091 87.6973 131.125 89.5642C132.091 90.1436 133.185 90.4333 134.408 90.4333C135.503 90.4333 136.533 90.3046 137.498 90.0471C138.464 89.7252 139.365 89.1458 140.202 88.3089C141.039 87.4719 141.683 86.7316 142.134 86.0878C142.649 85.444 142.874 85.1543 142.81 85.2187C142.938 85.0899 143.067 85.0255 143.196 85.0255C143.454 85.0255 143.647 85.1865 143.775 85.5084C143.969 85.8303 143.936 86.1522 143.679 86.4741C142.649 87.9548 141.297 89.2745 139.623 90.4333C138.014 91.5278 136.243 92.075 134.312 92.075C132.831 92.075 131.543 91.7531 130.449 91.1093C127.488 95.809 124.43 98.1588 121.275 98.1588ZM129.87 88.6951C130.707 86.635 131.35 84.8646 131.801 83.3839C132.252 81.9032 132.477 80.519 132.477 79.2314V78.4589C132.477 76.7207 132.187 75.1112 131.608 73.6305C131.028 72.0854 130.191 71.3128 129.097 71.3128C127.616 71.3128 126.458 72.2141 125.621 74.0167C125.041 75.2399 124.751 76.5919 124.751 78.0726V78.652C125.782 77.4288 126.812 76.8172 127.842 76.8172C128.807 76.8172 129.516 77.1391 129.966 77.7829C130.159 78.0404 130.256 78.2657 130.256 78.4589C130.256 78.8452 129.87 79.0383 129.097 79.0383C127.938 79.0383 126.715 80.2615 125.427 82.7079C126.329 85.2187 127.809 87.2144 129.87 88.6951ZM122.82 95.8412C123.657 95.8412 124.848 95.0686 126.393 93.5235C127.037 92.8797 127.584 92.2682 128.035 91.6887C128.485 91.1093 128.84 90.5621 129.097 90.0471C126.908 88.5664 125.299 86.9247 124.269 85.1221C122.337 89.178 121.372 92.1072 121.372 93.9098C121.372 95.1974 121.854 95.8412 122.82 95.8412Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M157.248 98.5451C155.059 98.5451 153.514 97.9657 152.613 96.8069C151.776 95.648 151.358 94.1673 151.358 92.3647C151.358 90.884 151.583 89.3389 152.034 87.7294C152.549 86.0556 153.16 84.5105 153.868 83.0942C154.576 81.6778 155.188 80.5512 155.703 79.7143C155.51 79.7787 155.317 79.843 155.124 79.9074C154.931 79.9074 154.705 79.9074 154.448 79.9074C153.546 79.9074 152.549 79.5855 151.454 78.9417C150.295 78.1692 149.716 77.3644 149.716 76.5275C149.33 77.4288 148.782 78.4589 148.074 79.6177C147.43 80.7765 146.658 82.0319 145.757 83.3839C143.375 87.1178 141.797 88.9848 141.025 88.9848C140.767 88.9848 140.638 88.8561 140.638 88.5986C140.638 88.341 140.832 87.9548 141.218 87.4397C142.441 85.7659 143.664 83.8345 144.887 81.6456C146.175 79.4568 147.463 77.0104 148.75 74.3064C148.686 73.9845 148.621 73.6627 148.557 73.3408C148.557 73.0189 148.557 72.6326 148.557 72.1819C148.557 70.7012 148.847 68.9952 149.426 67.0638C150.134 64.6174 151.003 63.3942 152.034 63.3942C152.677 63.3942 153.289 63.9736 153.868 65.1325C154.061 65.5831 154.222 66.0338 154.351 66.4844C154.48 66.8707 154.544 67.2891 154.544 67.7398C154.544 69.2849 153.225 71.6347 150.585 74.7893C151.164 76.785 152.291 77.7829 153.965 77.7829C155.188 77.7829 156.315 77.1713 157.345 75.9481C158.439 74.6605 159.212 74.0167 159.662 74.0167C160.242 74.0167 160.757 74.2421 161.208 74.6927C161.658 75.1434 161.883 75.7228 161.883 76.4309C161.883 76.3666 161.465 76.946 160.628 78.1692C159.856 79.3924 158.954 81.0984 157.924 83.2873C156.894 85.4762 156.154 87.3432 155.703 88.8883C155.317 90.4334 155.124 91.8175 155.124 93.0407C155.124 95.294 156.186 96.4206 158.31 96.4206C160.371 96.4206 162.978 94.8433 166.132 91.6887C167.163 90.5943 168.354 89.2102 169.706 87.5363C171.379 85.4762 172.216 84.4461 172.216 84.4461C172.474 84.4461 172.603 84.6393 172.603 85.0255C172.603 85.5406 172.409 86.0878 172.023 86.6672C171.122 88.0835 170.124 89.4999 169.03 90.9162C167.999 92.2681 167.034 93.3626 166.132 94.1995C163.171 97.0966 160.21 98.5451 157.248 98.5451Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M189.591 97.8691C188.11 97.8691 186.758 97.3863 185.535 96.4206C184.312 95.4549 183.25 94.2639 182.348 92.8476C181.447 91.3668 180.739 89.8861 180.224 88.4054C179.709 86.8603 179.451 85.5727 179.451 84.5427C178.679 85.444 177.81 86.3775 176.844 87.3432C175.878 88.3089 175.041 89.2423 174.333 90.1436C173.368 91.3025 172.692 92.9763 172.305 95.1652C172.305 95.2296 172.241 95.4549 172.112 95.8412C172.048 96.1631 172.016 96.3884 172.016 96.5172C171.243 96.8391 170.503 97 169.795 97C168.378 97 167.67 96.6781 167.67 96.0343C167.67 94.5536 169.022 90.7231 171.726 84.5427C173.722 79.9718 175.814 75.594 178.003 71.4094C180.192 67.2248 182.638 62.9758 185.342 58.6624C193.196 46.1085 199.602 39.8316 204.559 39.8316C207.456 39.8316 208.905 41.1513 208.905 43.7909C208.905 48.4261 204.849 54.8962 196.737 63.2011C194.162 65.8406 191.265 68.5445 188.046 71.3128C184.827 74.0167 181.415 76.7528 177.81 79.5211C177.166 80.8731 176.554 82.1929 175.975 83.4804C175.46 84.768 174.977 86.0556 174.526 87.3432L184.57 77.4932C187.016 75.0468 189.108 73.3086 190.846 72.2785C192.649 71.2484 194.065 70.7334 195.095 70.7334C196.769 70.7334 197.606 71.9566 197.606 74.403C197.606 76.8494 195.868 79.2958 192.392 81.7422C190.846 82.7723 189.173 83.6092 187.37 84.253C185.632 84.8968 184.022 85.2187 182.542 85.2187C183.25 88.3089 184.441 90.5943 186.115 92.075C187.788 93.4913 189.559 94.1995 191.426 94.1995C195.16 94.1995 199.248 91.2703 203.69 85.4118C204.076 84.8324 204.463 84.5427 204.849 84.5427C205.171 84.5427 205.332 84.7036 205.332 85.0255C205.332 85.3474 205.203 85.6693 204.945 85.9912C203.4 88.2445 201.211 90.6265 198.379 93.1373C196.705 94.6824 195.192 95.809 193.84 96.5172C192.488 97.2253 191.329 97.6438 190.364 97.7725C190.235 97.7725 190.106 97.7725 189.977 97.7725C189.849 97.8369 189.72 97.8691 189.591 97.8691ZM179.065 76.2378C181.383 74.7571 184.022 72.697 186.984 70.0574C189.945 67.4179 192.971 64.5209 196.061 61.3663C203.143 54.0915 206.684 48.6837 206.684 45.1428C206.684 43.7909 206.136 43.1149 205.042 43.1149C203.433 43.1149 200.857 44.5956 197.317 47.557C194.291 50.1322 191.361 53.5443 188.529 57.7933C185.696 62.0423 183.057 66.7741 180.61 71.9888C180.031 73.212 179.612 74.1777 179.355 74.8859C179.162 75.594 179.065 76.0447 179.065 76.2378ZM183.411 83.6736C185.278 83.6736 187.434 82.8366 189.881 81.1628C192.263 79.4246 193.454 77.6541 193.454 75.8515C193.454 74.564 193.035 73.9202 192.198 73.9202C190.911 73.9202 187.402 76.9138 181.672 82.901C181.994 83.4161 182.574 83.6736 183.411 83.6736Z"
+                                                        fill="#B3AFFF" />
+                                                    <path
+                                                        d="M210.924 99.2211C207.899 99.2211 205.162 98.1266 202.716 95.9377C200.205 93.6845 198.95 91.1093 198.95 88.2123C198.95 86.3453 199.465 85.4118 200.495 85.4118C201.139 85.4118 201.815 85.8625 202.523 86.7638C203.424 85.9912 205.034 83.577 207.351 79.5211C208.381 77.7829 209.508 76.0125 210.731 74.2099C211.954 72.3429 213.274 70.7978 214.691 69.5746C216.107 68.287 217.588 67.6432 219.133 67.6432C220.356 67.6432 221.386 67.9329 222.223 68.5123C223.189 69.0918 223.671 69.7999 223.671 70.6368C223.671 71.1519 222.931 71.4094 221.45 71.4094C220.034 71.4094 218.682 71.86 217.394 72.7614C216.171 73.727 215.56 74.918 215.56 76.3344C215.56 76.8494 215.656 77.3966 215.849 77.976L218.264 84.253C218.779 85.4762 219.1 86.6672 219.229 87.826C219.422 88.9205 219.519 89.9183 219.519 90.8196C223.253 90.2402 226.44 88.341 229.079 85.1221C229.208 84.929 229.369 84.8324 229.562 84.8324C229.948 84.8324 230.141 85.0899 230.141 85.6049C230.141 85.7337 230.109 85.8625 230.045 85.9912C230.045 86.12 230.013 86.2487 229.948 86.3775C227.824 89.7252 224.251 91.8819 219.229 92.8476C219.036 93.8776 218.682 94.7789 218.167 95.5515C217.652 96.324 217.04 96.9678 216.332 97.4828C214.723 98.6417 212.92 99.2211 210.924 99.2211ZM216.139 91.3025V90.3368C216.139 89.6286 215.978 88.6629 215.656 87.4397C215.399 86.2165 214.98 84.6393 214.401 82.7079C213.821 80.7765 213.371 79.0383 213.049 77.4932C212.791 75.8837 212.695 74.8537 212.759 74.403C211.085 77.1069 209.411 79.6821 207.738 82.1285C206.128 84.5105 204.68 86.4419 203.392 87.9226C205.388 88.8883 207.512 89.6608 209.766 90.2402C212.019 90.8196 214.143 91.1737 216.139 91.3025ZM209.669 96.5172C210.957 96.5172 212.212 96.2918 213.435 95.8412C214.723 95.3261 215.592 94.4248 216.042 93.1373C213.145 93.1373 210.442 92.8476 207.931 92.2682C205.484 91.6887 203.521 90.7874 202.04 89.5642L201.461 90.1436C203.199 94.3927 205.935 96.5172 209.669 96.5172Z"
+                                                        fill="#B3AFFF" />
+                                                </svg></h1>
+                                        </a>
+                                        <div class="contact-footbar flex flex-col justify-center items-end">
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Email Us</div>
+                                                <a href="mailto:maruhodooo@gmail.com" target="_blank" title="Email"
+                                                    class="contact-item relative ml-5 contact-mail w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-mail w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Twitter/X</div>
+                                                <a href="https://twitter.com/maruu_snk" target="_blank" title="X"
+                                                    class="contact-item relative ml-5 contact-twitter w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-twitter w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-row justify-center items-center">
+                                                <div class="text-[#B3AFFF]">Instagram</div>
+                                                <a href="https://instagram.com/maruhodooo" target="_blank"
+                                                    title="Instagram"
+                                                    class="contact-item relative ml-5 contact-instagram w-[20px] h-[20px] border border-[#B3AFFF] my-2">
+                                                    <div class="icon-instagram w-full h-full"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 py-5 text-gray-500 font-bold text-center">Copyright ©️ Maruhodo 2024</div>
+                        </div>
+                        <!-- end footer -->
+                    </div>
+                    <!-- end tos section -->
+                </div>
+                
+
+                <!-- side menu -->
+                <div class="side-menu sticky top-0">
+                    <div class="w-[70px] flex flex-col h-screen justify-between">
+                        <div class="menu p-1 mt-2">
+                            <div class="menu-icon">
+                                <div class="top-icon">
+                                    <svg width="15" height="32" viewBox="0 0 21 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5394 0.578766L20.9357 24.0022L10.5394 37.6554L0.143066 24.0022L10.5394 0.578766Z"
+                                            fill="#DDE4EC" />
+                                    </svg>
+                                </div>
+                                <div class="left-icon">
+                                    <svg width="32" height="16" viewBox="0 0 38 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.516358 11.3652L23.9398 21.7615L37.593 11.3652L23.9398 0.968841L0.516358 11.3652Z"
+                                            fill="#DDE4EC" />
+                                    </svg>
+                                </div>
+                                <div class="bottom-icon">
+                                    <svg width="15" height="32" viewBox="0 0 21 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5394 37.4212L20.9357 13.9978L10.5394 0.344625L0.143066 13.9978L10.5394 37.4212Z"
+                                            fill="#DDE4EC" />
+                                    </svg>
+                                </div>
+                                <div class="right-icon">
+                                    <svg width="32" height="16" viewBox="0 0 38 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M38 11.3652L14.5765 21.7615L0.923391 11.3652L14.5765 0.968841L38 11.3652Z"
+                                            fill="#DDE4EC" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact relative flex flex-col justify-center items-center mb-6">
+                            <div title="magic button" class="magic-button w-[40px] h-[40px] relative mb-5"></div>
+                            <a href="mailto:maruhodooo@gmail.com" target="_blank" title="Email"
+                                class="contact-item relative contact-mail w-[25px] h-[25px] border border-[#B3AFFF] my-2">
+                                <div class="icon-mail w-full h-full"></div>
+                            </a>
+                            <a href="https://twitter.com/maruu_snk" target="_blank" title="X"
+                                class="contact-item relative contact-twitter w-[25px] h-[25px] border border-[#B3AFFF] my-2">
+                                <div class="icon-twitter w-full h-full"></div>
+                            </a>
+                            <a href="https://instagram.com/maruhodooo" target="_blank" title="Instagram"
+                                class="contact-item relative contact-instagram w-[25px] h-[25px] border border-[#B3AFFF] my-2">
+                                <div class="icon-instagram w-full h-full"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <button class="fixed hidden bottom-[30px] right-[70px] sm:right-[70px] md:right-[70px] lg:right-[100px] xl:right-[100px] 2xl:right-[100px] z-[9999999]" id="btn-to-top">
+        <svg width="40" height="40" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 60L60 26L94 60L60 47.5L26 60Z" fill="#B3AFFF"/>
+            <path d="M60 54L40 74L60 66.6471L80 74L60 54Z" fill="#B3AFFF"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 60L60 120L120 60L60 0L0 60ZM60 2.82843L2.82843 60L60 117.172L117.172 60L60 2.82843Z" fill="#B3AFFF"/>
+        </svg>
+    </button>
 
-    <!--Extra large modal-->
-    <div data-te-modal-init
-        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-hidden overflow-x-hidden outline-none"
-        id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true" role="dialog">
-        <div data-te-modal-dialog-ref
-            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] items-center w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1140px]">
-            <div
-                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-gray-800 bg-clip-padding text-current shadow-lg outline-none">
-                <div class="flex items-center justify-end rounded-t-md">
-                    <!--Close button-->
-                    <div class="">
-                        <button id="btn-close" type="button" data-te-ripple-init data-te-ripple-color="danger"
+   <div id="custom-modal" class="fixed top-0 z-[999999999999] hidden w-full h-full overflow-y-hidden overflow-x-hidden">
+    <div id="modal-container" class="flex items-center justify-center items-center justify-center bg-[#0000006A] w-full h-full backdrop-blur-sm py-12 px-4 sm:px-4 md:px-4 lg:px-44 xl:px-44 2xl:px-44">
+        <div id="modal-card" class="h-auto sm:h-auto md:h-auto lg:h-[calc(100%-1rem)] xl:h-[calc(100%-1rem)] 2xl:h-[calc(100%-1rem)] w-full bg-[#354462] rounded-2xl">
+            <div class="w-full h-full flex flex-col">
+                <div class="w-full flex flex-row justify-between items-center p-3">
+                    <div class="modal-title text-white"></div>
+                    <div class="flex flex-row justify-content-end">
+                        <button id="close-modal" type="button" data-te-ripple-init data-te-ripple-color="danger"
                             data-te-modal-dismiss aria-label="Close"
-                            class="ml-2 box-content inline-block rounded border-danger m-2 px-2 py-2 text-sm font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700">
+                            class="ml-2 box-content inline-block rounded border border-red-600 px-2 py-2 text-xs font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="h-5 w-5">
+                                stroke="currentColor" class="h-3 w-3">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
                 </div>
-
-                <!--Modal body-->
-                <div class="relative">
-                    <div class="h-[80vh] w-full overflow-y-scroll">
-                        <div class="grid grid grid-cols-3 lg:grid-cols-3 px-3">
-                            <div class="col-span-3 lg:col-span-2">
-                                <div class="flex flex-col items-center lg:top-6 lg:sticky xl:top-6 xl:sticky 2xl:top-6 2xl:sticky">
-                                    <div id="image-carousel" class="swiper mySwiper w-full h-full rounded-2xl">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="detail-list" class="col-span-3 lg:col-span-1 px-6 py-3 overflow-y-scroll">
+                <div class="mt-2 p-2 h-full">
+                    <div class="relative h-full">
+                        <div class="h-full w-full">
+                            <div id="video-container" class="h-full rounded-2xl">
+                                
                             </div>
                         </div>
                     </div>
@@ -238,67 +1018,272 @@
             </div>
         </div>
     </div>
+   </div>
 
-    <!--Extra large modal 2-->
-    <div data-te-modal-init
-        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-hidden overflow-x-hidden outline-none"
-        id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-modal="true" role="dialog">
-        <div data-te-modal-dialog-ref
-            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] items-center w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1140px]">
-            <div
-                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-gray-800 bg-clip-padding text-current shadow-lg outline-none">
-                <div class="flex items-center justify-between rounded-t-md px-4">
-                    <div class="">
-                        <h3 id="video-title" class="font-bold text-white">Title</h3>
-                    </div>
-                    <!--Close button-->
-                    <div class="">
-                        <button id="btn-close" type="button" data-te-ripple-init data-te-ripple-color="danger"
-                            data-te-modal-dismiss aria-label="Close"
-                            class="ml-2 box-content inline-block rounded border-danger m-2 px-2 py-2 text-sm font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="h-5 w-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!--Modal body-->
-                <div class="relative">
-                    <div class="h-full lg:h-[80vh] w-full overflow-y-scroll">
-                        <div id="video-container" class="h-full rounded-2xl">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.js"
-        integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.slim.js"
+        integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/assets/js/utilities.js"></script>
     <script src="./src/assets/js/app.js"></script>
     <script src="./src/assets/js/feed.js"></script>
-    <script src="./src/assets/js/commission.js"></script>
+    <script src="./src/assets/js/commission.js"></script> 
     <script src="./src/assets/js/tos.js"></script>
     <script src="./src/assets/js/work.js"></script>
+    <script src="./src/assets/js/collaborator.js"></script>
     <script src="./src/assets/js/main.js"></script>
     <script type="text/javascript">
-        // function redirectIfNotIndonesian() {
-        //     const userLanguage = navigator.language || navigator.userLanguage;
-        //     const isIndonesian = userLanguage.toLowerCase().startsWith('id'); // Memeriksa apakah bahasa pengguna dimulai dengan 'id' (kode bahasa untuk Indonesia)
 
-        //     if (!isIndonesian) {
-        //         window.location.href = 'https://vgen.co/maru-maru';
-        //     }
-        // }
+        const titleSectionClasses = ['.title-section']
 
-        // Panggil fungsi redirectIfNotIndonesian saat dokumen dimuat
-        // document.addEventListener('DOMContentLoaded', redirectIfNotIndonesian);
+        const collaboratorClasses = ['.profile-card']
+
+        const inquiriesClasses = ['.inquiries', '.inquiries-form']
+
+        const tosClasses = ['.point-title','.sub-point']
+
+        const cmsClasses = ['.yt-section','.tw-section','.glow']
+
+
+        // var workObserver = createObserver(workClasses);
+        var titleObserver = createObserver(titleSectionClasses);
+        var collaboratorObserver = createObserver(collaboratorClasses);
+        var inquiriesObserver = createObserver(inquiriesClasses);
+        var tosObserver = createObserver(tosClasses);
+        var cmsObserver = createObserver(cmsClasses);
+
+        document.querySelectorAll('.home-porto-section, .collaborator-section, .inquiries-section').forEach(container => {
+            titleObserver.observe(container);
+        });
+        document.querySelectorAll('.collaborator-list').forEach(container => {
+            collaboratorObserver.observe(container);
+        });
+        document.querySelectorAll('.inquiries-section').forEach(container => {
+            inquiriesObserver.observe(container);
+        });
+        document.querySelectorAll('.point-section').forEach(container => {
+            tosObserver.observe(container);
+        });
+        document.querySelectorAll('.cms-wrapper').forEach(container => {
+            cmsObserver.observe(container);
+        });
+
+
+        $(document).ready(function () {
+            $('.menu-icon').click(function () {
+                $(this).toggleClass('open')
+
+                $('.main-container').toggleClass('hidden')
+                $('.menu-container').toggleClass('hidden')
+            });
+
+            $('#close-modal').click(function(){
+                $('#custom-modal').addClass('hidden')
+            })
+
+            $(window).on('popstate', function (event) {
+                location.reload(true);
+            });
+
+            if (window.location.hash === "#our-works") {
+                $(".main-wrapper").addClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+                $(".work-wrapper").removeClass('hidden')
+
+                $('#works-nav-btn').addClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+                // window.location.reload(true)
+            }
+            if (window.location.hash === "#tos") {
+                $(".main-wrapper").addClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+                $(".tos-wrapper").removeClass('hidden')
+
+                $('#works-nav-btn').removeClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').addClass('link-active')
+                // window.location.reload(true)
+            }
+            if (window.location.hash === "#home") {
+                $(".main-wrapper").removeClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+
+                $('#works-nav-btn').removeClass('link-active')
+                $('#home-nav-btn').addClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+                // window.location.reload(true)
+            }
+            if (window.location.hash === "#commission") {
+                $(".main-wrapper").addClass('hidden')
+                $(".commission-wrapper").removeClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+
+                $('#works-nav-btn').removeClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#commission-nav-btn').addClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+                // window.location.reload(true)
+            }
+
+            $('.magic-button').click(function(){
+                $(this).toggleClass('active-effect')
+                $('.bg').toggleClass('effect')
+                $('.bg-anim').toggleClass('hidden')
+            })
+
+            $('.submit-button').click(function(){
+                // event.preventDefault()
+                var name = encodeURIComponent($('#name-input').val())
+                var email = encodeURIComponent($('#email-input').val())
+                var message = encodeURIComponent($('#message-input').val())
+
+                var mailUrl = "mailto:maruhodooo@gmail.com?subject="+ name +"%20Inquiries&body=" + message
+
+                if (name !== "" && email !== "" && message !== "") {
+                    window.open(mailUrl)
+                }
+            })
+
+            $('.commission-button').click(function () {
+                event.preventDefault();
+                var targetUrl = $(this).attr('href')
+                history.pushState(null, null, targetUrl);
+
+                $(".main-wrapper").addClass('hidden')
+                $(".commission-wrapper").removeClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+
+                $('#commission-nav-btn').addClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#works-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+
+                if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+                    $('.menu-container').addClass('hidden')
+                    $('.main-container').removeClass('hidden')
+                    $('.menu-icon').removeClass('open')
+                }
+
+                $('.body-wrapper').animate({
+                    scrollTop: 0
+                }, 0);
+            })
+
+            $('.works-button').click(function () {
+                event.preventDefault();
+                var targetUrl = $(this).attr('href')
+                history.pushState(null, null, targetUrl);
+
+                $(".main-wrapper").addClass('hidden')
+                $(".commission-wrapper").addClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+                $(".work-wrapper").removeClass('hidden')
+
+                $('#works-nav-btn').addClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+
+                if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+                    $('.menu-container').addClass('hidden')
+                    $('.main-container').removeClass('hidden')
+                    $('.menu-icon').removeClass('open')
+                }
+
+                $('.body-wrapper').animate({
+                    scrollTop: 0
+                }, 0);
+            })
+
+            $('.tos-button').click(function () {
+                event.preventDefault();
+                var targetUrl = $(this).attr('href')
+                history.pushState(null, null, targetUrl);
+
+                $(".main-wrapper").addClass('hidden')
+                $(".commission-wrapper").addClass('hidden')
+                $(".tos-wrapper").removeClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+
+                $('#works-nav-btn').removeClass('link-active')
+                $('#home-nav-btn').removeClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').addClass('link-active')
+
+                if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+                    $('.menu-container').addClass('hidden')
+                    $('.main-container').removeClass('hidden')
+                    $('.menu-icon').removeClass('open')
+                }
+
+                $('.body-wrapper').animate({
+                    scrollTop: 0
+                }, 0);
+            })
+
+            $('.home-button').click(function () {
+                event.preventDefault();
+
+                var targetUrl = $(this).attr('href')
+                history.pushState(null, null, targetUrl);
+
+                $(".commission-wrapper").addClass('hidden')
+                $(".work-wrapper").addClass('hidden')
+                $(".tos-wrapper").addClass('hidden')
+                $(".main-wrapper").removeClass('hidden')
+
+                $('#home-nav-btn').addClass('link-active')
+                $('#commission-nav-btn').removeClass('link-active')
+                $('#works-nav-btn').removeClass('link-active')
+                $('#tos-nav-btn').removeClass('link-active')
+
+                $('.body-wrapper').animate({
+                    scrollTop: 0
+                }, 0);
+
+                if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+                    $('.menu-container').addClass('hidden')
+                    $('.main-container').removeClass('hidden')
+                    $('.menu-icon').removeClass('open')
+                }
+            })
+        })
+
+
+        $(document).ready(function () {
+            // const $scrollToTopButton = $('#btn-to-top');
+
+            $('#btn-to-top').on('click', function () {
+                console.log($('.main-container').offset().top)
+                // $('.main-wrapper').scrollTop(0)
+                $('.body-wrapper').animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+
+            // console.log($('#btn-to-top').offset().top === 481.3333435058594)
+
+            $('.body-wrapper').scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('#btn-to-top').removeClass('hidden')
+                } else {
+                    $('#btn-to-top').addClass('hidden')
+                }
+            })
+        });
+
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
+
 </html>

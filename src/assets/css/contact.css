@@ -1,0 +1,182 @@
+
+.contact-item:hover {
+    /* overflow: hidden; */
+    filter: drop-shadow(0px 0px 10px #b3afffbb);
+}
+
+.contact-mail {
+    transform: rotate(45deg);
+    animation: contact-slide-to-bottom 1s ease both;
+}
+.contact-twitter {
+    transform: rotate(45deg);
+    animation: contact-slide-to-bottom 1s ease 0.3s both;
+}
+.contact-instagram {
+    transform: rotate(45deg);
+    animation: contact-slide-to-bottom 1s ease 0.6s both;
+}
+
+.contact-mail:hover::before {
+    content: '';
+    background: #B3AFFF;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    transform-origin: left center;
+    animation: contact-anim 0.3s ease both;
+}
+.contact-twitter:hover::before {
+    content: '';
+    background: #B3AFFF;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    transform-origin: left center;
+    animation: contact-anim 0.3s ease both;
+}
+.contact-instagram:hover::before {
+    content: '';
+    background: #B3AFFF;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    transform-origin: left center;
+    animation: contact-anim 0.3s ease both;
+}
+
+@keyframes contact-anim {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+@keyframes contact-slide-to-left {
+    from {
+        opacity: 0;
+        transform: rotate(45deg) translateX(50px);
+    }
+}
+
+@keyframes contact-slide-to-right {
+    from {
+        opacity: 0;
+        transform: rotate(45deg) translateX(-50px);
+    }
+}
+
+@keyframes contact-slide-to-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) rotate(45deg);
+    }
+}
+
+@keyframes contact-slide-to-top {
+    from {
+        opacity: 0;
+        transform: rotate(45deg) translateY(50px);
+    }
+}
+
+.icon-mail,
+.icon-twitter,
+.icon-instagram {
+    position: relative;
+}
+
+.icon-mail::after {
+    content: '';
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z' fill='%23B3AFFF'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}
+.icon-twitter::after {
+    content: '';
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.29395 6.928L14.357 1H13.157L8.76195 6.147L5.24995 1H1.19995L6.50995 8.784L1.19995 15H2.39995L7.04195 9.564L10.751 15H14.801L9.29395 6.928ZM7.65095 8.852L7.11295 8.077L2.83195 1.91H4.67495L8.12895 6.887L8.66695 7.662L13.158 14.132H11.315L7.65095 8.852Z' fill='%23B3AFFF'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}
+.icon-instagram::after {
+    content: '';
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z' fill='%23B3AFFF'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}
+
+.contact-mail:hover .icon-mail::after {
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}
+.contact-twitter:hover .icon-twitter::after {
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.29395 6.928L14.357 1H13.157L8.76195 6.147L5.24995 1H1.19995L6.50995 8.784L1.19995 15H2.39995L7.04195 9.564L10.751 15H14.801L9.29395 6.928ZM7.65095 8.852L7.11295 8.077L2.83195 1.91H4.67495L8.12895 6.887L8.66695 7.662L13.158 14.132H11.315L7.65095 8.852Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}
+.contact-instagram:hover .icon-instagram::after {
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0281 2C14.1531 2.003 14.7241 2.009 15.2171 2.023L15.4111 2.03C15.6351 2.038 15.8561 2.048 16.1231 2.06C17.1871 2.11 17.9131 2.278 18.5501 2.525C19.2101 2.779 19.7661 3.123 20.3221 3.678C20.8306 4.1779 21.224 4.78259 21.4751 5.45C21.7221 6.087 21.8901 6.813 21.9401 7.878C21.9521 8.144 21.9621 8.365 21.9701 8.59L21.9761 8.784C21.9911 9.276 21.9971 9.847 21.9991 10.972L22.0001 11.718V13.028C22.0025 13.7574 21.9949 14.4868 21.9771 15.216L21.9711 15.41C21.9631 15.635 21.9531 15.856 21.9411 16.122C21.8911 17.187 21.7211 17.912 21.4751 18.55C21.2248 19.2178 20.8312 19.8226 20.3221 20.322C19.8221 20.8303 19.2174 21.2238 18.5501 21.475C17.9131 21.722 17.1871 21.89 16.1231 21.94C15.8858 21.9512 15.6485 21.9612 15.4111 21.97L15.2171 21.976C14.7241 21.99 14.1531 21.997 13.0281 21.999L12.2821 22H10.9731C10.2434 22.0025 9.51361 21.9948 8.78409 21.977L8.59009 21.971C8.3527 21.962 8.11536 21.9517 7.87809 21.94C6.81409 21.89 6.08809 21.722 5.45009 21.475C4.78276 21.2244 4.17831 20.8308 3.67909 20.322C3.17013 19.8223 2.77631 19.2176 2.52509 18.55C2.27809 17.913 2.11009 17.187 2.06009 16.122C2.04895 15.8847 2.03895 15.6474 2.03009 15.41L2.02509 15.216C2.00666 14.4868 1.99833 13.7574 2.00009 13.028V10.972C1.9973 10.2426 2.00463 9.5132 2.02209 8.784L2.02909 8.59C2.03709 8.365 2.04709 8.144 2.05909 7.878C2.10909 6.813 2.27709 6.088 2.52409 5.45C2.7752 4.7819 3.16981 4.17702 3.68009 3.678C4.17918 3.16947 4.78323 2.77599 5.45009 2.525C6.08809 2.278 6.81309 2.11 7.87809 2.06C8.14409 2.048 8.36609 2.038 8.59009 2.03L8.78409 2.024C9.51328 2.00623 10.2427 1.99857 10.9721 2.001L13.0281 2ZM12.0001 7C10.674 7 9.40224 7.52678 8.46455 8.46447C7.52687 9.40215 7.00009 10.6739 7.00009 12C7.00009 13.3261 7.52687 14.5979 8.46455 15.5355C9.40224 16.4732 10.674 17 12.0001 17C13.3262 17 14.5979 16.4732 15.5356 15.5355C16.4733 14.5979 17.0001 13.3261 17.0001 12C17.0001 10.6739 16.4733 9.40215 15.5356 8.46447C14.5979 7.52678 13.3262 7 12.0001 7ZM12.0001 9C12.3941 8.99993 12.7842 9.07747 13.1482 9.22817C13.5122 9.37887 13.8429 9.5998 14.1216 9.87833C14.4002 10.1569 14.6212 10.4875 14.772 10.8515C14.9229 11.2154 15.0005 11.6055 15.0006 11.9995C15.0007 12.3935 14.9231 12.7836 14.7724 13.1476C14.6217 13.5116 14.4008 13.8423 14.1223 14.121C13.8437 14.3996 13.5131 14.6206 13.1491 14.7714C12.7851 14.9223 12.3951 14.9999 12.0011 15C11.2054 15 10.4424 14.6839 9.87977 14.1213C9.31716 13.5587 9.00109 12.7956 9.00109 12C9.00109 11.2044 9.31716 10.4413 9.87977 9.87868C10.4424 9.31607 11.2054 9 12.0011 9M17.2511 5.5C16.9196 5.5 16.6016 5.6317 16.3672 5.86612C16.1328 6.10054 16.0011 6.41848 16.0011 6.75C16.0011 7.08152 16.1328 7.39946 16.3672 7.63388C16.6016 7.8683 16.9196 8 17.2511 8C17.5826 8 17.9006 7.8683 18.135 7.63388C18.3694 7.39946 18.5011 7.08152 18.5011 6.75C18.5011 6.41848 18.3694 6.10054 18.135 5.86612C17.9006 5.6317 17.5826 5.5 17.2511 5.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    z-index: 99;
+}

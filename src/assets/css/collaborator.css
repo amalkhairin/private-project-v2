@@ -1,0 +1,43 @@
+.collaborator-section .profile-card img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.collaborator-section .profile-name {
+    font-family: 'DM Serif Display' !important;
+}
+
+.collaborator-section .profile-role {
+    font-family: 'Montserrat' !important;
+}
+
+.profile-card .big-sparkle {
+    left: 25px;
+    top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.profile-card .small-sparkle {
+    left: 15px;
+    top: 35px;
+    position: absolute;
+    z-index: 1;
+}
+
+.profile-card .big-sparkle svg {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-card .small-sparkle svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .profile-card.animated {
+        animation: scale-in-icon 0.5s ease 0.5s both;
+    }
+}

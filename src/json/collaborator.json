@@ -1,0 +1,38 @@
+[
+    {
+        "id": "col-1",
+        "name":"Maru",
+        "role": "Designer & Coding",
+        "status": "Available",
+        "img": "https://i.ibb.co/wy6Gptq/maru-2.png",
+        "social_media_name": "Twitter/X",
+        "social_media_url": "https://twitter.com/maruu_snk"
+    },
+    {
+        "id": "col-2",
+        "name":"Yumetsukie",
+        "role": "Designer",
+        "status": "Not Available",
+        "img": "https://i.ibb.co/QfvLN7B/yume-2.png",
+        "social_media_name": "Twitter/X",
+        "social_media_url": "https://twitter.com/yumetsukie"
+    },
+    {
+        "id": "col-3",
+        "name":"Esmeraeys",
+        "role": "Designer",
+        "status": "Not Available",
+        "img": "https://i.ibb.co/rF8Kr8k/rae-2.png",
+        "social_media_name": "Twitter/X",
+        "social_media_url": "https://twitter.com/esmeraeys"
+    },
+    {
+        "id": "col-4",
+        "name":"Jows",
+        "role": "Designer",
+        "status": "Available",
+        "img": "https://i.ibb.co/f8CRCQr/jows-2.png",
+        "social_media_name": "Twitter/X",
+        "social_media_url": "https://twitter.com/jows__"
+    }
+]
