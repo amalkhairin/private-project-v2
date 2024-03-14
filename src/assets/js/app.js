@@ -8,6 +8,7 @@ class App {
         this.workContainer = document.getElementById('list-work')
         this.sampleWorkContainer = document.getElementById('sample-work')
         this.collaboratorContainer = document.getElementById('list-collaborator')
+        this.collaboratorFilters = document.getElementById('cl-filter')
     }
 
     async init() {
@@ -111,6 +112,11 @@ class App {
             })
             detailContainer.innerHTML = listChild.join('')
         })
+
+        const tosClasses = ['.point-title','.sub-point']
+        const wrapper = ['.point-section']
+        var tosObserver = createObserver(tosClasses);
+        bindObserver(tosObserver, wrapper)
     }
 
     render_works(newVal) {
@@ -143,6 +149,20 @@ class App {
         bindObserver(workObserver, wrapper)
     }
 
+    render_filters() {
+        let listCl = []
+        Collaborator.list.forEach((partner) => {
+            listCl.push(`
+            <button id="p-${partner.id}" onclick="filterCl(this.id,'${partner.name}')" class="bg-transparent btn-filters border-[1px] border-gray-600 text-xs text-white data-[btn-active]:bg-[#B3AFFF] data-[btn-active]:text-white text-center px-2 py-[4px] rounded-2xl">
+                ${partner.name}
+            </button>
+            `)
+        })
+
+        this.collaboratorFilters.innerHTML = ""
+        this.collaboratorFilters.innerHTML = listCl.join('')
+    }
+
     render_collaborators() {
         this.collaboratorContainer.innerHTML = ""
         const listHtml = []
@@ -150,6 +170,11 @@ class App {
             listHtml.push(partner.render())
         })
         this.collaboratorContainer.innerHTML = listHtml.join('')
+
+        const collaboratorClasses = ['.profile-card']
+        const wrapper = ['.collaborator-list']
+        var collaboratorObserver = createObserver(collaboratorClasses);
+        bindObserver(collaboratorObserver, wrapper)
     }
 
      render_trakteer() {

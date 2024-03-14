@@ -55,7 +55,7 @@ class Collaborator {
                 </svg>
             </div>
             <img src="${this.img}" alt="profile picture">
-            <div class="profile-name text-white text-3xl mt-1">${this.name}</div>
+            <a href="#our-works?c=${this.name}" class="profile-name text-white text-3xl mt-1">${this.name}</a>
             <div
                 class="profile-role flex flex-row justify-center items-center text-[14px] text-[#B3AFFF]">
                 <div class="name-sparkle">

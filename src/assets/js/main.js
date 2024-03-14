@@ -7,6 +7,8 @@ $(document).ready(function(){
         app.render_tos()
         app.render_works()
         app.render_collaborators()
+        
+        app.render_filters()
 
         // $("#work-count").text(Work.length())
     })

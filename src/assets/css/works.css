@@ -100,6 +100,10 @@
     font-family: 'Montserrat';
 }
 
+.is-active {
+    background: #B3AFFF !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .work-container .bg-content.animated {
         animation: slide-to-right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;

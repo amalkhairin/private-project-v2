@@ -1,6 +1,6 @@
 [
     {
-        "id": "col-1",
+        "id": "cl-1",
         "name":"Maru",
         "role": "Designer & Coding",
         "status": "Available",
@@ -9,7 +9,7 @@
         "social_media_url": "https://twitter.com/maruu_snk"
     },
     {
-        "id": "col-2",
+        "id": "cl-2",
         "name":"Yumetsukie",
         "role": "Designer",
         "status": "Not Available",
@@ -18,7 +18,7 @@
         "social_media_url": "https://twitter.com/yumetsukie"
     },
     {
-        "id": "col-3",
+        "id": "cl-3",
         "name":"Esmeraeys",
         "role": "Designer",
         "status": "Not Available",
@@ -27,7 +27,7 @@
         "social_media_url": "https://twitter.com/esmeraeys"
     },
     {
-        "id": "col-4",
+        "id": "cl-4",
         "name":"Jows",
         "role": "Designer",
         "status": "Available",

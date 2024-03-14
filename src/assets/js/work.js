@@ -31,6 +31,13 @@ class Work {
         return this.list
     }
 
+    static filterWorkByCollaborator(cl) {
+        if (cl) {
+            return this.list.filter((work) => work.note.includes(cl))
+        }
+        return this.list
+    }
+
     constructor({ id, name, type, note, url }) {
         this.id = id || null;
         this.name = name || null;

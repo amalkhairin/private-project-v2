@@ -38,7 +38,7 @@ function createObserver(classes) {
 }
 
 function bindObserver(observer, wrapper) {
-    document.querySelectorAll('.work-container').forEach(container => {
+    document.querySelectorAll(wrapper).forEach(container => {
         observer.observe(container);
     });
 }
@@ -126,6 +126,7 @@ function detailModal(id) {
 let platform = []
 
 $("#filter-youtube").on("click", function(){
+    $('.btn-filters').removeClass('is-active')
     var attr = $(this).attr("data-btn-active")
     if (typeof attr !== 'undefined' && attr !== false) {
         $(this).removeAttr("data-btn-active")
@@ -135,12 +136,12 @@ $("#filter-youtube").on("click", function(){
         platform.push("Youtube")
     }
     let worksFilter = Work.filterWork(platform)
-    console.log(platform)
     const app = new App()
     app.render_works(worksFilter)
 })
 
 $("#filter-twitch").on("click", function(){
+    $('.btn-filters').removeClass('is-active')
     var attr = $(this).attr("data-btn-active")
     if (typeof attr !== 'undefined' && attr !== false) {
         $(this).removeAttr("data-btn-active")
@@ -150,7 +151,210 @@ $("#filter-twitch").on("click", function(){
         platform.push("Twitch")
     }
     let worksFilter = Work.filterWork(platform)
-    console.log(platform)
     const app = new App()
     app.render_works(worksFilter)
+})
+
+function filterCl(id,name) {
+    // event.preventDefault()
+    $('.btn-filters').removeClass('is-active')
+    $('#'+id).toggleClass('is-active')
+    $("#filter-twitch").removeAttr("data-btn-active")
+    $("#filter-youtube").removeAttr("data-btn-active")
+    if ($('#'+id).hasClass('is-active')) {
+        let worksFilter = Work.filterWorkByCollaborator(name)
+        const app = new App()
+        app.render_works(worksFilter)
+    } else {
+        const app = new App()
+        app.render_works()
+    }
+}
+
+$(document).ready(function () {
+    $('.menu-icon').click(function () {
+        $(this).toggleClass('open')
+
+        $('.main-container').toggleClass('hidden')
+        $('.menu-container').toggleClass('hidden')
+    });
+
+    $('#close-modal').click(function(){
+        $('#custom-modal').addClass('hidden')
+    })
+
+    $(window).on('popstate', function (event) {
+        location.reload(true);
+    });
+
+    if (window.location.hash === "#our-works") {
+        $(".main-wrapper").addClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+        $(".work-wrapper").removeClass('hidden')
+
+        $('#works-nav-btn').addClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+        // window.location.reload(true)
+    }
+
+    if (window.location.hash === "#tos") {
+        $(".main-wrapper").addClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+        $(".tos-wrapper").removeClass('hidden')
+
+        $('#works-nav-btn').removeClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').addClass('link-active')
+        // window.location.reload(true)
+    }
+    if (window.location.hash === "#home") {
+        $(".main-wrapper").removeClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+
+        $('#works-nav-btn').removeClass('link-active')
+        $('#home-nav-btn').addClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+        // window.location.reload(true)
+    }
+    if (window.location.hash === "#commission") {
+        $(".main-wrapper").addClass('hidden')
+        $(".commission-wrapper").removeClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+
+        $('#works-nav-btn').removeClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#commission-nav-btn').addClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+        // window.location.reload(true)
+    }
+
+    $('.magic-button').click(function(){
+        $(this).toggleClass('active-effect')
+        $('.bg').toggleClass('effect')
+        $('.bg-anim').toggleClass('hidden')
+    })
+
+    $('.submit-button').click(function(){
+        // event.preventDefault()
+        var name = encodeURIComponent($('#name-input').val())
+        var email = encodeURIComponent($('#email-input').val())
+        var message = encodeURIComponent($('#message-input').val())
+
+        var mailUrl = "mailto:maruhodooo@gmail.com?subject="+ name +"%20Inquiries&body=" + message
+
+        if (name !== "" && email !== "" && message !== "") {
+            window.open(mailUrl)
+        }
+    })
+
+    $('.commission-button').click(function () {
+        event.preventDefault();
+        var targetUrl = $(this).attr('href')
+        history.pushState(null, null, targetUrl);
+
+        $(".main-wrapper").addClass('hidden')
+        $(".commission-wrapper").removeClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+
+        $('#commission-nav-btn').addClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#works-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+
+        if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+            $('.menu-container').addClass('hidden')
+            $('.main-container').removeClass('hidden')
+            $('.menu-icon').removeClass('open')
+        }
+
+        $('.body-wrapper').animate({
+            scrollTop: 0
+        }, 0);
+    })
+
+    $('.works-button').click(function () {
+        event.preventDefault();
+        var targetUrl = $(this).attr('href')
+        history.pushState(null, null, targetUrl);
+
+        $(".main-wrapper").addClass('hidden')
+        $(".commission-wrapper").addClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+        $(".work-wrapper").removeClass('hidden')
+
+        $('#works-nav-btn').addClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+
+        if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+            $('.menu-container').addClass('hidden')
+            $('.main-container').removeClass('hidden')
+            $('.menu-icon').removeClass('open')
+        }
+
+        $('.body-wrapper').animate({
+            scrollTop: 0
+        }, 0);
+    })
+
+    $('.tos-button').click(function () {
+        event.preventDefault();
+        var targetUrl = $(this).attr('href')
+        history.pushState(null, null, targetUrl);
+
+        $(".main-wrapper").addClass('hidden')
+        $(".commission-wrapper").addClass('hidden')
+        $(".tos-wrapper").removeClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+
+        $('#works-nav-btn').removeClass('link-active')
+        $('#home-nav-btn').removeClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').addClass('link-active')
+
+        if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+            $('.menu-container').addClass('hidden')
+            $('.main-container').removeClass('hidden')
+            $('.menu-icon').removeClass('open')
+        }
+
+        $('.body-wrapper').animate({
+            scrollTop: 0
+        }, 0);
+    })
+
+    $('.home-button').click(function () {
+        event.preventDefault();
+
+        var targetUrl = $(this).attr('href')
+        history.pushState(null, null, targetUrl);
+
+        $(".commission-wrapper").addClass('hidden')
+        $(".work-wrapper").addClass('hidden')
+        $(".tos-wrapper").addClass('hidden')
+        $(".main-wrapper").removeClass('hidden')
+
+        $('#home-nav-btn').addClass('link-active')
+        $('#commission-nav-btn').removeClass('link-active')
+        $('#works-nav-btn').removeClass('link-active')
+        $('#tos-nav-btn').removeClass('link-active')
+
+        $('.body-wrapper').animate({
+            scrollTop: 0
+        }, 0);
+
+        if (!$('.menu-container').hasClass("hidden") && $('.main-container').hasClass("hidden")) {
+            $('.menu-container').addClass('hidden')
+            $('.main-container').removeClass('hidden')
+            $('.menu-icon').removeClass('open')
+        }
+    })
 })
