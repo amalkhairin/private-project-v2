@@ -20,7 +20,13 @@ class Work {
 
     static filterWork(type) {
         if (type.length != 0) {
-            return this.list.filter((work) => type.includes(work.type))
+            
+            // console.log(type.join('|'))
+            // return this.list.filter((work) => type.join('|').includes(work.type))
+            return this.list.filter((work) => {
+                const types = work.type.toLowerCase().split('|'); // Split the types if it's a combined type
+                return type.some(item => types.includes(item.toLowerCase()));
+            })
         }
         return this.list
     }

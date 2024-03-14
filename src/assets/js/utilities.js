@@ -135,6 +135,7 @@ $("#filter-youtube").on("click", function(){
         platform.push("Youtube")
     }
     let worksFilter = Work.filterWork(platform)
+    console.log(platform)
     const app = new App()
     app.render_works(worksFilter)
 })
@@ -149,6 +150,7 @@ $("#filter-twitch").on("click", function(){
         platform.push("Twitch")
     }
     let worksFilter = Work.filterWork(platform)
+    console.log(platform)
     const app = new App()
     app.render_works(worksFilter)
 })
