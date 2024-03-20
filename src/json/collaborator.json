@@ -34,5 +34,14 @@
         "img": "https://i.ibb.co/f8CRCQr/jows-2.png",
         "social_media_name": "Twitter/X",
         "social_media_url": "https://twitter.com/jows__"
+    },
+    {
+        "id": "cl-5",
+        "name":"Sano",
+        "role": "Designer",
+        "status": "Available",
+        "img": "https://i.ibb.co/zQH21Dq/sano.png",
+        "social_media_name": "Instagram",
+        "social_media_url": "https://www.instagram.com/sano_faris/"
     }
 ]
