@@ -337,20 +337,34 @@
     },
     {
         "id": "work-49",
+        "name": "WhimsicalPlushie",
+        "note": "Designed & Coding by Maruu",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-50",
+        "name": "WhimsicalPlushie",
+        "note": "Designed by Sano, Coding by Maruu",
+        "type": "Twitch",
+        "url": ""
+    },
+    {
+        "id": "work-51",
         "name": "Cecilia Lieberia",
         "type": "Youtube",
         "note": "Designed & Coding by Maruu",
         "url": "https://youtu.be/J-OAe6FVPTY?si=-DQmVIzh7TjtzMRy"
     },
     {
-        "id": "work-50",
+        "id": "work-52",
         "name": "YourLuLunie",
         "type": "Youtube",
         "note": "Designed by Esmeraeys, Coding by Maruu",
         "url": "https://youtu.be/wvl8diR06YY"
     },
     {
-        "id": "work-51",
+        "id": "work-53",
         "name": "Mikazuki Arion",
         "note": "Designed & Coding by Maruu",
         "type": "Youtube",
